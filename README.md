@@ -2,7 +2,7 @@
 Put [Kindroid](https://kindroid.ai/) on whole page for screen with width 990px and more.
 
 ## Preview
-![Preview](https://raw.githubusercontent.com/breatfr/kindroid/main/preview v3.xx.jpg)
+![Preview](https://raw.githubusercontent.com/breatfr/kindroid/main/preview%20v3.xx.jpg)
 Don't take care of this chat, i create it only to make the screenshot :)
 
 Changelog
