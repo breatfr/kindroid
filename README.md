@@ -88,6 +88,7 @@ v3 is v2 with customizations, here are all i already added:
 
 3. To update the theme, open the `Stylus Management` window and click on `Check for update` and follow the instructions or just wait 24h to automatic update
 
-PS: You can modify the theme but if you'll do, no more automatic update.
+PS: Normally with the v3 you won't need modify my theme yourself and if you do you won't get update anymore.
+PS2: Like i put on GitHub only I don't know if automatic update from stylus will works so you'll need re-install waiting userstyles.world works correctly.
 
 4. Enjoy :)
