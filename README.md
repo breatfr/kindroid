@@ -18,7 +18,7 @@ Help / comment / ask etc...
     	- Asterisks + Bold + no italic
     	- Asterisks + Bold + no italic + same color
     	- Bold
-   	- Bold + no italic
+   		- Bold + no italic
     	- Bold + no italic + same color
     	- No italic
     	- Same color
