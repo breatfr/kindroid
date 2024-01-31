@@ -46,6 +46,7 @@
     "⬜ None": "nobg",
     "❔ Custom": "custombg"
 }
+@var color      bgcolor                     "Background color"                      #101010
 @var text       custombgurl                 "Background URL"                        "URL between quotes"
 @var color      bubblescolor                "Bubbles font color"                    #CBCBCB
 @var text       bubblestext                 "Bubbles font size"                     20px
@@ -520,21 +521,26 @@ X (twitter)     https://x.com/breatfroff
     /* Background */
     if (bgchoice=="heartbg") {
         .css-1lvpjll {
-            background: url(https://i.ibb.co/fYQkYyc/heart-pattern.png) var(--chakra-colors-secondaryBlack) fixed 100% !important;
+            background: url(https://i.ibb.co/fYQkYyc/heart-pattern.png) bgcolor fixed 100% !important;
         }
     }    
     if (bgchoice=="nobg") {
         /* No background */
         .css-1lvpjll {
-            background: var(--chakra-colors-secondaryBlack) fixed 100%;
+            background: var(--chakra-colors-secondaryBlack) !important;
         }
     }    
     if (bgchoice=="custombg") {
         /* Custom background */
         .css-1lvpjll {
-            background: url(custombgurl) var(--chakra-colors-secondaryBlack) fixed 100%;
+            background: url(custombgurl) bgcolor fixed 100% !important;
         }
     }
+    if bgcolor {
+        .css-1lvpjll {
+            background-color: bgcolor;
+        }
+    } 
     
     /* Avatar position */
     if (avatarposition=="avatarlargemiddle") {
