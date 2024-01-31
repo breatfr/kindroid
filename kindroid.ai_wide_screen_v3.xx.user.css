@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name            Kindroid AI: Wide screen + customisations v3.xx
 @description     Put Kindroid on whole page for screen with width 990px and more and add customisations features.
-@version         3.01
+@version         3.02
 @author          BreatFR
 @namespace       userstyles.world/user/breat
 @homepageURL     https://discord.com/channels/1116127115574779905/1195415564101886102
@@ -56,6 +56,7 @@
 @var text       kinbubblesbgurl             "Kin bubbles background URL"            "URL between quotes"
 @var color      ourbubblesbgcolor           "Our bubbles background color"          rgb(27, 28, 30)
 @var text       ourbubblesbgurl             "Our bubbles background URL"            "URL between quotes"
+@var checkbox   showversion                 "Show theme version"                    1
 @var select     systembubblesstyle          "System bubbles style" {
     "Left": "systembubblesleft",
     "Dark": "systembubblesdark"
@@ -94,6 +95,26 @@ X (twitter)     https://x.com/breatfroff
     #nprogress .bar {
         background: linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
     }
+    
+    /* Theme version */
+    :root {
+        --version: "Theme by BreatFR version: Kindroid AI: Wide screen + customisations v3.02";
+    }
+    if showversion {
+        .css-x3odei,
+        .css-z0osps {
+            &::after {
+                background: -webkit-linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                content: var(--version);
+                font-size: 20px !important;
+                position: absolute;
+                left: 35%;
+                width: max-content;
+            }
+        }
+    }
 }
 @-moz-document url("https://kindroid.ai/home") {
 /* ===================================================================================================================================
@@ -103,30 +124,6 @@ X (twitter)     https://x.com/breatfroff
 /* ========================================================================
    Header and menu
 ======================================================================== */
-    /* Theme version */
-    :root {
-        --title: "Theme by BreatFR version:";
-        --version: "Kindroid AI: Wide screen + customisations v3.01";
-    }
-    .css-1raxatq {
-        &::before {
-            bottom: 10%;
-            color: var(--chakra-colors-secondaryWhite);
-            content: var(--title);
-            position: absolute;
-            right: 20px;
-            width: max-content;
-        }
-        &::after {
-            bottom: 8%;
-            color: var(--chakra-colors-secondaryWhite);
-            content: var(--version);
-            position: absolute;
-            right: 20px;
-            width: max-content;
-        }
-    }
-
     /* Header background color */
     .css-x3odei {
         background-color: var(--chakra-colors-primaryBlack) !important;
@@ -397,11 +394,12 @@ X (twitter)     https://x.com/breatfroff
 
         /* Danger zone: delete account */
         .css-yk3l44 {
-            bottom: 100px;
+            bottom: 150px;
         }
         .css-u2mg9m {
             font-weight: 600;
             font-size: 18px;
+            width: max-content;
         }
 
         /* Bigger menu text */
@@ -427,6 +425,10 @@ X (twitter)     https://x.com/breatfroff
         .css-iludz4 {
             height: auto;
             width: 300px;
+        }
+        .css-1raxatq > div.css-66xswa > div > p {
+            position: absolute;
+            top: 10px;
         }
 
         /* Voice */
