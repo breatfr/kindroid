@@ -1,4 +1,4 @@
-# Kindroid AI: Wide screen v3
+# Kindroid AI: Wide screen + customisations v3
 Put [Kindroid](https://kindroid.ai/) on whole page for screen with width 990px and more and add customisations features.
 ## Preview
 ![Preview](https://raw.githubusercontent.com/breatfr/kindroid/main/preview%20v3.xx.jpg)
