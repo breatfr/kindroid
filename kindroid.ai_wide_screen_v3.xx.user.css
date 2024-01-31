@@ -928,7 +928,7 @@ X (twitter)     https://x.com/breatfroff
             color: var(--chakra-colors-secondaryWhite);
         }
         .css-100dd8p {
-            gap: 80px !important;
+            gap: 50px !important;
             flex-direction: row-reverse !important;
         }
         .css-b9bzmp,
@@ -944,7 +944,7 @@ X (twitter)     https://x.com/breatfroff
         }
         .css-1y2ps2x {
             color: var(--chakra-colors-secondaryWhite);
-            margin-left: 90px;
+            margin-left: 50px;
         }
     }
     
