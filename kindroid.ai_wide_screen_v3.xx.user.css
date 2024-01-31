@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name            Kindroid AI: Wide screen + customisations v3.xx
 @description     Put Kindroid on whole page for screen with width 990px and more and add customisations features.
-@version         3.02
+@version         3.03
 @author          BreatFR
 @namespace       userstyles.world/user/breat
 @homepageURL     https://discord.com/channels/1116127115574779905/1195415564101886102
@@ -98,7 +98,7 @@ X (twitter)     https://x.com/breatfroff
     
     /* Theme version */
     :root {
-        --version: 'Theme "Kindroid AI: Wide screen + customisations" by BreatFR version 3.02';
+        --version: 'Theme "Kindroid AI: Wide screen + customisations" by BreatFR version 3.03';
     }
     if showversion {
         .css-x3odei,
@@ -252,13 +252,12 @@ X (twitter)     https://x.com/breatfroff
 
     /* Put Regenerate and Journal buttons inline */
     .css-1lvpjll > div.chatScrollParent.css-735j5d > div.css-1lbk8wf > div:nth-child(20) > div.css-1jby15f {
-        bottom: 100px;
         right: 10px;
-        position: fixed;
     }
     .css-100dd8p {
         gap: 90px !important;
         flex-direction: row-reverse !important;
+        margin-right: 90px;
     }
     
     /* Actions texts */
@@ -655,7 +654,6 @@ X (twitter)     https://x.com/breatfroff
             }
 
             .css-1lbk8wf {
-                margin-bottom: 70px;
                 padding: 0px 10px 0px 540px;
                 width: 100%;
             }
@@ -698,7 +696,6 @@ X (twitter)     https://x.com/breatfroff
             }
 
             .css-1lbk8wf {
-                margin-bottom: 70px;
                 padding: 0px 10px 0px 348px;
                 width: 100%;
             }
@@ -740,7 +737,6 @@ X (twitter)     https://x.com/breatfroff
             }
 
             .css-1lbk8wf {
-                margin-bottom: 70px;
                 padding-bottom: 0px;
                 padding-left: 28px + avatarcustomsizevalue;
                 padding-right: 10px;
@@ -777,7 +773,6 @@ X (twitter)     https://x.com/breatfroff
             top: 0px;
         }
         .css-1lbk8wf {
-            margin-bottom: 70px;
             padding: 0px 10px 0px 10px;
             width: 100%;
         }
@@ -858,10 +853,8 @@ X (twitter)     https://x.com/breatfroff
             }
             .css-b9bzmp,
             .css-14dkl09 {
-                bottom: 20px;
-                position: fixed;
                 right: 10px;
-                max-width: 72%;
+                max-width: 170%;
             }
         }
 
@@ -947,7 +940,7 @@ X (twitter)     https://x.com/breatfroff
             width: 98.5% !important;
         }
         .css-1lbk8wf {
-            margin-bottom: 70px;
+            margin-bottom: 72px;
             width: 100%;
         }
     }
