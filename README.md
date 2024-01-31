@@ -13,15 +13,15 @@ Help / comment / ask etc...
 # chat page
 - actions text style
 	- Default
-    	- Asterisks
-    	- Asterisks + bold
-    	- Asterisks + Bold + no italic
-    	- Asterisks + Bold + no italic + same color
-    	- Bold
-   		- Bold + no italic
-    	- Bold + no italic + same color
-    	- No italic
-    	- Same color
+	- Asterisks
+	- Asterisks + bold
+	- Asterisks + Bold + no italic
+	- Asterisks + Bold + no italic + same color
+	- Bold
+	- Bold + no italic
+	- Bold + no italic + same color
+	- No italic
+	- Same color
 - actions text color choice
 - avatar position (choose regarding of the size you use, isn't automatic)
 	- avatar position large middle
