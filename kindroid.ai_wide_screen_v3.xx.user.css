@@ -257,7 +257,6 @@ X (twitter)     https://x.com/breatfroff
     .css-100dd8p {
         gap: 90px !important;
         flex-direction: row-reverse !important;
-        margin-right: 90px;
     }
     
     /* Actions texts */
@@ -838,7 +837,7 @@ X (twitter)     https://x.com/breatfroff
                 font-size: 20px;
                 grid-template-columns: 1fr 1fr 1fr;
                 margin-left: -10% !important;
-                margin-top: 144%;
+                margin-top: 143%;
                 --menu-shadow: transparent !important;
                 opacity: 100% !important;
                 visibility: visible !important;        
@@ -873,7 +872,7 @@ X (twitter)     https://x.com/breatfroff
                 margin-top: 170%;
                 --menu-shadow: transparent !important;
                 opacity: 100% !important;
-                visibility: visible !important
+                visibility: visible !important;
             }
             .css-94x4at {
                 background-color: transparent;
@@ -902,7 +901,7 @@ X (twitter)     https://x.com/breatfroff
                 margin-top: 325%;
                 --menu-shadow: transparent !important;
                 opacity: 100% !important;
-                visibility: visible !important
+                visibility: visible !important;
             }
             .css-do4s31 button:hover {
                 background: -webkit-linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
@@ -942,6 +941,10 @@ X (twitter)     https://x.com/breatfroff
         .css-1lbk8wf {
             margin-bottom: 72px;
             width: 100%;
+        }
+        .css-1y2ps2x {
+            color: var(--chakra-colors-secondaryWhite);
+            margin-left: 90px;
         }
     }
     
