@@ -353,7 +353,7 @@ X (twitter)     https://x.com/breatfroff
             display: grid;
             align-content: center;
             gap: 50px;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
             margin-top: 10%;
             justify-content: space-between !important;
         }
