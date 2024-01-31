@@ -2,7 +2,6 @@
 Put [Kindroid](https://kindroid.ai/) on whole page for screen with width 990px and more and add customisations features.
 ## Preview
 ![Preview](https://raw.githubusercontent.com/breatfr/kindroid/main/preview%20v3.xx.jpg)
-Don't take care of this chat, i create it only to make the screenshot :)
 
 Changelog
 - https://discord.com/channels/1116127115574779905/1195415564101886102
@@ -10,7 +9,7 @@ Changelog
 Help / comment / ask etc...
 - https://discord.com/channels/1116127115574779905/1145809654044176485
 
-v3 is v2 with customizations, here are all i already added:
+## Customisations available
 # chat page
 - actions text style
 	- Default
@@ -61,7 +60,7 @@ v3 is v2 with customizations, here are all i already added:
 	- enabled (default)
 	- disabled
 
-## How to use in few steps on computer
+## How to use in few steps
 1. Install Stylus browser extension
     - Chromium based browsers link: https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne
         - Brave
