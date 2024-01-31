@@ -103,6 +103,30 @@ X (twitter)     https://x.com/breatfroff
 /* ========================================================================
    Header and menu
 ======================================================================== */
+    /* Theme version */
+    :root {
+        --title: "Theme by BreatFR version:";
+        --version: "Kindroid AI: Wide screen + customisations v3.01";
+    }
+    .css-1raxatq {
+        &::before {
+            bottom: 10%;
+            color: var(--chakra-colors-secondaryWhite);
+            content: var(--title);
+            position: absolute;
+            right: 20px;
+            width: max-content;
+        }
+        &::after {
+            bottom: 8%;
+            color: var(--chakra-colors-secondaryWhite);
+            content: var(--version);
+            position: absolute;
+            right: 20px;
+            width: max-content;
+        }
+    }
+
     /* Header background color */
     .css-x3odei {
         background-color: var(--chakra-colors-primaryBlack) !important;
