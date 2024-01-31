@@ -48,6 +48,7 @@
 }
 @var color      bgcolor                     "Background color"                      #101010
 @var text       custombgurl                 "Background URL"                        "URL between quotes"
+@var checkbox   blurcontent                 "Blur content in bubbles"               0
 @var color      bubblescolor                "Bubbles font color"                    #CBCBCB
 @var text       bubblestext                 "Bubbles font size"                     20px
 @var checkbox   hidenames                   "Hide names in bubbles"                 1
@@ -925,6 +926,14 @@ X (twitter)     https://x.com/breatfroff
         }
     }
     
+    if blurcontent {
+        .css-1j9xj7u > .css-0 > p,
+        .css-teti0a > .css-0 > p {
+            filter: blur(8px);
+            -webkit-filter: blur(8px);
+        }
+    }
+    
     if hidenames {
         /* Hide names in bubbles to save place */
         .css-ppua9z,
@@ -1019,13 +1028,19 @@ X (twitter)     https://x.com/breatfroff
 
     /* Image border on hover */
     if imageborder {
-        .css-1regj17 {
+        .css-1regj17:hover {
             transition: 0.2s linear;
         }
         .css-1regj17:hover {
-            border: 5px solid rgb(254, 132, 132);
             border-radius: 16px;
+            height: 300px;
+            width: 300px;
         }
+        .css-3vu8ng:hover {
+            border-radius: 16px;
+            box-shadow: rgba(139, 109, 255, 0.4) -5px -5px 5px 5px, rgba(254, 133, 133, 0.4) 5px 5px 5px 5px, rgba(254, 133, 133, 0.4) 5px -5px 5px 5px, rgba(139, 110, 255, 0.4) -5px 5px 5px 5px;
+            transition: 0.2s linear;
+        }        
     }    
 
     /* Put delete image button in red */
