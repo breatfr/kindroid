@@ -98,7 +98,7 @@ X (twitter)     https://x.com/breatfroff
     
     /* Theme version */
     :root {
-        --version: "Theme by BreatFR version: Kindroid AI: Wide screen + customisations v3.02";
+        --version: 'Theme "Kindroid AI: Wide screen + customisations" by BreatFR version 3.02';
     }
     if showversion {
         .css-x3odei,
