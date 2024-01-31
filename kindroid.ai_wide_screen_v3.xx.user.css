@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name            Kindroid AI: Wide screen v3.xx
 @description     Put Kindroid on whole page for screen with width 990px and more.
-@version         3.00
+@version         3.01
 @author          BreatFR
 @namespace       userstyles.world/user/breat
 @homepageURL     https://discord.com/channels/1116127115574779905/1195415564101886102
@@ -108,7 +108,7 @@ X (twitter)     https://x.com/breatfroff
     }
 
     /* Put Log out in orange */
-    .css-j7qwjs > div:nth-child(10) > p {
+    .css-yk3l44 > h2:nth-child(3) {
         color: var(--chakra-colors-orange);
     }
 
@@ -118,8 +118,8 @@ X (twitter)     https://x.com/breatfroff
     }
 
     /* Put FAQs and Terms & Privacy in blue */
-    .css-j7qwjs > div:nth-child(8) > p,
-    .css-j7qwjs > div:nth-child(9) > p {
+    .css-4i8yew,
+    .css-yk3l44 > h2:nth-child(2) {
         color: var(--chakra-colors-blue-400);
     }
 
@@ -132,7 +132,7 @@ X (twitter)     https://x.com/breatfroff
 
     /* Put Upload Photo text in custom avatar in white to be more visible */
     .css-1jcj2pk {
-        color: white;
+        color: var(--chakra-colors-secondaryWhite);
     }
 
     /* Billing error box */
@@ -144,14 +144,14 @@ X (twitter)     https://x.com/breatfroff
     }
     
     /* Add border to textarea when focus */
-    .css-ymugf1:focus {
+    textarea:focus {
         border: 0px;
         border-radius: 32px;
         box-shadow: 0 0 0 1px rgb(139, 109, 255), 0 0 0 2px rgb(254, 132, 132);
     }
     /* Remove the resize icon on textarea on chat page */
-    .css-ymugf1:not(:focus),
-    .css-ymugf1:focus {
+    textarea:not(:focus),
+    textarea:focus {
         resize: none;
     }
 
@@ -355,7 +355,13 @@ X (twitter)     https://x.com/breatfroff
             gap: 50px;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
             margin-top: 10%;
-            justify-content: space-between !important
+            justify-content: space-between !important;
+        }
+        .css-yk3l44 {
+            gap: 100px;
+        }
+        .css-yk3l44 > h2 {
+            font-size: 20px;
         }
 
         /* Subscribe button */
@@ -364,43 +370,38 @@ X (twitter)     https://x.com/breatfroff
             order: 2;
         }
 
-        /* Log out button */
-        .css-j7qwjs > div:nth-child(10) {
-            position: absolute;
-            right: 5%;
-            top: 70%;
+        /* Danger zone: delete account */
+        .css-yk3l44 {
+            bottom: 100px;
         }
-
-        /* Reset Kindroid button */
-        .css-16qb61r {
-            position: absolute;
-            right: 4%;
-            top: 80%;
+        .css-u2mg9m {
+            font-weight: 600;
+            font-size: 18px;
         }
 
         /* Bigger menu text */
         .css-dghbxk,
         .css-1jbciej,
         .css-3sp0ue {
-            font-size: 30px
+            font-size: 30px;
         }
 
         /* Move and fix the Save button in all menu page */
         .css-cbfcqn,
         .css-1raxatq > div.css-1xh8vw6 > button,
-        .css-1raxatq > div.css-ouwkos > button {
-            bottom: 50px;
+        .css-1raxatq > div.css-ouwkos > button,
+        .css-1sfbjfs,
+        .css-1dmnlsh {
+            bottom: 20px;
             margin: 39% 0px 0px 83%;
             position: fixed;
         }
-
-        /* Backstory and Key memories */
-        .css-1xh8vw6 > .css-188uayk > .css-j7qwjs > .css-1kxonj9 > .css-126ipcs > textarea.css-1y068e {
-            height: 600px !important;
-        }
-        #accordion-panel-\:r6i\: > div.css-mifb2i > div.css-1uyzhnb > p.chakra-text.css-7wdzg1,
-        #accordion-panel-\:r6f\: > p.chakra-text.css-7wdzg1 {
-            min-width: 100% !important;
+        
+        /* My kindroids */
+        .css-12jdxbf,
+        .css-iludz4 {
+            height: auto;
+            width: 300px;
         }
 
         /* Voice */
@@ -479,8 +480,8 @@ X (twitter)     https://x.com/breatfroff
         }
 
         /* Uncollapse "Advanced: secondary avatar" and "Advanced: custom avatar fidelity" */
-        .css-1y4vgns > div.chakra-accordion.css-0 > div > div,
-        .css-1v3caum > div > div {
+        .css-tf0j9o > div,
+        .css-1v3caum > div {
             display: block !important;
             height: auto !important;
             opacity: 1 !important;
@@ -490,12 +491,6 @@ X (twitter)     https://x.com/breatfroff
         .css-1y4vgns > button {
             margin: 39% 0px 0px 83%;
             position: fixed;
-        }
-
-        /* FAQs and Terms & Privacy pages */
-        .css-1udr2et,
-        .css-1pgxq2r {
-            max-width: 100%;
         }
 
         /* Remove the space between the header and the chat*/
@@ -1024,10 +1019,10 @@ X (twitter)     https://x.com/breatfroff
 
     /* Image border on hover */
     if imageborder {
-        div.css-3vu8ng > .css-1regj17 {
+        .css-1regj17 {
             transition: 0.2s linear;
         }
-        div.css-3vu8ng > .css-1regj17:hover {
+        .css-1regj17:hover {
             border: 5px solid rgb(254, 132, 132);
             border-radius: 16px;
         }
@@ -1050,19 +1045,24 @@ X (twitter)     https://x.com/breatfroff
     /* Background */
     if (bgchoice=="heartbg") {
         .css-10ytma2 {
-            background: url(https://i.ibb.co/fYQkYyc/heart-pattern.png) var(--chakra-colors-secondaryBlack) fixed 100% !important;
+            background: url(https://i.ibb.co/fYQkYyc/heart-pattern.png) bgcolor fixed 100% !important;
         }
     }    
     if (bgchoice=="nobg") {
         /* No background */
         .css-10ytma2 {
-            background: var(--chakra-colors-secondaryBlack) fixed 100%;
+            background: var(--chakra-colors-secondaryBlack) !important;
         }
     }    
     if (bgchoice=="custombg") {
         /* Custom background */
         .css-10ytma2 {
-            background: url(custombgurl) var(--chakra-colors-secondaryBlack) fixed 100%;
+            background: url(custombgurl) bgcolor fixed 100% !important;
+        }
+    }
+    if bgcolor {
+        .css-10ytma2 {
+            background-color: bgcolor;
         }
     }
 
@@ -1105,7 +1105,26 @@ X (twitter)     https://x.com/breatfroff
     .css-7wdzg1,
     .css-14mmx5r,
     .css-1vqt2yh {
-        font-size: 18px;    
+        font-size: 18px;
+    }
+}
+@-moz-document url("https://kindroid.ai/faqs") {
+    /* FAQs page */
+    .css-1udr2et {
+        max-width: 100% !important;
+    }
+    .css-51kqi6 {
+        text-align: center;
+    }
+}
+@-moz-document url("https://kindroid.ai/legal") {
+    /* Terms & Privacy page */
+    .css-1pgxq2r {
+        max-width: 100% !important;
+    }
+    .css-1pgxq2r > h1 {
+        font-size: 42px;
+        line-height: 48px;
     }
 }
 @-moz-document url("chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/popup.html") {
