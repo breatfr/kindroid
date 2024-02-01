@@ -23,6 +23,7 @@ Help / comment / ask etc...
 	- No italic
 	- Same color
 - actions text color choice
+- avatar choice
 - avatar position (choose regarding of the size you use, isn't automatic)
 	- avatar position large middle
 	- avatar position large top
