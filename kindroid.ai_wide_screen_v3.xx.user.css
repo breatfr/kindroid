@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name            Kindroid AI: Wide screen + customisations v3.xx
 @description     Put Kindroid on whole page for screen with width 990px and more and add customisations features.
-@version         3.03
+@version         3.04
 @author          BreatFR
 @namespace       userstyles.world/user/breat
 @homepageURL     https://discord.com/channels/1116127115574779905/1195415564101886102
@@ -23,6 +23,8 @@
     "Same color": "samecolor"
 }
 @var color      actionscolor                "Actions texts color choice"            rgb(168, 168, 168)
+@var checkbox   avatarchoice                "Avatar choice"                         0
+@var text       avatarchoiceurl             "Avatar choice URL"                     "URL between quotes"
 @var select     avatarposition              "Avatar position" {
     "Large Middle": "avatarlargemiddle",
     "Large Top": "avatarlargetop",
@@ -98,7 +100,7 @@ X (twitter)     https://x.com/breatfroff
     
     /* Theme version */
     :root {
-        --version: 'Theme "Kindroid AI: Wide screen + customisations" by BreatFR version 3.03';
+        --version: 'Theme "Kindroid AI: Wide screen + customisations" by BreatFR version 3.04';
     }
     if showversion {
         .css-x3odei,
@@ -713,7 +715,6 @@ X (twitter)     https://x.com/breatfroff
     }
     if avatarcustomsize {
         @media screen and (min-width: 900px) {
-            /* Custom avatar */
             .css-13tht1l,
             .css-g2goff {
                 border-radius: 20px;
@@ -781,6 +782,73 @@ X (twitter)     https://x.com/breatfroff
             bottom: 0px;
             margin-left: 540px;
             width: calc(100% - 555px);
+        }
+    }
+    
+    /* Avatar choice */
+    if avatarchoice {
+        .css-1bwrjj6 {
+            height: 0px;
+        }
+        .css-g2goff {
+            background: url(avatarchoiceurl) no-repeat;
+            background-size: cover;
+            max-width: avatarsize;
+        }
+        /* Avatar position */
+        if (avatarposition=="avatarlargemiddle") {
+            @media screen and (min-width: 900px) {
+                .css-13tht1l,
+                .css-g2goff {
+                    position: absolute;
+                    top: 24vh;
+                }
+            }
+        }
+        if (avatarposition=="avatarlargetop") {
+            @media screen and (min-width: 900px) {
+                .css-13tht1l,
+                .css-g2goff {
+                    position: absolute;
+                    top: 9vh;
+                }
+            }
+        }
+        if (avatarposition=="avatarlargebottom") {
+            @media screen and (min-width: 900px) {
+                .css-13tht1l,
+                .css-g2goff {
+                    position: absolute;
+                    top: 35vh;
+                }
+            }
+        }
+        if (avatarposition=="avatarsmallmiddle") {
+            @media screen and (min-width: 900px) {
+                .css-13tht1l,
+                .css-g2goff {
+                    position: absolute;
+                    top: 32vh;
+                }
+            }
+        }
+        if (avatarposition=="avatarsmalltop") {
+            @media screen and (min-width: 900px) {
+                .css-13tht1l,
+                .css-g2goff {
+                    position: absolute;
+                    top: 8vh;
+                }
+            }
+        }
+        if (avatarposition=="avatarsmallbottom") {
+            @media screen and (min-width: 900px) {
+                .css-13tht1l,
+                .css-g2goff {
+                    position: absolute;
+                    top: 56vh;
+                }
+            }
         }
     }
     
