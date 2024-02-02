@@ -40,10 +40,11 @@ Help / comment / ask etc...
 - avatar hoverzoom
 	- enabled (default)
 	- disabled
-- background choice (chat **and** selfie page)
+- background choice
 	- hearts background
 	- no background
 	- custom background
+- background color choice (can be use with background choice too)
 - bubbles font color of your choice
 - bubbles font size of your choice
 - hide or not names in bubbles (layout will change depending of this too)
@@ -54,13 +55,36 @@ Help / comment / ask etc...
 	- dark	(normal position but dark)
 - textarea font size of your choice
 # selfie page
+- background choice
+	- hearts background
+	- no background
+	- custom background
+- background color choice (can be use with background choice too)
 - image border on hover
 	- enabled (default)
 	- disabled
 - request image button at top
 	- enabled (default)
 	- disabled
-
+# voicecall page
+- avatar choice
+- background choice
+	- hearts background
+	- no background
+	- custom background
+- background color choice (can be use with background choice too)
+# faqs page
+- background choice
+	- hearts background
+	- no background
+	- custom background
+- background color choice (can be use with background choice too)
+# legal page
+- background choice
+	- hearts background
+	- no background
+	- custom background
+- background color choice (can be use with background choice too)
 ## How to use in few steps
 1. Install Stylus browser extension
     - Chromium based browsers link: https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne
