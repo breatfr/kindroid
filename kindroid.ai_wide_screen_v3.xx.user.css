@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name            Kindroid AI: Wide screen + customisations v3.xx
 @description     Put Kindroid on whole page for screen with width 990px and more and add customisations features.
-@version         3.05
+@version         3.06
 @author          BreatFR
 @namespace       userstyles.world/user/breat
 @homepageURL     https://discord.com/channels/1116127115574779905/1195415564101886102
@@ -83,7 +83,7 @@ X (twitter)     https://x.com/breatfroff
 =================================================================================================================================== */
     /* Theme version */
     :root {
-        --version: 'Theme "Kindroid AI: Wide screen + customisations" by BreatFR version 3.05';
+        --version: 'Theme "Kindroid AI: Wide screen + customisations" by BreatFR version 3.06';
     }
     if showversion {
         .css-x3odei,
@@ -462,9 +462,13 @@ X (twitter)     https://x.com/breatfroff
             height: auto;
             width: 300px;
         }
-        .css-1raxatq > div.css-66xswa > div > p {
+        .css-1raxatq > div.css-1h56vtb > div > p {
             position: absolute;
             top: 10px;
+        }
+        .css-cbfcqn {
+            position: absolute;
+            right: 50px;
         }
 
         /* Voice */
@@ -560,6 +564,9 @@ X (twitter)     https://x.com/breatfroff
         .css-g2goff {
             padding: 0px;
         }
+        .css-1lbk8wf {
+            padding-top: 70px !important;
+        }
         
         /* Resize header */
         .css-x3odei {
@@ -579,6 +586,7 @@ X (twitter)     https://x.com/breatfroff
     /* Avatar position */
     if (avatarposition=="avatarlargemiddle") {
         @media screen and (min-width: 900px) {
+            .css-oies6c,
             .css-13tht1l,
             .css-g2goff {
                 position: absolute;
@@ -588,6 +596,7 @@ X (twitter)     https://x.com/breatfroff
     }
     if (avatarposition=="avatarlargetop") {
         @media screen and (min-width: 900px) {
+            .css-oies6c,
             .css-13tht1l,
             .css-g2goff {
                 position: absolute;
@@ -597,6 +606,7 @@ X (twitter)     https://x.com/breatfroff
     }
     if (avatarposition=="avatarlargebottom") {
         @media screen and (min-width: 900px) {
+            .css-oies6c,
             .css-13tht1l,
             .css-g2goff {
                 position: absolute;
@@ -606,6 +616,7 @@ X (twitter)     https://x.com/breatfroff
     }
     if (avatarposition=="avatarsmallmiddle") {
         @media screen and (min-width: 900px) {
+            .css-oies6c,
             .css-13tht1l,
             .css-g2goff {
                 position: absolute;
@@ -615,6 +626,7 @@ X (twitter)     https://x.com/breatfroff
     }
     if (avatarposition=="avatarsmalltop") {
         @media screen and (min-width: 900px) {
+            .css-oies6c,
             .css-13tht1l,
             .css-g2goff {
                 position: absolute;
@@ -624,6 +636,7 @@ X (twitter)     https://x.com/breatfroff
     }
     if (avatarposition=="avatarsmallbottom") {
         @media screen and (min-width: 900px) {
+            .css-oies6c,
             .css-13tht1l,
             .css-g2goff {
                 position: absolute;
@@ -633,6 +646,7 @@ X (twitter)     https://x.com/breatfroff
     }
     if avatarcustomposition {
         @media screen and (min-width: 900px) {
+            .css-oies6c,
             .css-13tht1l,
             .css-g2goff {
                 position: absolute;
@@ -645,6 +659,7 @@ X (twitter)     https://x.com/breatfroff
     if (avatarsize=="avatarlarge") {
         @media screen and (min-width: 900px) {
             /* Bigger avatar */
+            .css-oies6c,
             .css-13tht1l,
             .css-g2goff {
                 border-radius: 20px;
@@ -687,6 +702,7 @@ X (twitter)     https://x.com/breatfroff
     if (avatarsize=="avatarsmall") {
         @media screen and (min-width: 900px) {
             /* Small avatar */
+            .css-oies6c,
             .css-13tht1l,
             .css-g2goff {
                 border-radius: 20px;
@@ -727,6 +743,7 @@ X (twitter)     https://x.com/breatfroff
     }
     if avatarcustomsize {
         @media screen and (min-width: 900px) {
+            .css-oies6c,
             .css-13tht1l,
             .css-g2goff {
                 border-radius: 20px;
@@ -770,6 +787,7 @@ X (twitter)     https://x.com/breatfroff
     }
     
     if (avatarsize=="avatarhidden") {
+        .css-oies6c,
         .css-13tht1l,
         .css-g2goff {
             display: none;
@@ -799,6 +817,7 @@ X (twitter)     https://x.com/breatfroff
     
     /* Avatar choice */
     if avatarchoice {
+        .css-oies6c,
         .css-1bwrjj6 {
             height: 0px;
         }
@@ -810,6 +829,7 @@ X (twitter)     https://x.com/breatfroff
         /* Avatar position */
         if (avatarposition=="avatarlargemiddle") {
             @media screen and (min-width: 900px) {
+                .css-oies6c,
                 .css-13tht1l,
                 .css-g2goff {
                     position: absolute;
@@ -819,6 +839,7 @@ X (twitter)     https://x.com/breatfroff
         }
         if (avatarposition=="avatarlargetop") {
             @media screen and (min-width: 900px) {
+                .css-oies6c,
                 .css-13tht1l,
                 .css-g2goff {
                     position: absolute;
@@ -828,6 +849,7 @@ X (twitter)     https://x.com/breatfroff
         }
         if (avatarposition=="avatarlargebottom") {
             @media screen and (min-width: 900px) {
+                .css-oies6c,
                 .css-13tht1l,
                 .css-g2goff {
                     position: absolute;
@@ -837,6 +859,7 @@ X (twitter)     https://x.com/breatfroff
         }
         if (avatarposition=="avatarsmallmiddle") {
             @media screen and (min-width: 900px) {
+                .css-oies6c,
                 .css-13tht1l,
                 .css-g2goff {
                     position: absolute;
@@ -846,6 +869,7 @@ X (twitter)     https://x.com/breatfroff
         }
         if (avatarposition=="avatarsmalltop") {
             @media screen and (min-width: 900px) {
+                .css-oies6c,
                 .css-13tht1l,
                 .css-g2goff {
                     position: absolute;
@@ -855,6 +879,7 @@ X (twitter)     https://x.com/breatfroff
         }
         if (avatarposition=="avatarsmallbottom") {
             @media screen and (min-width: 900px) {
+                .css-oies6c,
                 .css-13tht1l,
                 .css-g2goff {
                     position: absolute;
