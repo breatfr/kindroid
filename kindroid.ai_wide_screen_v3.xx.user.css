@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name            Kindroid AI: Wide screen + customisations v3.xx
 @description     Put Kindroid on whole page for screen with width 990px and more and add customisations features.
-@version         3.04
+@version         3.05
 @author          BreatFR
 @namespace       userstyles.world/user/breat
 @homepageURL     https://discord.com/channels/1116127115574779905/1195415564101886102
@@ -81,6 +81,26 @@ X (twitter)     https://x.com/breatfroff
 /* ===================================================================================================================================
     Whole kindroid domain
 =================================================================================================================================== */
+    /* Theme version */
+    :root {
+        --version: 'Theme "Kindroid AI: Wide screen + customisations" by BreatFR version 3.05';
+    }
+    if showversion {
+        .css-x3odei,
+        .css-z0osps {
+            &::after {
+                background: -webkit-linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                content: var(--version);
+                font-size: 20px !important;
+                position: absolute;
+                left: 35%;
+                width: max-content;
+            }
+        }
+    }
+
     /* Hide scrollbars */
     .css-1lbk8wf,
     :root ::-webkit-scrollbar {
@@ -98,23 +118,39 @@ X (twitter)     https://x.com/breatfroff
         background: linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
     }
     
-    /* Theme version */
-    :root {
-        --version: 'Theme "Kindroid AI: Wide screen + customisations" by BreatFR version 3.04';
+        /* Background */
+    if (bgchoice=="heartbg") {
+        .css-1lvpjll,
+        .css-10ytma2,
+        .css-1p90m26,
+        .css-11m3l17 {
+            background: url(https://i.ibb.co/fYQkYyc/heart-pattern.png) bgcolor fixed 100% !important;
+        }
+    }    
+    if (bgchoice=="nobg") {
+        /* No background */
+        .css-1lvpjll,
+        .css-10ytma2,
+        .css-1p90m26,
+        .css-11m3l17 {
+            background: var(--chakra-colors-secondaryBlack) !important;
+        }
+    }    
+    if (bgchoice=="custombg") {
+        /* Custom background */
+        .css-1lvpjll,
+        .css-10ytma2,
+        .css-1p90m26,
+        .css-11m3l17 {
+            background: url(custombgurl) bgcolor fixed 100% !important;
+        }
     }
-    if showversion {
-        .css-x3odei,
-        .css-z0osps {
-            &::after {
-                background: -webkit-linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                content: var(--version);
-                font-size: 20px !important;
-                position: absolute;
-                left: 35%;
-                width: max-content;
-            }
+    if bgcolor {
+        .css-1lvpjll,
+        .css-10ytma2,
+        .css-1p90m26,
+        .css-11m3l17 {
+            background-color: bgcolor;
         }
     }
 }
@@ -539,30 +575,6 @@ X (twitter)     https://x.com/breatfroff
             width: 100%;
         }
     }
-    
-    /* Background */
-    if (bgchoice=="heartbg") {
-        .css-1lvpjll {
-            background: url(https://i.ibb.co/fYQkYyc/heart-pattern.png) bgcolor fixed 100% !important;
-        }
-    }    
-    if (bgchoice=="nobg") {
-        /* No background */
-        .css-1lvpjll {
-            background: var(--chakra-colors-secondaryBlack) !important;
-        }
-    }    
-    if (bgchoice=="custombg") {
-        /* Custom background */
-        .css-1lvpjll {
-            background: url(custombgurl) bgcolor fixed 100% !important;
-        }
-    }
-    if bgcolor {
-        .css-1lvpjll {
-            background-color: bgcolor;
-        }
-    } 
     
     /* Avatar position */
     if (avatarposition=="avatarlargemiddle") {
@@ -1148,30 +1160,6 @@ X (twitter)     https://x.com/breatfroff
         padding-bottom: 10px;
     }
     
-    /* Background */
-    if (bgchoice=="heartbg") {
-        .css-10ytma2 {
-            background: url(https://i.ibb.co/fYQkYyc/heart-pattern.png) bgcolor fixed 100% !important;
-        }
-    }    
-    if (bgchoice=="nobg") {
-        /* No background */
-        .css-10ytma2 {
-            background: var(--chakra-colors-secondaryBlack) !important;
-        }
-    }    
-    if (bgchoice=="custombg") {
-        /* Custom background */
-        .css-10ytma2 {
-            background: url(custombgurl) bgcolor fixed 100% !important;
-        }
-    }
-    if bgcolor {
-        .css-10ytma2 {
-            background-color: bgcolor;
-        }
-    }
-
     /* Put Request image button at the top */
     if requestimage {
         @media screen and (min-width: 900px) {
@@ -1213,6 +1201,22 @@ X (twitter)     https://x.com/breatfroff
     .css-1vqt2yh {
         font-size: 18px;
     }
+    
+    /* Avatar choice */
+    if avatarchoice {
+        .css-j9wpg1 {
+            height: 0px;
+        }
+        .css-1a84nil {
+            background: url(avatarchoiceurl) border-box;
+            background-size: cover;
+            border-color: rgb(40, 40, 40);
+            border-radius: 50%;
+            border-style: solid;
+            height: 380px;
+            width: 380px;
+        }
+    }
 }
 @-moz-document url("https://kindroid.ai/faqs") {
     /* FAQs page */
@@ -1222,6 +1226,30 @@ X (twitter)     https://x.com/breatfroff
     .css-51kqi6 {
         text-align: center;
     }
+    
+    /* Background */
+    if (bgchoice=="heartbg") {
+        .css-1e3klk3 {
+            background: url(https://i.ibb.co/fYQkYyc/heart-pattern.png) bgcolor fixed 100% !important;
+        }
+    }    
+    if (bgchoice=="nobg") {
+        /* No background */
+        .css-1e3klk3 {
+            background: var(--chakra-colors-secondaryBlack) !important;
+        }
+    }    
+    if (bgchoice=="custombg") {
+        /* Custom background */
+        .css-1e3klk3 {
+            background: url(custombgurl) bgcolor fixed 100% !important;
+        }
+    }
+    if bgcolor {
+        .css-1e3klk3 {
+            background-color: bgcolor;
+        }
+    }
 }
 @-moz-document url("https://kindroid.ai/legal") {
     /* Terms & Privacy page */
@@ -1230,6 +1258,7 @@ X (twitter)     https://x.com/breatfroff
     }
     .css-1pgxq2r > h1 {
         font-size: 42px;
+        font-weight: bold;
         line-height: 48px;
     }
 }
