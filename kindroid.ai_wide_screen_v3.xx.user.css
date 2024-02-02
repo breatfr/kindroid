@@ -249,11 +249,13 @@ X (twitter)     https://x.com/breatfroff
         .css-6obdga,
         .css-1gi22a8 {
             font-size: bubblestext;
+            line-height: 2px + bubblestext;
         }
     } 
     if chattextareasize {
         .css-ymugf1 {
             font-size: chattextareasize;
+            line-height: 2px + chattextareasize;
         }
     }
     
