@@ -430,16 +430,6 @@ X (twitter)     https://x.com/breatfroff
             order: 2;
         }
 
-        /* Danger zone: delete account */
-        .css-yk3l44 {
-            bottom: 150px;
-        }
-        .css-u2mg9m {
-            font-weight: 600;
-            font-size: 18px;
-            width: max-content;
-        }
-
         /* Bigger menu text */
         .css-dghbxk,
         .css-1jbciej,
@@ -471,6 +461,27 @@ X (twitter)     https://x.com/breatfroff
         .css-cbfcqn {
             position: absolute;
             right: 50px;
+        }
+        
+        /* General Settings */
+        #__next > ion-app > div > div > div > div.css-1raxatq > div.css-1h56vtb > div > div.css-j7qwjs > div:nth-child(3),
+        #__next > ion-app > div > div > div > div.css-1raxatq > div.css-1h56vtb > div > div.css-j7qwjs > div:nth-child(4){
+            width: 100%;
+        }
+        .css-ewo462 > p > svg {
+            display: block !important;
+            left: 23%;
+            position: fixed;
+            top: 46.5%;
+        }
+        /* Danger zone: delete account */
+        .css-yk3l44 {
+            bottom: 150px;
+        }
+        .css-19zv6py {
+            font-weight: 600;
+            font-size: 18px;
+            width: max-content;
         }
 
         /* Voice */
