@@ -85,6 +85,7 @@ Help / comment / ask etc...
 	- no background
 	- custom background
 - background color choice (can be use with background choice too)
+
 ## How to use in few steps
 1. Install Stylus browser extension
     - Chromium based browsers link: https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne
@@ -115,3 +116,30 @@ PS: Normally with the v3 you won't need modify my theme yourself and if you do y
 PS2: Like i put on GitHub only I don't know if automatic update from stylus will works so you'll need re-install waiting userstyles.world works correctly.
 
 4. Enjoy :)
+## Also available a userscript
+- add autofocus on chat page textarea
+## How to use in few steps
+1. Install Stylus browser extension
+    - Chromium based browsers link: https://chromewebstore.google.com/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag
+        - Brave
+        - Chromium
+        - Google Chrome
+        - Iridium Browser
+        - Microsoft Edge
+        - Opera
+        - Opera GX
+        - SRWare Iron
+        - Ungoogled Chromium
+        - Vivaldi
+        - Yandex Browser
+        - many more
+    - Firefox based browsers link: https://addons.mozilla.org/fr/firefox/addon/violentmonkey/
+        - Mozilla Firefox
+        - Mullvad Browser
+        - Tor Browser
+        - Waterfox
+        - many more
+
+2. Go on [Kindroid AI: Wide screen](https://raw.githubusercontent.com/breatfr/kindroid/master/kindroid_new_features_v1.00.user.js) website and click on `Install` on left.
+
+3. Enjoy :)
