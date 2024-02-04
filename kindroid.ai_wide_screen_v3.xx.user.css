@@ -1,13 +1,13 @@
 /* ==UserStyle==
 @name            Kindroid AI: Wide screen + customisations v3.xx
 @description     Put Kindroid on whole page for screen with width 990px and more and add customisations features.
-@version         3.07
+@version         3.08
 @author          BreatFR
 @namespace       userstyles.world/user/breat
 @homepageURL     https://discord.com/channels/1116127115574779905/1195415564101886102
 @supportURL      https://discord.com/channels/1116127115574779905/1145809654044176485
 @updateURL       https://github.com/breatfr/kindroid/raw/main/kindroid.ai_wide_screen_v3.xx.user.css
-@license         GNU GPL v3
+@license         GNU GPL v3 (https://www.gnu.org/licenses/quick-guide-gplv3.en.html)
 @preprocessor    stylus
 
 @var select     actionsstyle                "Actions texts style" {
@@ -83,7 +83,7 @@ X (twitter)     https://x.com/breatfroff
 =================================================================================================================================== */
     /* Theme version */
     :root {
-        --version: 'Theme "Kindroid AI: Wide screen + customisations" by BreatFR version 3.07';
+        --version: 'Theme "Kindroid AI: Wide screen + customisations" by BreatFR version 3.08';
     }
     if showversion {
         .css-x3odei,
@@ -168,17 +168,6 @@ X (twitter)     https://x.com/breatfroff
     }
     
     /* Tooltips */
-    .chakra-stack.css-1foy9ay > button:nth-child(1):hover::after {
-       background: linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
-        border-radius: 16px;
-        color:  var(--chakra-colors-primaryWhite);
-        content: "Menu";
-        font-size: 16px;
-        left: 5px;
-        padding: 10px;
-        position: absolute;
-        top: 100%; 
-    }
     [aria-label="gallery"]:hover::after {
         background: linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
         border-radius: 16px;
@@ -884,6 +873,44 @@ X (twitter)     https://x.com/breatfroff
             background: url(avatarchoiceurl) no-repeat;
             background-size: cover;
             max-width: avatarsize;
+        }
+        
+        if avatarzoom {
+            @media screen and (min-width: 900px) {
+                .css-g2goff:hover {
+                    border-radius: 0px;
+                    height: 933px;
+                    left: -12px;
+                    max-width: 933px;
+                    top: 0px;
+                    width: 933px;
+                    z-index: 9999;
+                }
+            }
+            @media screen and (min-height: 1080px) {
+                .css-g2goff:hover {
+                    border-radius: 0px;
+                    height: 1080px;
+                    left: -10px;
+                    max-height: 1080px;
+                    max-width: 1080px;
+                    top: 0px;
+                    width: 1080px;
+                    z-index: 9999;
+                }
+            }
+            @media screen and (height: 1080px) {
+                .css-g2goff:hover {
+                    border-radius: 0px;
+                    height: 1080px;
+                    left: -10px;
+                    max-height: 1080px;
+                    max-width: 1080px;
+                    top: 0px;
+                    width: 1080px;
+                    z-index: 9999;
+                }
+            }
         }
         /* Avatar position */
         if (avatarposition=="avatarlargemiddle") {
