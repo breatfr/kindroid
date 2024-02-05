@@ -6,6 +6,7 @@
 // @version     1.00
 // @author      BreatFR
 // @icon        https://kindroid.ai/favicon.svg
+// @license     GNU GPL v3 (https://www.gnu.org/licenses/quick-guide-gplv3.en.html)
 // ==/UserScript==
 
 (function() {
