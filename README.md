@@ -117,6 +117,7 @@ PS: Normally with the v3 you won't need modify my theme yourself and if you do y
 PS2: Like i put on GitHub only I don't know if automatic update from stylus will works so you'll need re-install waiting userstyles.world works correctly.
 
 4. Enjoy :)
+
 ## Also available a userscript
 - add autofocus on chat page textarea
 ## How to use in few steps
@@ -144,3 +145,5 @@ PS2: Like i put on GitHub only I don't know if automatic update from stylus will
 2. Go on [Kindroid AI: New features](https://raw.githubusercontent.com/breatfr/kindroid/master/kindroid.ai_new_features_v1.xx.user.js) website and click on `Install` on left.
 
 3. Enjoy :)
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/breatfr)
