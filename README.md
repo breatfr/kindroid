@@ -47,6 +47,7 @@ Help / comment / ask etc...
 - background color choice (can be use with background choice too)
 - bubbles font color of your choice
 - bubbles font size of your choice
+- blur bubbles content and image you send to ai to share in privacy
 - hide or not names in bubbles (layout will change depending of this too)
 - kin bubbles background color of your choice **OR** kin bubbles background image of your choice
 - our bubbles background color of your choice **OR** our bubbles background image of your choice
