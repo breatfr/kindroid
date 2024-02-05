@@ -5,7 +5,7 @@
 // @match       https://kindroid.ai/*
 // @version     1.00
 // @author      BreatFR
-// @icon        https://kindroid.ai/favicon.svg
+// @icon        https://play-lh.googleusercontent.com/plaMooDMA0URmZGnfDJmn-v4DEP1SGMUXxC0grATSPuXQ8-HgAgijTXVvyU1y1ir_fRd=w240-h480-rw
 // @license     GNU GPL v3 (https://www.gnu.org/licenses/quick-guide-gplv3.en.html)
 // ==/UserScript==
 
