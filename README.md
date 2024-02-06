@@ -156,6 +156,7 @@ after any script update you'll need press `F5` or close/reopen kindroid website 
 4. Enjoy :)
 
 ## How to use in few steps on iOS (Safari)
+![Preview](https://raw.githubusercontent.com/breatfr/kindroid/main/preview_chat_script_obile_version.jpg)
 1. Install [Makeover - Custom CSS](https://apps.apple.com/us/app/makeover-custom-css/id1602361167) app
 
 2. Open the app just installed and click on `How to Use` and follow instructions
@@ -166,24 +167,7 @@ after any script update you'll need press `F5` or close/reopen kindroid website 
 
 4. In Safari go to [Kindroid](https://kindroid.ai) website and click on `plugin` icon to finally click on `Makeover`
 
-5. Paste the previously copied code in the `Makerover's JS field`, for CSS i know you need remove the 1st line:
-```css
-@-moz-document url-prefix("https://beta.nomi.ai/nomis/") {
-```
-for JS, maybe you'll need remove this but i don't know because i didn't test:
-```js
-// ==UserScript==
-// @name        Kindroid - Chat page new features v1.xx
-// @description New features for Kindroid's chat page
-// @namespace   https://kindroid.ai/home
-// @match       https://kindroid.ai/home
-// @version     1.04
-// @author      BreatFR
-// @icon        https://play-lh.googleusercontent.com/plaMooDMA0URmZGnfDJmn-v4DEP1SGMUXxC0grATSPuXQ8-HgAgijTXVvyU1y1ir_fRd=w240-h480-rw
-// @license     GNU GPL v3 (https://www.gnu.org/licenses/quick-guide-gplv3.en.html)
-// ==/UserScript==
-```
-for each update you'll need copy/paste the code and remove this code part if need.
+5. Paste the previously copied code in the `Makerover's JS field` for each update you'll need copy/paste the code.
 
 6. Enjoy :)
 
