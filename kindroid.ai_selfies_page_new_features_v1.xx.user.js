@@ -4,7 +4,7 @@
 // @namespace   https://kindroid.ai/selfies
 // @match       https://kindroid.ai/selfies
 // @updateURL   https://raw.githubusercontent.com/breatfr/Kindroid/main/kindroid.ai_selfies_page_new_features_v1.xx.user.js
-// @version     1.00
+// @version     1.01
 // @author      BreatFR
 // @icon        https://play-lh.googleusercontent.com/plaMooDMA0URmZGnfDJmn-v4DEP1SGMUXxC0grATSPuXQ8-HgAgijTXVvyU1y1ir_fRd=w240-h480-rw
 // @license     GNU GPL v3 (https://www.gnu.org/licenses/quick-guide-gplv3.en.html)
