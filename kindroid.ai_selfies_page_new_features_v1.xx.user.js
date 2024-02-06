@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        Kindroid - Selfies page new features
+// @name        Kindroid - Selfies page new features v1.xx
 // @description New features for Kindroid's selfies page
 // @namespace   https://kindroid.ai/selfies
 // @match       https://kindroid.ai/selfies
