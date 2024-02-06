@@ -8,7 +8,7 @@ Changelog https://discord.com/channels/1116127115574779905/1195415564101886102
 Help / comment / ask etc... https://discord.com/channels/1116127115574779905/1145809654044176485
 
 ## Customisations available
-# chat page
+### chat page
 - actions text style
 	- Default
 	- Asterisks
@@ -53,7 +53,7 @@ Help / comment / ask etc... https://discord.com/channels/1116127115574779905/114
 	- left (like v2)
 	- dark	(normal position but dark)
 - textarea font size of your choice
-# selfie page
+### selfies page
 - background choice
 	- hearts background
 	- no background
@@ -65,29 +65,34 @@ Help / comment / ask etc... https://discord.com/channels/1116127115574779905/114
 - request image button at top
 	- enabled (default)
 	- disabled
-# voicecall page
+### voicecall page
 - avatar choice
 - background choice
 	- hearts background
 	- no background
 	- custom background
 - background color choice (can be use with background choice too)
-# faqs page
+### faqs page
 - background choice
 	- hearts background
 	- no background
 	- custom background
 - background color choice (can be use with background choice too)
-# legal page
+### legal page
 - background choice
 	- hearts background
 	- no background
 	- custom background
 - background color choice (can be use with background choice too)
 ## userscript possible features
+### chat page
+![Preview](https://raw.githubusercontent.com/breatfr/kindroid/main/chat%20script%20preview.jpg)
 - add autoconfirm regenerate
 - add autofocus textarea (chat page only)
-
+### selfies page
+![Preview](https://raw.githubusercontent.com/breatfr/kindroid/main/chat%20script%20preview.jpg)
+- add a checkbox to see all images
+- add a button to download all images (use it after enable see all images)
 ## How to install the theme in few steps
 1. Install Stylus browser extension
     - Chromium based browsers link: https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne
@@ -141,6 +146,8 @@ PS2: Like i put on GitHub only I don't know if automatic update from stylus will
         - Waterfox
         - many more
 
-2. Go on [Kindroid AI: Chat page new features](https://raw.githubusercontent.com/breatfr/kindroid/master/kindroid.ai_chat_page_new_features_v1.xx.user.js) website and click on `Install` on left.
+2. Go on:
+   - [Kindroid AI: Chat page new features](https://raw.githubusercontent.com/breatfr/kindroid/master/kindroid.ai_chat_page_new_features_v1.xx.user.js) website and click on `Install` on left.
+   - [Kindroid AI: Selfies page new features](https://raw.githubusercontent.com/breatfr/kindroid/master/kindroid.ai_selfies_page_new_features_v1.xx.user.js) website and click on `Install` on left.
 
-3. Enjoy :)
+4. Enjoy :)
