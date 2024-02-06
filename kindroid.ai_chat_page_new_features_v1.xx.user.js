@@ -82,11 +82,11 @@
         if (!autoConfirmEnabled) {
             return;
         }
-
+    
         // Cherchez le bouton "Confirm" dans le message de régénération
         const confirmButton1 = document.querySelector('.css-mqmatd .chakra-text');
         const confirmButton2 = document.querySelector('.css-1jbciej'); // Ajout du sélecteur pour le bouton Confirm
-
+    
         // Vérifiez d'abord si le texte spécifique est présent avant de sélectionner le bouton Confirm
         const confirmationText = document.querySelector('.css-10813k0');
         if (confirmationText && confirmationText.textContent.includes("Are you sure you want to regenerate this message?")) {
@@ -94,12 +94,11 @@
                 confirmButton1.click();
             } else if (confirmButton2) { // Utilisation du deuxième sélecteur si le premier n'est pas trouvé
                 confirmButton2.click();
-            } else {
-                setTimeout(autoConfirmRegenerate, 500);
             }
-        } else {
-            setTimeout(autoConfirmRegenerate, 500);
         }
+    
+        // Vérifiez régulièrement si le bouton réapparaît
+        setTimeout(autoConfirmRegenerate, 500);
     }
 
     autoConfirmRegenerate();
