@@ -156,7 +156,7 @@ after any script update you'll need press `F5` or close/reopen kindroid website 
 4. Enjoy :)
 
 ## How to use in few steps on iOS (Safari)
-![Preview](https://raw.githubusercontent.com/breatfr/kindroid/main/preview_chat_script_obile_version.jpg)
+![Preview](https://raw.githubusercontent.com/breatfr/kindroid/main/preview_chat_script_mobile_version.jpg)
 1. Install [Makeover - Custom CSS](https://apps.apple.com/us/app/makeover-custom-css/id1602361167) app
 
 2. Open the app just installed and click on `How to Use` and follow instructions
