@@ -124,7 +124,7 @@ PS2: Like i put on GitHub only I don't know if automatic update from stylus will
 - add a checkbox to see all images
 - add a button to download all images (use it after enable see all images)
 ## How to install the userscripts in few steps
-1. Install Stylus browser extension
+1. Install Violentmonkey browser extension
     - Chromium based browsers link: https://chromewebstore.google.com/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag
         - Brave
         - Chromium
