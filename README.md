@@ -143,7 +143,7 @@ PS2: Like i put on GitHub only I don't know if automatic update from stylus will
         - Waterfox
         - many more
 
-2. Go on [Kindroid AI: New features](https://raw.githubusercontent.com/breatfr/kindroid/master/kindroid.ai_new_features_v1.xx.user.js) website and click on `Install` on left.
+2. Go on [Kindroid AI: Chat page new features](https://raw.githubusercontent.com/breatfr/kindroid/master/kindroid.ai_chat_page_new_features_v1.xx.user.js) website and click on `Install` on left.
 
 3. Enjoy :)
 
