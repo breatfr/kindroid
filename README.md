@@ -196,7 +196,7 @@ for each update you'll need copy/paste the code and remove this code part if nee
 	-  [Kindroid AI: Chat page new features](https://raw.githubusercontent.com/breatfr/kindroid/master/kindroid.ai_chat_page_new_features_v1.xx.user.js)
 	-  [Kindroid AI: Selfies page new features](https://raw.githubusercontent.com/breatfr/kindroid/master/kindroid.ai_selfies_page_new_features_v1.xx.user.js)
 
-4. Go on [Kindroid](https://kindroid.ai) website and click on `3 dots` on top right of the browser and check if Violentmonkey's scripts are enable.
+4. Go on [Kindroid](https://kindroid.ai) website and click on `3 dots` on top right of the browser and click on icon refresh page to see the script interface in the page.
 
 5. To update scripts do like on computer.
 
