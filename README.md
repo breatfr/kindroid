@@ -84,15 +84,6 @@ Help / comment / ask etc... https://discord.com/channels/1116127115574779905/114
 	- no background
 	- custom background
 - background color choice (can be use with background choice too)
-## userscript possible features
-### chat page
-![Preview](https://raw.githubusercontent.com/breatfr/kindroid/main/chat%20script%20preview.jpg)
-- add autoconfirm regenerate
-- add autofocus textarea (chat page only)
-### selfies page
-![Preview](https://raw.githubusercontent.com/breatfr/kindroid/main/selfies%20script%20preview.jpg)
-- add a checkbox to see all images
-- add a button to download all images (use it after enable see all images)
 ## How to install the theme in few steps
 1. Install Stylus browser extension
     - Chromium based browsers link: https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne
@@ -123,7 +114,15 @@ PS: Normally with the v3 you won't need modify my theme yourself and if you do y
 PS2: Like i put on GitHub only I don't know if automatic update from stylus will works so you'll need re-install waiting userstyles.world works correctly.
 
 4. Enjoy :)
-
+## userscript possible features
+### chat page
+![Preview](https://raw.githubusercontent.com/breatfr/kindroid/main/chat%20script%20preview.jpg)
+- add autoconfirm regenerate
+- add autofocus textarea (chat page only)
+### selfies page
+![Preview](https://raw.githubusercontent.com/breatfr/kindroid/main/selfies%20script%20preview.jpg)
+- add a checkbox to see all images
+- add a button to download all images (use it after enable see all images)
 ## How to install the userscripts in few steps
 1. Install Stylus browser extension
     - Chromium based browsers link: https://chromewebstore.google.com/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag
