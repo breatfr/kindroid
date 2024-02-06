@@ -44,7 +44,7 @@
     var uiContainer = document.createElement('div');
     uiContainer.style.position = 'fixed';
     uiContainer.style.top = '5px';
-    uiContainer.style.left = '30%';
+    uiContainer.style.left = '50%';
     uiContainer.style.color = '#cbcbcb';
     uiContainer.style.zIndex = '9999';
 
@@ -57,7 +57,7 @@
     });
 
     var autoConfirmLabel = document.createElement('label');
-    autoConfirmLabel.innerText = 'Auto Confirm Regenerate ';
+    autoConfirmLabel.innerText = 'ACR ';
     autoConfirmLabel.appendChild(autoConfirmCheckbox);
 
     var autoFocusCheckbox = document.createElement('input');
@@ -69,7 +69,7 @@
     });
 
     var autoFocusLabel = document.createElement('label');
-    autoFocusLabel.innerText = 'Auto Focus Textarea ';
+    autoFocusLabel.innerText = 'AFT ';
     autoFocusLabel.appendChild(autoFocusCheckbox);
 
     uiContainer.appendChild(autoConfirmLabel);
