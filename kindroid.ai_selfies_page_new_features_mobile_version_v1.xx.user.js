@@ -22,7 +22,7 @@
     var uiContainer = document.createElement('div');
     uiContainer.style.position = 'fixed';
     uiContainer.style.top = '5px';
-    uiContainer.style.left = '15%';
+    uiContainer.style.left = '50%';
     uiContainer.style.color = '#cbcbcb';
     uiContainer.style.zIndex = '9999';
 
@@ -38,11 +38,11 @@
     });
 
     var autoLoadMoreLabel = document.createElement('label');
-    autoLoadMoreLabel.innerText = 'See All Images ';
+    autoLoadMoreLabel.innerText = 'SAI ';
     autoLoadMoreLabel.appendChild(autoLoadMoreCheckbox);
 
     var downloadAllButton = document.createElement('button');
-    downloadAllButton.innerText = 'Download All Images';
+    downloadAllButton.innerText = 'DLI';
     downloadAllButton.title = 'Please make sure to enable "See All Images" before downloading.'; // Add tooltip
     downloadAllButton.addEventListener('click', function() {
         downloadAllImages();
