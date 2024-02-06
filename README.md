@@ -1,13 +1,11 @@
-# Kindroid AI: Wide screen + customisations v3
+# Kindroid AI: Wide screen + customisations v3 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/breatfr)
 Put [Kindroid](https://kindroid.ai/) on whole page for screen with width 990px and more and add customisations features.
 ## Preview
 ![Preview](https://raw.githubusercontent.com/breatfr/kindroid/main/preview%20v3.xx.jpg)
 
-Changelog
-- https://discord.com/channels/1116127115574779905/1195415564101886102
+Changelog https://discord.com/channels/1116127115574779905/1195415564101886102
 
-Help / comment / ask etc...
-- https://discord.com/channels/1116127115574779905/1145809654044176485
+Help / comment / ask etc... https://discord.com/channels/1116127115574779905/1145809654044176485
 
 ## Customisations available
 # chat page
@@ -146,5 +144,3 @@ PS2: Like i put on GitHub only I don't know if automatic update from stylus will
 2. Go on [Kindroid AI: Chat page new features](https://raw.githubusercontent.com/breatfr/kindroid/master/kindroid.ai_chat_page_new_features_v1.xx.user.js) website and click on `Install` on left.
 
 3. Enjoy :)
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/breatfr)
