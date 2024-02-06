@@ -90,7 +90,7 @@ Help / comment / ask etc... https://discord.com/channels/1116127115574779905/114
 - add autoconfirm regenerate
 - add autofocus textarea (chat page only)
 ### selfies page
-![Preview](https://raw.githubusercontent.com/breatfr/kindroid/main/chat%20script%20preview.jpg)
+![Preview](https://raw.githubusercontent.com/breatfr/kindroid/main/selfies%20script%20preview.jpg)
 - add a checkbox to see all images
 - add a button to download all images (use it after enable see all images)
 ## How to install the theme in few steps
