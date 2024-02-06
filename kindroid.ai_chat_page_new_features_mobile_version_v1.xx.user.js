@@ -4,6 +4,7 @@
 // @namespace   https://kindroid.ai/home
 // @match       https://kindroid.ai/home
 // @version     1.04
+// @updateURL   https://raw.githubusercontent.com/breatfr/Kindroid/main/kindroid.ai_chat_page_new_features_mobile_version_v1.xx.user.js
 // @author      BreatFR
 // @icon        https://play-lh.googleusercontent.com/plaMooDMA0URmZGnfDJmn-v4DEP1SGMUXxC0grATSPuXQ8-HgAgijTXVvyU1y1ir_fRd=w240-h480-rw
 // @license     GNU GPL v3 (https://www.gnu.org/licenses/quick-guide-gplv3.en.html)
