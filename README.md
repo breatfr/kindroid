@@ -86,8 +86,11 @@ Help / comment / ask etc...
 	- no background
 	- custom background
 - background color choice (can be use with background choice too)
+## userscript possible features
+- add autoconfirm regenerate
+- add autofocus textarea (chat page only)
 
-## How to use in few steps
+## How to install the theme in few steps
 1. Install Stylus browser extension
     - Chromium based browsers link: https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne
         - Brave
@@ -118,9 +121,7 @@ PS2: Like i put on GitHub only I don't know if automatic update from stylus will
 
 4. Enjoy :)
 
-## Also available a userscript
-- add autofocus on chat page textarea
-## How to use in few steps
+## How to install the uerscript in few steps
 1. Install Stylus browser extension
     - Chromium based browsers link: https://chromewebstore.google.com/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag
         - Brave
