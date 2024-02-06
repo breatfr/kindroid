@@ -1,7 +1,7 @@
 # Kindroid AI: Wide screen + customisations v3 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/breatfr)
 Put [Kindroid](https://kindroid.ai/) on whole page for screen with width 990px and more and add customisations features.
 ## Preview
-![Preview](https://raw.githubusercontent.com/breatfr/kindroid/main/preview%20v3.xx.jpg)
+![Preview](https://raw.githubusercontent.com/breatfr/kindroid/main/preview_theme_v3.xx.jpg)
 
 Changelog https://discord.com/channels/1116127115574779905/1195415564101886102
 
@@ -116,11 +116,11 @@ PS2: Like i put on GitHub only I don't know if automatic update from stylus will
 4. Enjoy :)
 ## userscripts possible features
 ### chat page
-![Preview](https://raw.githubusercontent.com/breatfr/kindroid/main/preview%20chat%20script.jpg)
+![Preview](https://raw.githubusercontent.com/breatfr/kindroid/main/preview_chat_script.jpg)
 - add autoconfirm regenerate
 - add autofocus textarea (chat page only)
 ### selfies page
-![Preview](https://raw.githubusercontent.com/breatfr/kindroid/main/preview%20selfies%20script.jpg)
+![Preview](https://raw.githubusercontent.com/breatfr/kindroid/main/preview_selfies_script.jpg)
 - add a checkbox to see all images
 - add a button to download all images (use it after enable see all images)
 ## How to install the userscripts in few steps on PC
@@ -149,9 +149,56 @@ PS2: Like i put on GitHub only I don't know if automatic update from stylus will
    - [Kindroid AI: Chat page new features](https://raw.githubusercontent.com/breatfr/kindroid/master/kindroid.ai_chat_page_new_features_v1.xx.user.js) page and click on `Install` on left.
    - [Kindroid AI: Selfies page new features](https://raw.githubusercontent.com/breatfr/kindroid/master/kindroid.ai_selfies_page_new_features_v1.xx.user.js) page and click on `Install` on left.
 
-3. after any script update you'll need press `F5` or close/reopen kindroid website to load the new script version.
+3. to update script juste click on the corresponding button here
+![Preview](https://raw.githubusercontent.com/breatfr/kindroid/main/update_scripts.jpg)
+after any script update you'll need press `F5` or close/reopen kindroid website to load the new script version.
 
 4. Enjoy :)
 
-## How to install the userscripts in few steps on mobile
-coming soon
+## How to use in few steps on iOS (Safari)
+1. Install [Makeover - Custom CSS](https://apps.apple.com/us/app/makeover-custom-css/id1602361167) app
+
+2. Open the app just installed and click on `How to Use` and follow instructions
+
+3. In Safari come on the script code page you want install:
+-  [Kindroid AI: Chat page new features](https://raw.githubusercontent.com/breatfr/kindroid/master/kindroid.ai_chat_page_new_features_v1.xx.user.js)
+-  [Kindroid AI: Selfies page new features](https://raw.githubusercontent.com/breatfr/kindroid/master/kindroid.ai_selfies_page_new_features_v1.xx.user.js)
+   and select `ALL` the code to finally copy it
+
+4. In Safari go to [Kindroid](https://kindroid.ai) website and click on `plugin` icon to finally click on `Makeover`
+
+5. Paste the previously copied code in the `Makerover's JS field`, for CSS i know you need remove the 1st line:
+```css
+@-moz-document url-prefix("https://beta.nomi.ai/nomis/") {
+```
+for JS, maybe you'll need remove this but i don't know because i didn't test:
+```js
+// ==UserScript==
+// @name        Kindroid - Chat page new features v1.xx
+// @description New features for Kindroid's chat page
+// @namespace   https://kindroid.ai/home
+// @match       https://kindroid.ai/home
+// @version     1.04
+// @author      BreatFR
+// @icon        https://play-lh.googleusercontent.com/plaMooDMA0URmZGnfDJmn-v4DEP1SGMUXxC0grATSPuXQ8-HgAgijTXVvyU1y1ir_fRd=w240-h480-rw
+// @license     GNU GPL v3 (https://www.gnu.org/licenses/quick-guide-gplv3.en.html)
+// ==/UserScript==
+```
+for each update you'll need copy/paste the code and remove this code part if need.
+
+6. Enjoy :)
+
+## How to use in few steps on Android (Kiwi Browser)
+1. Install [Kiwi Browser](https://play.google.com/store/apps/details?id=com.kiwibrowser.browser)
+
+2. Install [Violentmonkey](https://chromewebstore.google.com/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag)
+   
+3. In Kiwi Browser go on the script page you want install:
+-  [Kindroid AI: Chat page new features](https://raw.githubusercontent.com/breatfr/kindroid/master/kindroid.ai_chat_page_new_features_v1.xx.user.js)
+-  [Kindroid AI: Selfies page new features](https://raw.githubusercontent.com/breatfr/kindroid/master/kindroid.ai_selfies_page_new_features_v1.xx.user.js)
+and install it like on computer
+4. Go on [Kindroid](https://kindroid.ai) website and click on `3 dots` on top right of the browser and check if Violentmonkey's scripts are enable.
+
+5. To update scripts do like on computer.
+
+6. Enjoy :)
