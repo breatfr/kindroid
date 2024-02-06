@@ -149,4 +149,6 @@ PS2: Like i put on GitHub only I don't know if automatic update from stylus will
    - [Kindroid AI: Chat page new features](https://raw.githubusercontent.com/breatfr/kindroid/master/kindroid.ai_chat_page_new_features_v1.xx.user.js) page and click on `Install` on left.
    - [Kindroid AI: Selfies page new features](https://raw.githubusercontent.com/breatfr/kindroid/master/kindroid.ai_selfies_page_new_features_v1.xx.user.js) page and click on `Install` on left.
 
+3. after any script update you'll need press F5 or close/reopen kindroid website to load the new script version.
+
 4. Enjoy :)
