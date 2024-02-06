@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        Kindroid - test
+// @name        Kindroid - Chat page new features
 // @description New features for Kindroid's chat page
 // @namespace   https://kindroid.ai/home
 // @match       https://kindroid.ai/home
