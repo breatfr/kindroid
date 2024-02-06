@@ -21,6 +21,17 @@
     uiContainer.style.color = '#cbcbcb';
     uiContainer.style.zIndex = '9999';
 
+    var autoConfirmCheckbox = document.createElement('input');
+    autoConfirmCheckbox.type = 'checkbox';
+    autoConfirmCheckbox.checked = true;
+    autoConfirmCheckbox.addEventListener('change', function() {
+        autoConfirmEnabled = autoConfirmCheckbox.checked;
+    });
+
+    var autoConfirmLabel = document.createElement('label');
+    autoConfirmLabel.innerText = 'Auto Confirm Regenerate ';
+    autoConfirmLabel.appendChild(autoConfirmCheckbox);
+    
     var autoFocusCheckbox = document.createElement('input');
     autoFocusCheckbox.type = 'checkbox';
     autoFocusCheckbox.checked = true;
@@ -32,26 +43,31 @@
     autoFocusLabel.innerText = 'Auto Focus Textarea ';
     autoFocusLabel.appendChild(autoFocusCheckbox);
 
-    var autoConfirmCheckbox = document.createElement('input');
-    autoConfirmCheckbox.type = 'checkbox';
-    autoConfirmCheckbox.checked = true;
-    autoConfirmCheckbox.addEventListener('change', function() {
-        autoConfirmEnabled = autoConfirmCheckbox.checked;
-    });
-
-    var autoConfirmLabel = document.createElement('label');
-    autoConfirmLabel.innerText = 'Auto Confirm Regenerate ';
-    autoConfirmLabel.appendChild(autoConfirmCheckbox);
-
-    uiContainer.appendChild(autoFocusLabel);
-    uiContainer.appendChild(document.createElement('br'));
     uiContainer.appendChild(autoConfirmLabel);
+    uiContainer.appendChild(document.createElement('br'));
+    uiContainer.appendChild(autoFocusLabel);
 
     document.body.appendChild(uiContainer);
 
     // Choose your feature needed
-    var autoFocusEnabled = true; // Autofocus on textarea
     var autoConfirmEnabled = true; // Autoconfirm regenerate
+    var autoFocusEnabled = true; // Autofocus on textarea
+
+    // Autoconfirm regenerate
+    function autoConfirmRegenerate() {
+        if (!autoConfirmEnabled) {
+            return;
+        }
+
+        const confirmButton = document.querySelector('button.chakra-button .chakra-text');
+        if (confirmButton && confirmButton.textContent === 'Confirm') {
+            confirmButton.click();
+        } else {
+            setTimeout(autoConfirmRegenerate, 500);
+        }
+    }
+
+    autoConfirmRegenerate();
 
     // Autofocus on textarea
     function focusTextarea() {
@@ -76,20 +92,4 @@
             focusTextarea();
         }
     }, 500);
-
-    // Autoconfirm regenerate
-    function autoConfirmRegenerate() {
-        if (!autoConfirmEnabled) {
-            return;
-        }
-
-        const confirmButton = document.querySelector('button.chakra-button .chakra-text');
-        if (confirmButton && confirmButton.textContent === 'Confirm') {
-            confirmButton.click();
-        } else {
-            setTimeout(autoConfirmRegenerate, 500);
-        }
-    }
-
-    autoConfirmRegenerate();
 })();
