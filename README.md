@@ -161,8 +161,8 @@ after any script update you'll need press `F5` or close/reopen kindroid website 
 2. Open the app just installed and click on `How to Use` and follow instructions
 
 3. In Safari come on the script code page you want install and select `ALL` the code to finally copy it:
-	-  [Kindroid AI: Chat page new features](https://raw.githubusercontent.com/breatfr/kindroid/master/kindroid.ai_chat_page_new_features_v1.xx.user.js)
-	-  [Kindroid AI: Selfies page new features](https://raw.githubusercontent.com/breatfr/kindroid/master/kindroid.ai_selfies_page_new_features_v1.xx.user.js)
+	-  [Kindroid AI: Chat page new features mobile version](https://raw.githubusercontent.com/breatfr/kindroid/master/kindroid.ai_chat_page_new_features_mobile_version_v1.xx.user.js)
+	-  [Kindroid AI: Selfies page new features mobile version](https://raw.githubusercontent.com/breatfr/kindroid/master/kindroid.ai_selfies_page_new_features_mobile_version_v1.xx.user.js)
 
 4. In Safari go to [Kindroid](https://kindroid.ai) website and click on `plugin` icon to finally click on `Makeover`
 
@@ -193,8 +193,8 @@ for each update you'll need copy/paste the code and remove this code part if nee
 2. Install [Violentmonkey](https://chromewebstore.google.com/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag)
    
 3. In Kiwi Browser go on the script page you want install and install it like on computer:
-	-  [Kindroid AI: Chat page new features](https://raw.githubusercontent.com/breatfr/kindroid/master/kindroid.ai_chat_page_new_features_v1.xx.user.js)
-	-  [Kindroid AI: Selfies page new features](https://raw.githubusercontent.com/breatfr/kindroid/master/kindroid.ai_selfies_page_new_features_v1.xx.user.js)
+	-  [Kindroid AI: Chat page new features mobile version](https://raw.githubusercontent.com/breatfr/kindroid/master/kindroid.ai_chat_page_new_features_mobile_version_v1.xx.user.js)
+	-  [Kindroid AI: Selfies page new features mobile version](https://raw.githubusercontent.com/breatfr/kindroid/master/kindroid.ai_selfies_page_new_features_mobile_version_v1.xx.user.js)
 
 4. Go on [Kindroid](https://kindroid.ai) website and click on `3 dots` on top right of the browser and click on icon refresh page to see the script interface in the page.
 
