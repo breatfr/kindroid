@@ -118,10 +118,12 @@ PS2: Like i put on GitHub only I don't know if automatic update from stylus will
 ### chat page
 - add autoconfirm regenerate
 - add autofocus textarea (chat page only)
+
 ![Preview](https://raw.githubusercontent.com/breatfr/kindroid/main/chat%20script%20preview.jpg)
 ### selfies page
 - add a checkbox to see all images
 - add a button to download all images (use it after enable see all images)
+
 ![Preview](https://raw.githubusercontent.com/breatfr/kindroid/main/selfies%20script%20preview.jpg)
 ## How to install the userscripts in few steps
 1. Install Violentmonkey browser extension
