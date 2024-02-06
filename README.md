@@ -123,7 +123,7 @@ PS2: Like i put on GitHub only I don't know if automatic update from stylus will
 ![Preview](https://raw.githubusercontent.com/breatfr/kindroid/main/preview%20selfies%20script.jpg)
 - add a checkbox to see all images
 - add a button to download all images (use it after enable see all images)
-## How to install the userscripts in few steps
+## How to install the userscripts in few steps on PC
 1. Install Violentmonkey browser extension
     - Chromium based browsers link: https://chromewebstore.google.com/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag
         - Brave
@@ -152,3 +152,6 @@ PS2: Like i put on GitHub only I don't know if automatic update from stylus will
 3. after any script update you'll need press F5 or close/reopen kindroid website to load the new script version.
 
 4. Enjoy :)
+
+## How to install the userscripts in few steps on mobile
+coming soon
