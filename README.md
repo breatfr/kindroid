@@ -114,7 +114,7 @@ PS: Normally with the v3 you won't need modify my theme yourself and if you do y
 PS2: Like i put on GitHub only I don't know if automatic update from stylus will works so you'll need re-install waiting userstyles.world works correctly.
 
 4. Enjoy :)
-## userscript possible features
+## userscripts possible features
 ### chat page
 ![Preview](https://raw.githubusercontent.com/breatfr/kindroid/main/chat%20script%20preview.jpg)
 - add autoconfirm regenerate
