@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name            Kindroid AI: Wide screen + customisations v3.xx
 @description     Put Kindroid on whole page for screen with width 990px and more and add customisations features.
-@version         3.08
+@version         3.09
 @author          BreatFR
 @namespace       userstyles.world/user/breat
 @homepageURL     https://discord.com/channels/1116127115574779905/1195415564101886102
@@ -83,7 +83,7 @@ X (twitter)     https://x.com/breatfroff
 =================================================================================================================================== */
     /* Theme version */
     :root {
-        --version: 'Theme "Kindroid AI: Wide screen + customisations" by BreatFR version 3.08';
+        --version: 'Theme "Kindroid AI: Wide screen + customisations" by BreatFR version 3.09';
     }
     if showversion {
         .css-x3odei,
@@ -503,12 +503,22 @@ X (twitter)     https://x.com/breatfroff
         #__next > ion-app > div > div > div > div.css-1raxatq > div.css-1h56vtb > div > div.css-j7qwjs > div:nth-child(4){
             width: 100%;
         }
-        .css-ewo462 > p > svg {
-            display: block !important;
-            left: 23%;
-            position: fixed;
-            top: 46.5%;
+        
+        /* add some arrows when needed */
+        :root {
+            --arrow: url("https://unpkg.com/ionicons@7.1.0/dist/svg/chevron-down-outline.svg")
+        }        
+        button > .css-1cfkm3f::after {
+            background-image: var(--arrow);
+            background-size: contain;
+            background-repeat: no-repeat;
+            content: "";
+            display: inline-block;
+            filter: invert(79%) sepia(6%) saturate(37%) hue-rotate(161deg) brightness(92%) contrast(86%);
+            height: 20px;
+            width: 20px;
         }
+        
         /* Danger zone: delete account */
         .css-yk3l44 {
             bottom: 150px;
