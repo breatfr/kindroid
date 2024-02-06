@@ -119,7 +119,7 @@ PS2: Like i put on GitHub only I don't know if automatic update from stylus will
 
 4. Enjoy :)
 
-## How to install the uerscript in few steps
+## How to install the userscripts in few steps
 1. Install Stylus browser extension
     - Chromium based browsers link: https://chromewebstore.google.com/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag
         - Brave
