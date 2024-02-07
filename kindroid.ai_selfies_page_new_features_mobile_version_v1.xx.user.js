@@ -43,7 +43,6 @@
 
     var downloadAllButton = document.createElement('button');
     downloadAllButton.innerHTML = '<abbr title="Download All Images">DLI</abbr>';
-    downloadAllButton.title = 'Please make sure to enable "See All Images" before downloading.'; // Add tooltip
     downloadAllButton.addEventListener('click', function() {
         downloadAllImages();
     });
