@@ -44,9 +44,9 @@
     var uiContainer = document.createElement('div');
     uiContainer.style.position = 'fixed';
     uiContainer.style.top = '5px';
-    uiContainer.style.left = '15%';
+    uiContainer.style.right = '9%';
+    uiContainer.style.textAlign = 'right';
     uiContainer.style.color = '#cbcbcb';
-    uiContainer.style.zIndex = '9999';
 
     var autoConfirmCheckbox = document.createElement('input');
     autoConfirmCheckbox.type = 'checkbox';
@@ -83,11 +83,11 @@
         if (!autoConfirmEnabled) {
             return;
         }
-    
+
         // Cherchez le bouton "Confirm" dans le message de régénération
         const confirmButton1 = document.querySelector('.css-mqmatd .chakra-text');
         const confirmButton2 = document.querySelector('.css-1jbciej'); // Ajout du sélecteur pour le bouton Confirm
-    
+
         // Vérifiez d'abord si le texte spécifique est présent avant de sélectionner le bouton Confirm
         const confirmationText = document.querySelector('.css-10813k0');
         if (confirmationText && confirmationText.textContent.includes("Are you sure you want to regenerate this message?")) {
@@ -97,7 +97,7 @@
                 confirmButton2.click();
             }
         }
-    
+
         // Vérifiez régulièrement si le bouton réapparaît
         setTimeout(autoConfirmRegenerate, 300);
     }
