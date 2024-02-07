@@ -117,7 +117,7 @@
         }
 
         // Vérifiez régulièrement si le bouton réapparaît
-        setTimeout(autoConfirmRegenerate, 300);
+        setTimeout(autoConfirmRegenerate, 500);
     }
 
     autoConfirmRegenerate();
