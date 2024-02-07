@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name            Kindroid AI: Wide screen + customisations v3.xx
 @description     Put Kindroid on whole page for screen with width 990px and more and add customisations features.
-@version         3.10
+@version         3.11
 @author          BreatFR
 @namespace       userstyles.world/user/breat
 @homepageURL     https://discord.com/channels/1116127115574779905/1195415564101886102
@@ -83,7 +83,7 @@ X (twitter)     https://x.com/breatfroff
 =================================================================================================================================== */
     /* Theme version */
     :root {
-        --version: 'Theme "Kindroid AI: Wide screen + customisations" by BreatFR version 3.10';
+        --version: 'Theme "Kindroid AI: Wide screen + customisations" by BreatFR version 3.11';
     }
     if showversion {
         .css-x3odei,
@@ -100,7 +100,7 @@ X (twitter)     https://x.com/breatfroff
             }
         }
     }
-
+    
     /* Hide scrollbars */
     .css-1lbk8wf,
     :root ::-webkit-scrollbar {
@@ -1086,8 +1086,41 @@ X (twitter)     https://x.com/breatfroff
                 max-width: 72%;
             }
         }
+        
+        /* Vivaldi statusbar fix for min-height 1440 */
+        @media screen and (min-height: 1300px) {
+            .css-1y2ps2x {
+                display: none;
+            }
+            .css-do4s31 {
+                background-color: transparent;
+                border: none;    
+                color: var(--chakra-colors-secondaryWhite);
+                display: grid;
+                font-size: 20px;
+                grid-template-columns: 1fr 1fr 1fr;
+                margin-left: -10% !important;
+                margin-top: 212%;
+                --menu-shadow: transparent !important;
+                opacity: 100% !important;
+                visibility: visible !important;
+            }
+            .css-1lbk8wf {
+                margin-bottom: 72px;
+            }
+            .css-94x4at {
+                background-color: transparent;
+            }
+            .css-b9bzmp,
+            .css-14dkl09 {
+                bottom: 20px;
+                position: fixed;
+                right: 10px;
+                max-width: 78%;
+            }
+        }
 
-        @media screen and (min-height: 1329px) {
+        @media screen and (min-height: 1320px) {
             .css-1y2ps2x {
                 display: none;
             }
