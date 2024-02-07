@@ -173,6 +173,7 @@ after any script update you'll need press `F5` or close/reopen kindroid website 
 7. Enjoy :)
 
 8. To update scripts, in Safari, click on `plugins icon` and `Userscripts` and the refresh icon to check update.
+- if update seems not work follow step 4 and 5 but this time you'll click on `Tap-to-reinstall` and scroll down a little to see the `install` button.
 
 ## How to use in few steps on Android (Kiwi Browser)
 1. Install [Kiwi Browser](https://play.google.com/store/apps/details?id=com.kiwibrowser.browser)
