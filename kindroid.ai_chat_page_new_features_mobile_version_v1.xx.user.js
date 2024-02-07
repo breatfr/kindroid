@@ -44,7 +44,6 @@
     // User interface
     var uiContainer = document.createElement('div');
     uiContainer.style.position = 'fixed';
-    uiContainer.style.top = '5px';
     uiContainer.style.left = '50%';
     uiContainer.style.color = '#cbcbcb';
     uiContainer.style.zIndex = '9999';
