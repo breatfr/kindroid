@@ -145,10 +145,10 @@
             focusTextarea();
         }
     }, 500);
-
+        
     // Function to toggle content blur
     function toggleContentBlur() {
-        const blurElements = document.querySelectorAll('.css-1hmzamm, .css-gnnge1, .css-1j9xj7u > .css-0 > p, .css-teti0a > .css-0 > p');
+        const blurElements = document.querySelectorAll('.css-ppua9z, .css-19hb772, .css-1hmzamm, .css-gnnge1, .css-1j9xj7u > .css-0 > p, .css-teti0a > .css-0 > p');
         blurElements.forEach(function(element) {
             if (blurContentEnabled) {
                 element.style.filter = 'blur(8px)';
