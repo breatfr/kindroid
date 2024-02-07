@@ -119,6 +119,7 @@ PS2: Like i put on GitHub only I don't know if automatic update from stylus will
 ![Preview](https://raw.githubusercontent.com/breatfr/kindroid/main/preview_chat_script.jpg)
 - add autoconfirm regenerate
 - add autofocus textarea (chat page only)
+- - blur bubbles content and image you send to ai to share in privacy (chat page and mobile script version only)
 ### selfies page
 ![Preview](https://raw.githubusercontent.com/breatfr/kindroid/main/preview_selfies_script.jpg)
 - add a checkbox to see all images
