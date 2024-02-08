@@ -2,11 +2,11 @@
 @name            Kindroid AI: Wide screen + customisations v3.xx
 @description     Put Kindroid on whole page for screen with width 990px and more and add customisations features.
 @version         3.12
-@author          BreatFR
-@namespace       userstyles.world/user/breat
-@homepageURL     https://discord.com/channels/1116127115574779905/1195415564101886102
+@author          BreatFR (https://breat.fr)
+@namespace       https://github.com/breatfr
+@homepageURL     https://github.com/breatfr/kindroid
 @supportURL      https://discord.com/channels/1116127115574779905/1145809654044176485
-@updateURL       https://github.com/breatfr/kindroid/raw/main/kindroid.ai_wide_screen_v3.xx.user.css
+@updateURL       https://raw.githubusercontent.com/breatfr/Kindroid/main/kindroid.ai_wide_screen_v3.xx.user.css
 @license         GPL-3.0-or-later; http://www.gnu.org/licenses/gpl-3.0.txt
 @preprocessor    stylus
 
@@ -80,7 +80,7 @@ X (twitter)     https://x.com/breatfroff
 /* ===================================================================================================================================
     Whole kindroid domain
 =================================================================================================================================== */
-    /* Theme version */
+    /* Versions */
     :root {
         --themeversion: 'Theme v3.12';
         --chatversionpc: 'Chat script PC v1.06';
