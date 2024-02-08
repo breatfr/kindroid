@@ -1,4 +1,4 @@
-## How to install the theme in few steps
+# How to install the theme in few steps
 1. Install Stylus browser extension
     - Chromium based browsers link: https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne
         - Brave
