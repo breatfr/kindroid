@@ -11,7 +11,7 @@
     <li>https://ko-fi.com/breatfr</li>
     <li>https://www.paypal.me/breat</li>
   </ul>
-  <p>And if you are a coder CSS and/or JavaSscript some help can be good mostly for JavaSscript, so don't hesitate to contact me (look: I can't find my problem in the FAQs).</p>
+  <p>And if you are a coder CSS and/or JavaSscript some help can be good mostly for JavaSscript, so don't hesitate to contact me (look: <a href="https://github.com/breatfr/Kindroid/blob/main/FAQs.md#i-cant-find-my-problem-in-the-faqs">I can't find my problem in the FAQs</a>).</p>
 </details>
 
 <details>
@@ -25,7 +25,7 @@
     <li>Disable my theme</li>
     <li>Click on <img src="https://media.discordapp.net/attachments/1145809654044176485/1204880635177467924/image.png" alt="arrow"/></li>
     <li>Enable my theme</li>
-    <li>If still don't work, so contact me (look: I can't find my problem in the FAQs).</li>
+    <li>If still don't work, so contact me (look: <a href="https://github.com/breatfr/Kindroid/blob/main/FAQs.md#i-cant-find-my-problem-in-the-faqs">I can't find my problem in the FAQs</a>).</li>
   </ul>
 </details>
 
