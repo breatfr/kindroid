@@ -1,0 +1,52 @@
+/* Versions */
+:root {
+    --themeversion: 'Theme v3.12';
+    --chatversionpc: 'Chat script PC v1.06';
+    --chatversionmobile: 'Chat script mobile v1.07';
+    --selfiesversionpc: 'Selfies script PC v1.01';
+    --selfiesversionmobile: 'Selfies script mobile v1.02';
+    --author: 'by BreatFR';
+    --link: ' https://github.com/breatfr/kindroid ';
+}
+
+.css-x3odei::after,
+.css-z0osps::after {
+    background: linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    content: var(--themeversion) ' · ' var(--chatversionpc) ' · ' var(--chatversionmobile) ' · ' var(--selfiesversionpc) ' · ' var(--selfiesversionmobile) ' ' var(--author) '\A' url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBoZWlnaHQ9IjIwIiB3aWR0aD0iMjAiIHN0eWxlPSJ0cmFuc2Zvcm06IHNjYWxlWSgtMSk7Ij48IS0tIUZvbnQgQXdlc29tZSBGcmVlIDYuNS4xIGJ5IEBmb250YXdlc29tZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlL2ZyZWUgQ29weXJpZ2h0IDIwMjQgRm9udGljb25zLCBJbmMuLS0+PHBhdGggZmlsbD0iI2NiY2JjYiIgZD0iTTMwNyAzNC44Yy0xMS41IDUuMS0xOSAxNi42LTE5IDI5LjJ2NjRIMTc2Qzc4LjggMTI4IDAgMjA2LjggMCAzMDRDMCA0MTcuMyA4MS41IDQ2Ny45IDEwMC4yIDQ3OC4xYzIuNSAxLjQgNS4zIDEuOSA4LjEgMS45YzEwLjkgMCAxOS43LTguOSAxOS43LTE5LjdjMC03LjUtNC4zLTE0LjQtOS44LTE5LjVDMTA4LjggNDMxLjkgOTYgNDE0LjQgOTYgMzg0YzAtNTMgNDMtOTYgOTYtOTZoOTZ2NjRjMCAxMi42IDcuNCAyNC4xIDE5IDI5LjJzMjUgMyAzNC40LTUuNGwxNjAtMTQ0YzYuNy02LjEgMTAuNi0xNC43IDEwLjYtMjMuOHMtMy44LTE3LjctMTAuNi0yMy44bC0xNjAtMTQ0Yy05LjQtOC41LTIyLjktMTAuNi0zNC40LTUuNHoiLz48L3N2Zz4=") var(--link) url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBoZWlnaHQ9IjIwIiB3aWR0aD0iMjAiIHRyYW5zZm9ybT0icm90YXRlKDE4MCkiPjwhLS0hRm9udCBBd2Vzb21lIEZyZWUgNi41LjEgYnkgQGZvbnRhd2Vzb21lIC0gaHR0cHM6Ly9mb250YXdlc29tZS5jb20gTGljZW5zZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tL2xpY2Vuc2UvZnJlZSBDb3B5cmlnaHQgMjAyNCBGb250aWNvbnMsIEluYy4tLT48cGF0aCBmaWxsPSIjY2JjYmNiIiBkPSJNMzA3IDM0LjhjLTExLjUgNS4xLTE5IDE2LjYtMTkgMjkuMnY2NEgxNzZDNzguOCAxMjggMCAyMDYuOCAwIDMwNEMwIDQxNy4zIDgxLjUgNDY3LjkgMTAwLjIgNDc4LjFjMi41IDEuNCA1LjMgMS45IDguMSAxLjljMTAuOSAwIDE5LjctOC45IDE5LjctMTkuN2MwLTcuNS00LjMtMTQuNC05LjgtMTkuNUMxMDguOCA0MzEuOSA5NiA0MTQuNCA5NiAzODRjMC01MyA0My05NiA5Ni05Nmg5NnY2NGMwIDEyLjYgNy40IDI0LjEgMTkgMjkuMnMyNSAzIDM0LjQtNS40bDE2MC0xNDRjNi43LTYuMSAxMC42LTE0LjcgMTAuNi0yMy44cy0zLjgtMTcuNy0xMC42LTIzLjhsLTE2MC0xNDRjLTkuNC04LjUtMjIuOS0xMC42LTM0LjQtNS40eiIvPjwvc3ZnPg==") ;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    width: max-content;
+    white-space: pre-line;
+}
+@-moz-document url-prefix() {
+    /* Fix firefox version */
+    .css-x3odei::after,
+    .css-z0osps::after {
+        background: linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
+        background: -moz-linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
+        background-clip: text;
+        color: transparent;
+        content: var(--themeversion) ' · ' var(--chatversionpc) ' · ' var(--chatversionmobile) ' · ' var(--selfiesversionpc) ' · ' var(--selfiesversionmobile) ' ' var(--author) '\A' '->' var(--link) '<-';
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+        left: 22%;
+        position: absolute;
+        text-align: center;
+        top: 20%;
+        transform: translate(0%, -20%);
+        -moz-transform: translate(0%, -20%);
+        width: max-content;
+        white-space: pre-line;            
+    }
+}
