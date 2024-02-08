@@ -35,7 +35,7 @@
 </details>
 
 <details>
-  <summary><h3>Are theme and scripts works on all broswer?</h3></summary>
+  <summary><h3>Are theme and scripts works on all broswers?</h3></summary>
   <ul>
     <li>Theme
       <ul>
