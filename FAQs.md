@@ -52,7 +52,7 @@
 </details>
 
 <details>
-  <summary><h3>I can't find my problem in the FAQs</h3></summary>
+  <summary><h3>I can't find my problem in the FAQs, what can I do?</h3></summary>
   <p>Before contact me, please be sure your browser in with zoom at 100%, to be sure go to <a href="https://kindroid.ai/" target="_blank">Kindroid</a> website and press <kdd>CTRL+0 (numpad)</kdd> and check if your problem is fixed.<br>
     If isn't so you can contact me on the support <a href="https://discord.com/channels/1116127115574779905/1145809654044176485" target="_blank">discord thread</a>, please include these informations and a screenshot (you can blur it with my theme settings if you prefer except if the problem is in blured content):</p>
   <ul>
