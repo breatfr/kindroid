@@ -25,7 +25,7 @@
 </details>
 
 <details>
-  <summary><h3>I installed the theme but I can't see kin's avatar</h3></summary>
+  <summary><h3>I installed the theme but I can't see kin's avatar.</h3></summary>
   <ul>
     <li>Disable my theme</li>
     <li>Click on <img src="https://media.discordapp.net/attachments/1145809654044176485/1204880635177467924/image.png" alt="arrow"/></li>
