@@ -16,7 +16,7 @@
 
 <details>
   <summary><h3>How can I install theme or scripts?</h3></summary>
-  <p>Just follow steps in <a href="https://github.com/breatfr/Kindroid/blob/main/README.md">README</a>).</p>
+  <p>Just follow steps in <a href="https://github.com/breatfr/Kindroid/blob/main/README.md">README</a>.</p>
 </details>
 
 <details>
