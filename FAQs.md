@@ -15,6 +15,11 @@
 </details>
 
 <details>
+  <summary><h3>How can I install theme or scripts?</h3></summary>
+  <p>Just follow steps in <a href="https://github.com/breatfr/Kindroid/blob/main/README.md">README</a>).</p>
+</details>
+
+<details>
   <summary><h3>Can I edit code of the theme?</h3></summary>
   <p>Yes, but keep in mind if you do it you won't get my updates anymore, so I highly recommand you to create new one with your modifications.</p>
 </details>
