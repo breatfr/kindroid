@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name            Kindroid AI: Wide screen + customisations v3.xx
 @description     Put Kindroid on whole page for screen with width 990px and more and add customisations features.
-@version         3.12
+@version         3.13
 @author          BreatFR (https://breat.fr)
 @namespace       https://github.com/breatfr
 @homepageURL     https://github.com/breatfr/kindroid
@@ -82,10 +82,10 @@ X (twitter)     https://x.com/breatfroff
 =================================================================================================================================== */
     /* Versions */
     :root {
-        --themeversion: 'Theme v3.12';
+        --themeversion: 'Theme v3.13';
         --chatversionpc: 'Chat script PC v1.06';
         --chatversionmobile: 'Chat script mobile v1.07';
-        --selfiesversionpc: 'Selfies script PC v1.01';
+        --selfiesversionpc: 'Selfies script PC v1.02';
         --selfiesversionmobile: 'Selfies script mobile v1.02';
         --author: 'by BreatFR';
         --link: ' https://github.com/breatfr/kindroid ';
@@ -1428,6 +1428,15 @@ X (twitter)     https://x.com/breatfroff
         padding-bottom: 10px;
     }
     
+    /* Blur content */
+    if blurcontent {
+        .css-1regj17 {
+            filter: blur(50px);
+            -moz-filter: blur(50px);
+            -webkit-filter: blur(50px);
+        }
+    }
+    
     /* Put Request image button at the top */
     if requestimage {
         @media screen and (min-width: 900px) {
@@ -1528,5 +1537,57 @@ X (twitter)     https://x.com/breatfroff
         font-size: 42px;
         font-weight: bold;
         line-height: 48px;
+    }
+}
+@-moz-document url("https://www.feedough.com/stable-diffusion-prompt-generator/") {
+    /* Hide scrollbars */
+    :root ::-webkit-scrollbar {
+        overflow: hidden !important;
+        scrollbar-width: none !important;
+        -ms-overflow-style: none !important;
+        -moz-overflow-style: none !important;
+        -webkit-overflow-style: none !important;
+        width: 0px !important;
+    }    
+    ::-webkit-scrollbar {
+        overflow: hidden !important;
+        display: none !important;
+        width: 0px !important;
+    }
+        
+    /* Hide content of iframe */
+    #thrive-header > div > div.symbol-section-in.tve-default-state.tcb-mp > div > div > div:nth-child(2),
+    #thrive-header > div > div.symbol-section-in.tve-default-state.tcb-mp > div > div > div:nth-child(3),
+    #tve_editor > div > div.thrv_wrapper.thrv-page-section.tcb-window-width,
+    #tve_editor > div > div.thrv_wrapper.thrv-page-section.tcb-window-width > div.tve-page-section-out,
+    #tve_editor > div:nth-child(5) > div.tve-page-section-in > div > div > div:nth-child(1),
+    #tve_tcb2_personal-brand-v1-2-step-ribbon_m1 > div,
+    .tl-state-root.tve-leads-ribbon.tve-trigger-hide.tve-tl-anim.tve-leads-track-ribbon-75.tl-anim-slide_top.tve-leads-triggered,
+    .thrv-lp-block,
+    #ai_x_generator_65c5fc4f631f6_form > div > label,
+    #tve_editor > div:nth-child(4),
+    #tve_editor > div:nth-child(7),
+    #tve_editor > div:nth-child(8),
+    #tve_editor > div:nth-child(9) > div.tve-page-section-in,
+    body > div:nth-child(40) {
+        display: none !important;
+        height: 0px !important;
+    }
+    
+    /* Show only what we need in iframe */
+    .ai-x-generator-container {
+        margin-top: 0px !important;
+    }
+    .thrv_wrapper {
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+    .tcb-col {
+        border: 0px !important;
+    }
+    #tve_editor > div:nth-child(6) {
+        overflow: hidden !important;
+        position: fixed !important;
+        
     }
 }
