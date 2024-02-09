@@ -147,7 +147,7 @@ https://discord.com/channels/1116127115574779905/1145809654044176485
 </details>
 
 <details>
-  <summary><h3> How to install in few steps</h3></summary>
+  <summary><h2> How to install in few steps</h2></summary>
   <ul>
 	  <li><a href="https://github.com/breatfr/Kindroid/blob/main/docs/how_to_install_the_theme_in_few_steps.md" target="_blank">theme</a> (pc only)</li>
 	  <li>scripts
