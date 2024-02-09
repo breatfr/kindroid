@@ -1568,13 +1568,17 @@ X (twitter)     https://x.com/breatfroff
     #tve_editor > div:nth-child(4),
     #tve_editor > div:nth-child(7),
     #tve_editor > div:nth-child(8),
-    #tve_editor > div:nth-child(9) > div.tve-page-section-in,
+    #tve_editor > div:nth-child(9),
+    #tve_editor > div:nth-child(10),
     body > div:nth-child(40) {
         display: none !important;
         height: 0px !important;
     }
     
     /* Show only what we need in iframe */
+    body {
+        overflow: hidden !important;
+    }
     .ai-x-generator-container {
         margin-top: 0px !important;
     }
