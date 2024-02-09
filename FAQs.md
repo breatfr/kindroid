@@ -48,18 +48,37 @@
       <ul>
         <li>PC version
           <ul>
-            <li><a href="https://greasyfork.org/scripts/486625-kindroid-chat-page-new-features-v1-xx" target="_blank">Greasy Fork</a> (Chat page scriptn)</li>
-            <li><a href="https://greasyfork.org/scripts/486776-kindroid-selfies-page-new-features-v1-xx" target="_blank">Greasy Fork</a> (Selfies page script)</li>
+            <li>Chat page script
+              <ul>
+                <li><a href="https://greasyfork.org/scripts/486625-kindroid-chat-page-new-features-v1-xx" target="_blank">Greasy Fork</a></li>
+                <li><a href="https://openuserjs.org/scripts/Breat/Kindroid_-_Chat_page_new_features_v1.xx" target="_blank">OpenUserJS</a></li>
+              </ul>
+            </li>
+            <li>Selfies page script
+              <ul>
+                <li><a href="https://greasyfork.org/scripts/486776-kindroid-selfies-page-new-features-v1-xx" target="_blank">Greasy Fork</a></li>
+                <li><a href="https://openuserjs.org/scripts/Breat/Kindroid_-_Selfies_page_new_features_v1.xx" target="_blank">OpenUserJS</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li>Mobile version
           <ul>
-            <li><a href="https://greasyfork.org/scripts/486802-kindroid-chat-page-new-features-mobile-version-v1-xx" target="_blank">Greasy Fork</a> (Chat page script)</li>        
-            <li><a href="https://greasyfork.org/scripts/486803-kindroid-selfies-page-new-features-mobile-version-v1-xx" target="_blank">Greasy Fork</a> (Selfies page script)</li>
+            <li>Chat page script
+              <ul>
+                <li><a href="https://greasyfork.org/scripts/486802-kindroid-chat-page-new-features-mobile-version-v1-xx" target="_blank">Greasy Fork</a></li>
+                <li><a href="https://openuserjs.org/scripts/Breat/Kindroid_-_Chat_page_new_features_mobile_version_v1.xx" target="_blank">OpenUserJS</a></li>
+              </ul>
+            </li>
+            <li>Selfies page script
+              <ul>
+                <li><a href="https://greasyfork.org/scripts/486803-kindroid-selfies-page-new-features-mobile-version-v1-xx" target="_blank">Greasy Fork</a></li>
+                <li><a href="https://openuserjs.org/scripts/Breat/Kindroid_-_Selfies_page_new_features_mobile_version_v1.xx" target="_blank">OpenUserJS</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
-    </li>
-  </ul>
+    </ul>
 </details>
 
 <details>
