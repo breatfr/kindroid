@@ -220,11 +220,10 @@
         var modal = document.createElement('div');
         modal.id = 'promptModal';
         modal.style.position = 'fixed';
-        modal.style.top = '20%';
+        modal.style.top = '0px';
         modal.style.left = '25%';
         modal.style.width = '100%';
         modal.style.maxWidth = '910px';
-        modal.style.maxHeight = '650px';
         modal.style.height = '100%';
         modal.style.zIndex = '9998';
 
