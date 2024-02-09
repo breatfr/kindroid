@@ -69,7 +69,7 @@
     <li>Theme
       <ul>
         <li>On PC works on all chromium and firefox based browsers but works better on chromium based browsers, I'm working to avod this but actually it's like this sorry.</li>
-        <li>On mobile, you can technically install my theme but keep in mind my theme is for wide screen so I don't support any mobile devices for my theme.</li>
+        <li>On mobile, you can technically install my theme but keep in mind my theme is for wide screens so I don't support any mobile devices for my theme.</li>
       </ul>
     </li>
     <li>Scripts
