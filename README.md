@@ -16,7 +16,7 @@ https://github.com/breatfr/Kindroid/blob/main/FAQs.md
 https://discord.com/channels/1116127115574779905/1145809654044176485
 
 <details>
-  <summary><h2>Customisations available in the theme</h2></summary>
+  <summary><h2>Customizations available in the theme</h2></summary>
 <h3>chat page</h3>
 <ul>
 		<li>actions text style
