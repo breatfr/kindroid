@@ -20,7 +20,7 @@
     var uiContainer = document.createElement('div');
     uiContainer.style.position = 'fixed';
     uiContainer.style.top = '5px';
-    uiContainer.style.left = '20%';
+    uiContainer.style.left = '15%';
     uiContainer.style.color = '#cbcbcb';
     uiContainer.style.zIndex = '9999';
 
