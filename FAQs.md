@@ -36,7 +36,7 @@
 
 <details>
   <summary><h3>I don't like install from github, are the theme and scripts available outside github?</h3></summary>
-  Yes.
+  Sure.
   <ul>
     <li>Theme
       <ul>
