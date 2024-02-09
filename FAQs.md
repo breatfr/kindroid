@@ -1,6 +1,6 @@
 # FAQs
 <details>
-  <summary><h3>Are theme and scripts free?</h3></summary>
+  <summary><h3>Are the theme and scripts free?</h3></summary>
   <p>Both are 100% free and under GNU GPL 3.0 license http://www.gnu.org/licenses/gpl-3.0.txt.</p>
 </details>
 
@@ -35,7 +35,7 @@
 </details>
 
 <details>
-  <summary><h3>Are theme and scripts available outside github?</h3></summary>
+  <summary><h3>I don't like install from github, are the theme and scripts available outside github?</h3></summary>
   Yes.
   <ul>
     <li>Theme
@@ -63,7 +63,7 @@
 </details>
 
 <details>
-  <summary><h3>Are theme and scripts works on all browsers?</h3></summary>
+  <summary><h3>Are the theme and scripts works on all browsers?</h3></summary>
   Yes and no.
   <ul>
     <li>Theme
