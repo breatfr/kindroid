@@ -35,7 +35,36 @@
 </details>
 
 <details>
+  <summary><h3>Are theme and scripts available outside github?</h3></summary>
+  Yes.
+  <ul>
+    <li>Theme
+      <ul>
+        <li><a href="https://greasyfork.org/scripts/486624-kindroid-ai-wide-screen-customisations-v3-xx" target="_blank">Greasy Fork</a></li>
+        <li><a href="https://userstyles.world/style/14456/kindroid-ai-wide-screen-customisations-v3-xx" target="_blank">UserStyles.world</a></li>
+      </ul>
+    </li>
+    <li>Scripts
+      <ul>
+        <li>PC version
+          <ul>
+            <li><a href="https://greasyfork.org/scripts/486625-kindroid-chat-page-new-features-v1-xx" target="_blank">Greasy Fork</a> (Chat page scriptn)</li>
+            <li><a href="https://greasyfork.org/scripts/486776-kindroid-selfies-page-new-features-v1-xx" target="_blank">Greasy Fork</a> (Selfies page script)</li>
+          </ul>
+        </li>
+        <li>Mobile version
+          <ul>
+            <li><a href="https://greasyfork.org/scripts/486802-kindroid-chat-page-new-features-mobile-version-v1-xx" target="_blank">Greasy Fork</a> (Chat page script)</li>        
+            <li><a href="https://greasyfork.org/scripts/486803-kindroid-selfies-page-new-features-mobile-version-v1-xx" target="_blank">Greasy Fork</a> (Selfies page script)</li>
+          </ul>
+        </li>
+    </li>
+  </ul>
+</details>
+
+<details>
   <summary><h3>Are theme and scripts works on all browsers?</h3></summary>
+  Yes and no.
   <ul>
     <li>Theme
       <ul>
