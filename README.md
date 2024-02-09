@@ -9,6 +9,9 @@ Put [Kindroid](https://kindroid.ai/) on whole page for screen with width 900px a
 ## Changelog
 https://discord.com/channels/1116127115574779905/1195415564101886102
 
+## FAQs
+https://github.com/breatfr/Kindroid/blob/main/FAQs.md
+
 ## Help / comments / ask etc...
 https://discord.com/channels/1116127115574779905/1145809654044176485
 
@@ -163,5 +166,3 @@ https://discord.com/channels/1116127115574779905/1145809654044176485
 	  </li>
   </ul>
 </details>
-<h2>FAQs</h2>
-<p>A faqs page is available <a href="https://github.com/breatfr/Kindroid/blob/main/FAQs.md" target="_blank">here</a>.</p>
