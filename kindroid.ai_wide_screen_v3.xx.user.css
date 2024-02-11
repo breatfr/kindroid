@@ -82,10 +82,10 @@ X (twitter)     https://x.com/breatfroff
 =================================================================================================================================== */
     /* Versions */
     :root {
-        --themeversion: 'Theme v3.13';
+        --themeversion: 'Theme v3.14';
         --chatversionpc: 'Chat script PC v1.06';
         --chatversionmobile: 'Chat script mobile v1.07';
-        --selfiesversionpc: 'Selfies script PC v1.02';
+        --selfiesversionpc: 'Selfies script PC v1.03';
         --selfiesversionmobile: 'Selfies script mobile v1.02';
         --author: 'by BreatFR';
         --link: ' https://github.com/breatfr/kindroid ';
@@ -1592,6 +1592,10 @@ X (twitter)     https://x.com/breatfroff
     #tve_editor > div:nth-child(6) {
         overflow: hidden !important;
         position: fixed !important;
-        
+    }
+    [data-css=tve-u-18a4637eccf] {
+        max-width: 100% !important;
+        min-width: 100% !important;
+        width: 100% !important;
     }
 }
