@@ -1,4 +1,4 @@
-# Kindroid AI: Wide screen + customisations v3 <a href="https://ko-fi.com/breatfr" target="_blank"><img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="ko-fi"></a> <a href="https://www.paypal.me/breat" target="_blank"><img src="https://github.com/andreostrovsky/donate-with-paypal/raw/master/blue.svg" alt="PayPal" height="30"></a>
+# Kindroid AI: Wide screen + customisations v3 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/breatfr) <a href="https://www.paypal.me/breat" target="_blank"><img src="https://github.com/andreostrovsky/donate-with-paypal/raw/master/blue.svg" alt="PayPal" height="30"></a>
 Put [Kindroid](https://kindroid.ai/) on whole page for screen with width 900px and more and add customisations features.
 ## Preview theme v3.xx
 ![Preview theme](https://raw.githubusercontent.com/breatfr/kindroid/main/preview_theme_v3.xx.jpg)
