@@ -1,6 +1,6 @@
 /* ==UserStyle==
-@name            Kindroid AI: Wide screen + customisations v3.xx
-@description     Put Kindroid on whole page for screen with width 990px and more and add customisations features.
+@name            Kindroid AI: Wide screen + customizations v3.xx
+@description     Put Kindroid on whole page for screen with width 990px and more and add customizations features.
 @version         3.13
 @author          BreatFR (https://breat.fr)
 @namespace       https://github.com/breatfr
@@ -1578,7 +1578,7 @@ X (twitter)     https://x.com/breatfroff
     /* Show only what we need in iframe */
     body {
         overflow: hidden !important;
-    }
+    }        
     .ai-x-generator-container {
         margin-top: 0px !important;
     }
