@@ -2,9 +2,17 @@
 Put [Kindroid](https://kindroid.ai/) on whole page for screen with width 900px and more and add customisations features.
 ## Preview theme v3.xx
 ![Preview theme](https://raw.githubusercontent.com/breatfr/kindroid/main/preview_theme_v3.xx.jpg)
-| <h2>Preview Chat page script</h2> | <h2>Preview Selfies page script</h2> |
-|---|---|
-| ![Preview Chat page script](https://raw.githubusercontent.com/breatfr/kindroid/main/preview_chat_script.jpg) | ![Preview Selfies page script](https://raw.githubusercontent.com/breatfr/kindroid/main/preview_selfies_script.jpg) |
+
+<table>
+	<tr>
+		<th><h2>Preview Chat page script</h2></th>
+		<th><h2>Preview Selfies page script</h2></th>
+	</tr>
+	<tr>
+		<td><img src="https://raw.githubusercontent.com/breatfr/kindroid/main/preview_chat_script.jpg" alt="Preview Chat page script"></td>
+		<td><img src="https://raw.githubusercontent.com/breatfr/kindroid/main/preview_selfies_script.jpg" alt="Preview Selfies page script"></td>
+	</tr>
+</table>
 
 ## Changelog
 https://discord.com/channels/1116127115574779905/1195415564101886102
