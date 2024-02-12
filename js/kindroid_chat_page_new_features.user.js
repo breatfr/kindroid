@@ -43,7 +43,6 @@
     if (window.location.href.includes("/home")) {
         // User interface
         var uiContainer = document.createElement('div');
-        uiContainer.id = 'chatui';
         uiContainer.style.position = 'fixed';
         uiContainer.style.top = '5px';
         uiContainer.style.right = '9%';
