@@ -18,91 +18,95 @@
     script.src = 'https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js';
     document.head.appendChild(script);
 
-    // User interface
-    var uiContainer = document.createElement('div');
-    uiContainer.style.position = 'fixed';
-    uiContainer.style.top = '5px';
-    uiContainer.style.left = '8%';
-    uiContainer.style.color = '#cbcbcb';
-    uiContainer.style.zIndex = '9999';
-
-    // Create table for layout
-    var table = document.createElement('table');
-    table.style.borderCollapse = 'collapse'; // Collapse border spacing
-    table.style.width = '100%'; // Set table width
-
-    // First row for labels and checkboxes
-    var row1 = document.createElement('tr');
-    table.appendChild(row1);
-
-    // Cell for "Help Create Prompts" label and checkbox
-    var cell1 = document.createElement('td');
-    row1.appendChild(cell1);
-
-    var autoCreateModalLabel = document.createElement('label');
-    autoCreateModalLabel.innerText = 'Help Create Prompts ';
-    autoCreateModalLabel.setAttribute('for', 'showModalCheckbox');
-    autoCreateModalLabel.style.cursor = 'pointer'; // Make the label clickable
-
-    var showModalCheckbox = document.createElement('input');
-    showModalCheckbox.type = 'checkbox';
-    showModalCheckbox.id = 'showModalCheckbox';
-    showModalCheckbox.style.marginRight = '5px'; // Add some margin to separate from label
-    showModalCheckbox.checked = false; // Initially unchecked
-    showModalCheckbox.addEventListener('change', function() {
-        if (showModalCheckbox.checked) {
-            createModal();
-        } else {
-            var modal = document.getElementById('promptModal');
-            if (modal) {
-                modal.parentNode.removeChild(modal);
+    if (window.location.href.includes("/selfies")) {
+        // User interface
+        var uiContainer = document.createElement('div');
+        uiContainer.style.position = 'fixed';
+        uiContainer.style.top = '5px';
+        uiContainer.style.left = '8%';
+        uiContainer.style.color = '#cbcbcb';
+        uiContainer.style.zIndex = '9999';
+    
+        // Create table for layout
+        var table = document.createElement('table');
+        table.style.borderCollapse = 'collapse'; // Collapse border spacing
+        table.style.width = '100%'; // Set table width
+    
+        // First row for labels and checkboxes
+        var row1 = document.createElement('tr');
+        table.appendChild(row1);
+    
+        // Cell for "Help Create Prompts" label and checkbox
+        var cell1 = document.createElement('td');
+        row1.appendChild(cell1);
+    
+        var autoCreateModalLabel = document.createElement('label');
+        autoCreateModalLabel.innerText = 'Help Create Prompts ';
+        autoCreateModalLabel.setAttribute('for', 'showModalCheckbox');
+        autoCreateModalLabel.style.cursor = 'pointer'; // Make the label clickable
+    
+        var showModalCheckbox = document.createElement('input');
+        showModalCheckbox.type = 'checkbox';
+        showModalCheckbox.id = 'showModalCheckbox';
+        showModalCheckbox.style.marginRight = '5px'; // Add some margin to separate from label
+        showModalCheckbox.checked = false; // Initially unchecked
+        showModalCheckbox.addEventListener('change', function() {
+            if (showModalCheckbox.checked) {
+                createModal();
+            } else {
+                var modal = document.getElementById('promptModal');
+                if (modal) {
+                    modal.parentNode.removeChild(modal);
+                }
             }
-        }
-    });
-
-    autoCreateModalLabel.appendChild(showModalCheckbox);
-    cell1.appendChild(autoCreateModalLabel);
-
-    // Cell for "See All Images" label and checkbox
-    var cell2 = document.createElement('td');
-    row1.appendChild(cell2);
-
-    var autoLoadMoreLabel = document.createElement('label');
-    autoLoadMoreLabel.innerText = 'See All Images ';
-    autoLoadMoreLabel.style.marginRight = '5px'; // Add some margin to separate from checkbox
-
-    var autoLoadMoreCheckbox = document.createElement('input');
-    autoLoadMoreCheckbox.type = 'checkbox';
-    autoLoadMoreCheckbox.checked = getCookie('autoLoadMoreEnabled') === 'true'; // Set checkbox value based on cookie
-    autoLoadMoreCheckbox.addEventListener('change', function() {
-        autoLoadMoreEnabled = autoLoadMoreCheckbox.checked;
-        // Set cookie to remember user choice
-        setCookie('autoLoadMoreEnabled', autoLoadMoreEnabled, 30);
-        // Trigger autoLoadMore function when the checkbox is changed
-        autoLoadMore();
-    });
-
-    autoLoadMoreLabel.appendChild(autoLoadMoreCheckbox);
-    cell2.appendChild(autoLoadMoreLabel);
-
-    // Second row for empty space and "Download All Images" button
-    var row2 = document.createElement('tr');
-    table.appendChild(row2);
-
-    // Empty cell to align with "Help Create Prompts" checkbox
-    var emptyCell = document.createElement('td');
-    row2.appendChild(emptyCell);
-
-    // Cell for "Download All Images" button
-    var cell3 = document.createElement('td');
-    row2.appendChild(cell3);
-
-    var downloadAllButton = document.createElement('button');
-    downloadAllButton.innerText = 'Download All Images';
-    downloadAllButton.title = 'Please make sure to enable "See All Images" before downloading.'; // Add tooltip
-    downloadAllButton.addEventListener('click', function() {
-        downloadAllImages();
-    });
+        });
+    
+        autoCreateModalLabel.appendChild(showModalCheckbox);
+        cell1.appendChild(autoCreateModalLabel);
+    
+        // Cell for "See All Images" label and checkbox
+        var cell2 = document.createElement('td');
+        row1.appendChild(cell2);
+    
+        var autoLoadMoreLabel = document.createElement('label');
+        autoLoadMoreLabel.innerText = 'See All Images ';
+        autoLoadMoreLabel.style.marginRight = '5px'; // Add some margin to separate from checkbox
+    
+        var autoLoadMoreCheckbox = document.createElement('input');
+        autoLoadMoreCheckbox.type = 'checkbox';
+        autoLoadMoreCheckbox.checked = getCookie('autoLoadMoreEnabled') === 'true'; // Set checkbox value based on cookie
+        autoLoadMoreCheckbox.addEventListener('change', function() {
+            autoLoadMoreEnabled = autoLoadMoreCheckbox.checked;
+            // Set cookie to remember user choice
+            setCookie('autoLoadMoreEnabled', autoLoadMoreEnabled, 30);
+            // Trigger autoLoadMore function when the checkbox is changed
+            autoLoadMore();
+        });
+    
+        autoLoadMoreLabel.appendChild(autoLoadMoreCheckbox);
+        cell2.appendChild(autoLoadMoreLabel);
+    
+        // Second row for empty space and "Download All Images" button
+        var row2 = document.createElement('tr');
+        table.appendChild(row2);
+    
+        // Empty cell to align with "Help Create Prompts" checkbox
+        var emptyCell = document.createElement('td');
+        row2.appendChild(emptyCell);
+    
+        // Cell for "Download All Images" button
+        var cell3 = document.createElement('td');
+        row2.appendChild(cell3);
+    
+        var downloadAllButton = document.createElement('button');
+        downloadAllButton.innerText = 'Download All Images';
+        downloadAllButton.title = 'Please make sure to enable "See All Images" before downloading.'; // Add tooltip
+        downloadAllButton.addEventListener('click', function() {
+            downloadAllImages();
+        });
+    } else {
+      // Masquer l'interface de la page Selfies
+    }
 
     // Create status text for download progress
     var downloadStatus = document.createElement('span');
