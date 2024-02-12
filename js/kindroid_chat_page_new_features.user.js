@@ -79,7 +79,7 @@
     
         document.body.appendChild(uiContainer);
     } else {
-      // Masquer l'interface de la page Selfies
+      // Masquer l'interface de la page chat
     }
 
     // Autoconfirm regenerate
