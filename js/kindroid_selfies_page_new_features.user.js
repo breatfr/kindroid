@@ -247,7 +247,7 @@
         // Create the background
         var background = document.createElement('div');
         background.style.position = 'absolute';
-        background.style.top = '0%';
+        background.style.top = '10%';
         background.style.left = '10%';
         background.style.width = '80%';
         background.style.height = '10%';
