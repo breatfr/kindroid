@@ -6,8 +6,7 @@
 3. In Safari, open `Manage plugins` and enable `Userscripts`
    
 4. In Safari, go on the script code page you want install and click on `plugins icon` and `Userscripts`:
-	-  [Kindroid AI: Chat page new features mobile version](https://raw.githubusercontent.com/breatfr/kindroid/master/kindroid.ai_chat_page_new_features_mobile_version_v1.xx.user.js)
-	-  [Kindroid AI: Selfies page new features mobile version](https://raw.githubusercontent.com/breatfr/kindroid/master/kindroid.ai_selfies_page_new_features_mobile_version_v1.xx.user.js)
+	-  [Kindroid: New features bundle mobile](https://raw.githubusercontent.com/breatfr/Kindroid/main/js/kindroid_new_features_bundle_mobile.user.js)
 
 5. Click on `Tap-to-install` and scroll down a little to see the `install` button. 
    
