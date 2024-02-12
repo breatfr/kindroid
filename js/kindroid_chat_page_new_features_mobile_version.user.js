@@ -41,60 +41,64 @@
     var autoFocusEnabled = getCookie('autoFocusEnabled') === 'true';
     var blurContentEnabled = getCookie('blurContentEnabled') === 'true';
 
-    // User interface
-    var uiContainer = document.createElement('div');
-    uiContainer.style.position = 'fixed';
-    uiContainer.style.left = '50%';
-    uiContainer.style.color = '#cbcbcb';
-    uiContainer.style.zIndex = '9999';
-
-    var autoConfirmCheckbox = document.createElement('input');
-    autoConfirmCheckbox.type = 'checkbox';
-    autoConfirmCheckbox.checked = autoConfirmEnabled;
-    autoConfirmCheckbox.addEventListener('change', function() {
-        autoConfirmEnabled = autoConfirmCheckbox.checked;
-        setCookie('autoConfirmEnabled', autoConfirmEnabled, 30); // Save user preference in cookie
-    });
-
-    var autoConfirmLabel = document.createElement('label');
-    autoConfirmLabel.innerHTML = '<abbr title="Auto Confirm Regenerate">ACR </abbr>';
-    autoConfirmLabel.appendChild(autoConfirmCheckbox);
-
-    var autoFocusCheckbox = document.createElement('input');
-    autoFocusCheckbox.type = 'checkbox';
-    autoFocusCheckbox.checked = autoFocusEnabled;
-    autoFocusCheckbox.addEventListener('change', function() {
-        autoFocusEnabled = autoFocusCheckbox.checked;
-        setCookie('autoFocusEnabled', autoFocusEnabled, 30); // Save user preference in cookie
-    });
-
-    var autoFocusLabel = document.createElement('label');
-    autoFocusLabel.innerHTML = '<abbr title="Auto Focus Textarea">AFT </abbr>';
-    autoFocusLabel.appendChild(autoFocusCheckbox);
-
-    var blurContentCheckbox = document.createElement('input');
-    blurContentCheckbox.type = 'checkbox';
-    blurContentCheckbox.checked = blurContentEnabled;
-    blurContentCheckbox.addEventListener('change', function() {
-        blurContentEnabled = blurContentCheckbox.checked;
-        setCookie('blurContentEnabled', blurContentEnabled, 30); // Save user preference in cookie
-        toggleContentBlur();
-    });
-
-    var blurContentLabel = document.createElement('label');
-    blurContentLabel.innerHTML = '<abbr title="Blur Content">BLUR </abbr>';
-    blurContentLabel.appendChild(blurContentCheckbox);
-
-    var spacer = document.createElement('span');
-    spacer.innerHTML = '&nbsp;&nbsp;&nbsp;'; // Adjust as needed
-
-    uiContainer.appendChild(autoConfirmLabel);
-    uiContainer.appendChild(spacer); // Add spacer
-    uiContainer.appendChild(blurContentLabel); // Move BLUR after ACR
-    uiContainer.appendChild(document.createElement('br')); // Add line break
-    uiContainer.appendChild(autoFocusLabel);
-
-    document.body.appendChild(uiContainer);
+    if (window.location.href.includes("/home")) {
+        // User interface
+        var uiContainer = document.createElement('div');
+        uiContainer.style.position = 'fixed';
+        uiContainer.style.left = '50%';
+        uiContainer.style.color = '#cbcbcb';
+        uiContainer.style.zIndex = '9999';
+    
+        var autoConfirmCheckbox = document.createElement('input');
+        autoConfirmCheckbox.type = 'checkbox';
+        autoConfirmCheckbox.checked = autoConfirmEnabled;
+        autoConfirmCheckbox.addEventListener('change', function() {
+            autoConfirmEnabled = autoConfirmCheckbox.checked;
+            setCookie('autoConfirmEnabled', autoConfirmEnabled, 30); // Save user preference in cookie
+        });
+    
+        var autoConfirmLabel = document.createElement('label');
+        autoConfirmLabel.innerHTML = '<abbr title="Auto Confirm Regenerate">ACR </abbr>';
+        autoConfirmLabel.appendChild(autoConfirmCheckbox);
+    
+        var autoFocusCheckbox = document.createElement('input');
+        autoFocusCheckbox.type = 'checkbox';
+        autoFocusCheckbox.checked = autoFocusEnabled;
+        autoFocusCheckbox.addEventListener('change', function() {
+            autoFocusEnabled = autoFocusCheckbox.checked;
+            setCookie('autoFocusEnabled', autoFocusEnabled, 30); // Save user preference in cookie
+        });
+    
+        var autoFocusLabel = document.createElement('label');
+        autoFocusLabel.innerHTML = '<abbr title="Auto Focus Textarea">AFT </abbr>';
+        autoFocusLabel.appendChild(autoFocusCheckbox);
+    
+        var blurContentCheckbox = document.createElement('input');
+        blurContentCheckbox.type = 'checkbox';
+        blurContentCheckbox.checked = blurContentEnabled;
+        blurContentCheckbox.addEventListener('change', function() {
+            blurContentEnabled = blurContentCheckbox.checked;
+            setCookie('blurContentEnabled', blurContentEnabled, 30); // Save user preference in cookie
+            toggleContentBlur();
+        });
+    
+        var blurContentLabel = document.createElement('label');
+        blurContentLabel.innerHTML = '<abbr title="Blur Content">BLUR </abbr>';
+        blurContentLabel.appendChild(blurContentCheckbox);
+    
+        var spacer = document.createElement('span');
+        spacer.innerHTML = '&nbsp;&nbsp;&nbsp;'; // Adjust as needed
+    
+        uiContainer.appendChild(autoConfirmLabel);
+        uiContainer.appendChild(spacer); // Add spacer
+        uiContainer.appendChild(blurContentLabel); // Move BLUR after ACR
+        uiContainer.appendChild(document.createElement('br')); // Add line break
+        uiContainer.appendChild(autoFocusLabel);
+    
+        document.body.appendChild(uiContainer);
+    } else {
+      // Masquer l'interface de la page chat
+    }
 
     // Autoconfirm regenerate
     function autoConfirmRegenerate() {
