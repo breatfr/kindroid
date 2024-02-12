@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        Kindroid - Selfies page new features v1.xx
+// @name        Kindroid - Selfies page new features
 // @description New features for Kindroid's selfies page
 // @namespace   https://kindroid.ai/selfies
 // @match       https://kindroid.ai/selfies
@@ -21,6 +21,7 @@
     if (window.location.href.includes("/selfies")) {
         // User interface
         var uiContainer = document.createElement('div');
+        uiContainer.id = 'selfiesui';
         uiContainer.style.position = 'fixed';
         uiContainer.style.top = '5px';
         uiContainer.style.left = '8%';
