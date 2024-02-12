@@ -20,7 +20,7 @@
         - Waterfox
         - many more
 
-2. Go on [Kindroid: Wide screen](https://raw.githubusercontent.com/breatfr/kindroid/master/css/kindroid_wide_screen_v3.xx.user.css) website and click on `Install` on left.
+2. Go on [Kindroid: Wide screen](https://raw.githubusercontent.com/breatfr/Kindroid/main/css/kindroid_wide_screen_v3.xx.user.css) website and click on `Install` on left.
 
 3. To update the theme, open the `Stylus Management` window and click on `Check for update` and follow the instructions or just wait 24h to automatic update
 
