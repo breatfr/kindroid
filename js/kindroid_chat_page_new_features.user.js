@@ -40,43 +40,47 @@
     var autoConfirmEnabled = getCookie('autoConfirmEnabled') === 'true';
     var autoFocusEnabled = getCookie('autoFocusEnabled') === 'true';
 
-    // User interface
-    var uiContainer = document.createElement('div');
-    uiContainer.style.position = 'fixed';
-    uiContainer.style.top = '5px';
-    uiContainer.style.right = '9%';
-    uiContainer.style.textAlign = 'right';
-    uiContainer.style.color = '#cbcbcb';
-
-    var autoConfirmCheckbox = document.createElement('input');
-    autoConfirmCheckbox.type = 'checkbox';
-    autoConfirmCheckbox.checked = autoConfirmEnabled;
-    autoConfirmCheckbox.addEventListener('change', function() {
-        autoConfirmEnabled = autoConfirmCheckbox.checked;
-        setCookie('autoConfirmEnabled', autoConfirmEnabled, 30); // Save user preference in cookie
-    });
-
-    var autoConfirmLabel = document.createElement('label');
-    autoConfirmLabel.innerText = 'Auto Confirm Regenerate ';
-    autoConfirmLabel.appendChild(autoConfirmCheckbox);
-
-    var autoFocusCheckbox = document.createElement('input');
-    autoFocusCheckbox.type = 'checkbox';
-    autoFocusCheckbox.checked = autoFocusEnabled;
-    autoFocusCheckbox.addEventListener('change', function() {
-        autoFocusEnabled = autoFocusCheckbox.checked;
-        setCookie('autoFocusEnabled', autoFocusEnabled, 30); // Save user preference in cookie
-    });
-
-    var autoFocusLabel = document.createElement('label');
-    autoFocusLabel.innerText = 'Auto Focus Textarea ';
-    autoFocusLabel.appendChild(autoFocusCheckbox);
-
-    uiContainer.appendChild(autoConfirmLabel);
-    uiContainer.appendChild(document.createElement('br'));
-    uiContainer.appendChild(autoFocusLabel);
-
-    document.body.appendChild(uiContainer);
+    if (window.location.href.includes("/home")) {
+        // User interface
+        var uiContainer = document.createElement('div');
+        uiContainer.style.position = 'fixed';
+        uiContainer.style.top = '5px';
+        uiContainer.style.right = '9%';
+        uiContainer.style.textAlign = 'right';
+        uiContainer.style.color = '#cbcbcb';
+    
+        var autoConfirmCheckbox = document.createElement('input');
+        autoConfirmCheckbox.type = 'checkbox';
+        autoConfirmCheckbox.checked = autoConfirmEnabled;
+        autoConfirmCheckbox.addEventListener('change', function() {
+            autoConfirmEnabled = autoConfirmCheckbox.checked;
+            setCookie('autoConfirmEnabled', autoConfirmEnabled, 30); // Save user preference in cookie
+        });
+    
+        var autoConfirmLabel = document.createElement('label');
+        autoConfirmLabel.innerText = 'Auto Confirm Regenerate ';
+        autoConfirmLabel.appendChild(autoConfirmCheckbox);
+    
+        var autoFocusCheckbox = document.createElement('input');
+        autoFocusCheckbox.type = 'checkbox';
+        autoFocusCheckbox.checked = autoFocusEnabled;
+        autoFocusCheckbox.addEventListener('change', function() {
+            autoFocusEnabled = autoFocusCheckbox.checked;
+            setCookie('autoFocusEnabled', autoFocusEnabled, 30); // Save user preference in cookie
+        });
+    
+        var autoFocusLabel = document.createElement('label');
+        autoFocusLabel.innerText = 'Auto Focus Textarea ';
+        autoFocusLabel.appendChild(autoFocusCheckbox);
+    
+        uiContainer.appendChild(autoConfirmLabel);
+        uiContainer.appendChild(document.createElement('br'));
+        uiContainer.appendChild(autoFocusLabel);
+    
+        document.body.appendChild(uiContainer);
+    } else {
+      // Masquer l'interface de la page Selfies
+    }
 
     // Autoconfirm regenerate
     function autoConfirmRegenerate() {
