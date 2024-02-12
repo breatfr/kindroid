@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        Kindroid - Chat page new features v1.xx
+// @name        Kindroid - Chat page new features
 // @description New features for Kindroid's chat page
 // @namespace   https://kindroid.ai/home
 // @match       https://kindroid.ai/home
@@ -43,6 +43,7 @@
     if (window.location.href.includes("/home")) {
         // User interface
         var uiContainer = document.createElement('div');
+        uiContainer.id = 'chatui';
         uiContainer.style.position = 'fixed';
         uiContainer.style.top = '5px';
         uiContainer.style.right = '9%';
