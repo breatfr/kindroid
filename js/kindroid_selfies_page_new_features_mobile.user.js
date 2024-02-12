@@ -224,8 +224,7 @@
         modal.id = 'promptModal';
         modal.style.position = 'fixed';
         modal.style.top = '20%';
-        modal.style.left = '10%';
-        modal.style.width = '80%';
+        modal.style.width = '100%';
         modal.style.height = 'auto';
         modal.style.zIndex = '9998';
 
@@ -244,6 +243,7 @@
         link.style.background = 'linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%)';
         link.style.background = '-moz-linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%)';
         link.style.backgroundClip = 'text';
+        link.style.textAlign = 'center';
         link.style.color = 'transparent';
 
         // Create a container to hold the legend and the link on the same line
@@ -251,10 +251,11 @@
         container.style.display = 'flex';
         container.style.alignItems = 'center';
         container.style.position = 'absolute';
-        container.style.left = '15%';
+        container.style.left = '5%';
+        container.style.right = '5%';
         container.style.top = '5%';
         container.style.background = '#161616';
-        container.style.padding = '10px';
+        container.style.padding = '5px';
         container.style.borderRadius = '10px';
         container.style.border = '1px solid #cbcbcb';
 
