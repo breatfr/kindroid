@@ -13,6 +13,3 @@
 6. In Safari go to [Kindroid](https://kindroid.ai) website
 
 7. Enjoy :)
-
-8. To update scripts, in Safari, click on `plugins icon` and `Userscripts` and the refresh icon to check update.
-- if update seems not work follow step 4 and 5 but this time you'll click on `Tap-to-reinstall` and scroll down a little to see the `install` button.
