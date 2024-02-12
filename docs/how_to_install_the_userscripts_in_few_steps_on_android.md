@@ -4,8 +4,7 @@
 2. Install [Violentmonkey](https://chromewebstore.google.com/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag)
    
 3. In Kiwi Browser go on the script page you want install and install it like on computer:
-	-  [Kindroid AI: Chat page new features mobile version](https://raw.githubusercontent.com/breatfr/kindroid/master/kindroid.ai_chat_page_new_features_mobile_version_v1.xx.user.js)
-	-  [Kindroid AI: Selfies page new features mobile version](https://raw.githubusercontent.com/breatfr/kindroid/master/kindroid.ai_selfies_page_new_features_mobile_version_v1.xx.user.js)
+	-  [Kindroid: New features bundle mobile](https://raw.githubusercontent.com/breatfr/Kindroid/main/js/kindroid_new_features_bundle_mobile.user.js)
 
 4. Go on [Kindroid](https://kindroid.ai) website and click on `3 dots` on top right of the browser and click on icon refresh page to see the script interface in the page.
 
