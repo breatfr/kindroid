@@ -104,199 +104,132 @@
         downloadAllButton.addEventListener('click', function() {
             downloadAllImages();
         });
-    } else {
-      // Masquer l'interface de la page Selfies
-    }
 
-    // Create status text for download progress
-    var downloadStatus = document.createElement('span');
+        // Create status text for download progress
+        var downloadStatus = document.createElement('span');
 
-    cell3.appendChild(downloadAllButton);
-    cell3.appendChild(downloadStatus);
+        cell3.appendChild(downloadAllButton);
+        cell3.appendChild(downloadStatus);
 
-    uiContainer.appendChild(table);
-    document.body.appendChild(uiContainer);
+        uiContainer.appendChild(table);
+        document.body.appendChild(uiContainer);
 
-    // Check if autoLoadMore is enabled from cookie
-    var autoLoadMoreEnabled = autoLoadMoreCheckbox.checked;
+        // Check if autoLoadMore is enabled from cookie
+        var autoLoadMoreEnabled = autoLoadMoreCheckbox.checked;
 
-    // Function to set cookie
-    function setCookie(name, value, days) {
-        var expires = '';
-        if (days) {
-            var date = new Date();
-            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-            expires = '; expires=' + date.toUTCString();
-        }
-        document.cookie = name + '=' + (value || '') + expires + '; path=/';
-    }
-
-    // Function to get cookie
-    function getCookie(name) {
-        var nameEQ = name + '=';
-        var ca = document.cookie.split(';');
-        for (var i = 0; i < ca.length; i++) {
-            var c = ca[i];
-            while (c.charAt(0) === ' ') c = c.substring(1, c.length);
-            if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
-        }
-        return null;
-    }
-
-    // Auto load more images
-    function autoLoadMore() {
-        console.log('Auto Load More:', autoLoadMoreEnabled);
-        if (!autoLoadMoreEnabled) {
-            return;
+        // Function to set cookie
+        function setCookie(name, value, days) {
+            var expires = '';
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = '; expires=' + date.toUTCString();
+            }
+            document.cookie = name + '=' + (value || '') + expires + '; path=/';
         }
 
-        // Find the "Load More" button
-        var loadMoreButton = document.querySelector('button.chakra-button.css-1q03dzc');
-        console.log('Load More Button:', loadMoreButton);
-        if (loadMoreButton) {
-            // Click the "Load More" button
-            loadMoreButton.click();
-            // Hide the "Load More" button
-            loadMoreButton.style.display = 'none';
-        }
-    }
-
-    // Download all images
-    function downloadAllImages() {
-        console.log('Download All Images');
-        var images = document.querySelectorAll('.css-1dq4ssc img.css-1regj17');
-        console.log('Found Images:', images);
-        if (images.length === 0) {
-            alert('No images found.');
-            return;
+        // Function to get cookie
+        function getCookie(name) {
+            var nameEQ = name + '=';
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
         }
 
-        var zip = new JSZip();
-        var count = 0;
-        var totalImages = images.length;
-        downloadStatus.innerText = ' Downloading... (0/' + totalImages + ')';
-        images.forEach(function(image, index) {
-            fetch(image.src)
-                .then(response => response.blob())
-                .then(blob => {
-                    var filename = ('0000' + (totalImages - index)).slice(-4) + '.jpg'; // Reverse numbering
-                    zip.file(filename, blob);
-                    count++;
-                    downloadStatus.innerText = ' Downloading... (' + count + '/' + totalImages + ')';
-                    if (count === totalImages) {
-                        zip.generateAsync({ type: 'blob' })
-                            .then(content => {
-                                // Trigger file download
-                                var a = document.createElement('a');
-                                a.href = URL.createObjectURL(content);
-                                a.download = 'Kindroid.zip';
-                                a.click();
-                                downloadStatus.innerText = '';
-                                // Show the "Load More" button again after download is complete
-                                var loadMoreButton = document.querySelector('button.chakra-button.css-1q03dzc');
-                                if (loadMoreButton) {
-                                    loadMoreButton.style.display = 'block';
-                                }
-                            });
-                    }
-                });
-        });
-    }
+        // Auto load more images
+        function autoLoadMore() {
+            console.log('Auto Load More:', autoLoadMoreEnabled);
+            if (autoLoadMoreEnabled) {
+                window.scrollTo(0, document.body.scrollHeight);
+                setTimeout(autoLoadMore, 1000); // Adjust the delay here (in milliseconds)
+            }
+        }
 
-    // Call autoLoadMore function when the page is loaded
-    window.addEventListener('load', function() {
-        autoLoadMore();
+        // Function to download all images
+        function downloadAllImages() {
+            var imageElements = document.querySelectorAll('.image_container img');
+            if (imageElements.length === 0) {
+                downloadStatus.innerText = 'No images found.';
+                return;
+            }
 
-        // Observe mutations in the DOM to detect addition of new elements
-        var observer = new MutationObserver(function(mutations) {
-            mutations.forEach(function(mutation) {
-                autoLoadMore();
+            var zip = new JSZip();
+            var count = 0;
+
+            imageElements.forEach(function(img, index) {
+                var imageUrl = img.src;
+                var filename = 'image_' + index + '.png'; // You can modify the filename here if needed
+
+                // Fetch image as blob
+                fetch(imageUrl)
+                    .then(response => response.blob())
+                    .then(blob => {
+                        zip.file(filename, blob);
+                        count++;
+                        downloadStatus.innerText = 'Downloading ' + count + ' of ' + imageElements.length + ' images...';
+                        if (count === imageElements.length) {
+                            // Generate zip file
+                            zip.generateAsync({ type: 'blob' })
+                                .then(function(content) {
+                                    // Save zip file
+                                    var link = document.createElement('a');
+                                    link.href = URL.createObjectURL(content);
+                                    link.download = 'kindroid_images.zip';
+                                    link.click();
+                                    downloadStatus.innerText = 'Download complete.';
+                                });
+                        }
+                    });
             });
-        });
+        }
+    }
 
-        // Start observing mutations
-        observer.observe(document.body, { childList: true, subtree: true });
-    });
-
-    // Function to create and show the modal
     function createModal() {
-        // Create the modal
         var modal = document.createElement('div');
         modal.id = 'promptModal';
         modal.style.position = 'fixed';
-        modal.style.top = '0px';
-        modal.style.left = '25%';
+        modal.style.top = '0';
+        modal.style.left = '0';
         modal.style.width = '100%';
-        modal.style.maxWidth = '910px';
         modal.style.height = '100%';
-        modal.style.zIndex = '9998';
+        modal.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+        modal.style.display = 'flex';
+        modal.style.justifyContent = 'center';
+        modal.style.alignItems = 'center';
+        modal.style.zIndex = '9999';
 
-        // Create the iframe
-        var iframe = document.createElement('iframe');
-        iframe.src = 'https://www.feedough.com/stable-diffusion-prompt-generator/';
-        iframe.style.width = '80%';
-        iframe.style.height = '80%';
-        iframe.style.position = 'absolute';
-        iframe.style.top = '10%';
-        iframe.style.left = '10%';
-        iframe.style.borderRadius = '10px';
-        iframe.style.border = '1px solid #cbcbcb';
+        var modalContent = document.createElement('div');
+        modalContent.style.backgroundColor = '#fff';
+        modalContent.style.padding = '20px';
+        modalContent.style.borderRadius = '8px';
+        modalContent.style.boxShadow = '0 2px 4px rgba(0, 0, 0, 0.1)';
+        modal.appendChild(modalContent);
 
-        modal.appendChild(iframe);
+        var closeButton = document.createElement('button');
+        closeButton.innerText = 'Close';
+        closeButton.style.position = 'absolute';
+        closeButton.style.top = '10px';
+        closeButton.style.right = '10px';
+        closeButton.style.border = 'none';
+        closeButton.style.backgroundColor = 'transparent';
+        closeButton.style.cursor = 'pointer';
+        closeButton.addEventListener('click', function() {
+            modal.parentNode.removeChild(modal);
+        });
+        modal.appendChild(closeButton);
 
-        // Create the background
-        var background = document.createElement('div');
-        background.style.position = 'absolute';
-        background.style.top = '0%';
-        background.style.left = '10%';
-        background.style.width = '80%';
-        background.style.height = '10%';
-        background.style.backgroundColor = '#161616';
+        var promptTitle = document.createElement('h2');
+        promptTitle.innerText = 'Help Create Prompts';
+        modalContent.appendChild(promptTitle);
 
-        modal.appendChild(background);
-
-        // Create the legend
-        var legend = document.createElement('div');
-        legend.innerText = 'If the content is blocked, click the link to open it in new tab:';
-        legend.style.marginRight = '5px';
-        legend.style.color = '#cbcbcb';
-
-        // Create the link with the site name
-        var link = document.createElement('a');
-        link.href = 'https://www.feedough.com/stable-diffusion-prompt-generator/';
-        link.target = '_blank';
-        link.innerText = 'Feedough Prompt Generator';
-        link.style.background = 'linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%)';
-        link.style.background = '-moz-linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%)';
-        link.style.backgroundClip = 'text';
-        link.style.color = 'transparent';
-
-        // Create a container to hold the legend and the link on the same line
-        var container = document.createElement('div');
-        container.style.display = 'flex';
-        container.style.alignItems = 'center';
-        container.style.position = 'absolute';
-        container.style.left = '15%';
-        container.style.top = '5%';
-
-        // Add the link and legend to the container
-        container.appendChild(legend);
-        container.appendChild(link);
-
-        modal.appendChild(container);
+        var promptDescription = document.createElement('p');
+        promptDescription.innerText = 'This feature is currently under development. Stay tuned for updates!';
+        modalContent.appendChild(promptDescription);
 
         document.body.appendChild(modal);
-
-        // Close modal when clicked outside
-        document.addEventListener('click', function(event) {
-            var target = event.target;
-            // Check if the click target is not inside the modal
-            if (target !== modal && !modal.contains(target) && target !== showModalCheckbox && !showModalCheckbox.contains(target)) {
-                // Close the modal
-                modal.parentNode.removeChild(modal);
-                // Uncheck the checkbox
-                showModalCheckbox.checked = false;
-            }
-        });
     }
 })();
