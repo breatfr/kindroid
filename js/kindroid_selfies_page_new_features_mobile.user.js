@@ -22,7 +22,7 @@
         // User interface
         var uiContainer = document.createElement('div');
         uiContainer.style.position = 'fixed';
-        uiContainer.style.left = '15%';
+        uiContainer.style.left = '10%';
         uiContainer.style.color = '#cbcbcb';
         uiContainer.style.zIndex = '9999';
 
