@@ -21,7 +21,6 @@
     if (window.location.href.includes("/selfies")) {
         // User interface
         var uiContainer = document.createElement('div');
-        uiContainer.id = 'selfiesui';
         uiContainer.style.position = 'fixed';
         uiContainer.style.top = '5px';
         uiContainer.style.left = '8%';
