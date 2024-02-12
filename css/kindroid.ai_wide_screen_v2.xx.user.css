@@ -1,0 +1,701 @@
+/* === Credits ===
+Created by      BreatFR
+Creatied on     2023/08/27
+Version         2.19
+@description    Put Kindroid on whole page for screen with width 990px and more.
+@namespace      userstyles.world/user/breat
+Changelog       https://www.reddit.com/r/KindroidAI/comments/164darb/make_kindroid_love_wide_screens/
+Changelog       https://discord.com/channels/1116127115574779905/1195415564101886102
+Help            https://discord.com/channels/1116127115574779905/1145809654044176485
+@license        GNU GPL v3
+Website         https://breat.fr
+facebook        https://www.facebook.com/breatfroff
+mastodon        https://mastodon.social/@breat_fr
+telegram        https://t.me/+5ZLC2qntf6xmYmI0
+vk              https://vk.com/breatfroff
+X (twitter)     https://x.com/breatfroff
+=== Credits === */
+
+/* Hide scrollbars */
+.css-1lbk8wf,
+:root ::-webkit-scrollbar {
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+    width: 0px;
+}    
+::-webkit-scrollbar {
+    display: none;
+    width: 0px;
+}
+
+/* Loading bar */
+#nprogress .bar {
+    background: linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
+}
+
+/* ========================================================================
+   Header and menu
+======================================================================== */
+/* Header background color */
+.css-x3odei {
+    background-color: var(--chakra-colors-primaryBlack) !important;
+}
+
+/* Put Log out in orange */
+.css-j7qwjs > div:nth-child(10) > p {
+    color: var(--chakra-colors-orange);
+}
+
+/* Put Biling in yellow */
+.css-1fu7n7b > div > p {
+    color: var(--chakra-colors-yellow-400);
+}
+
+/* Put FAQs and Terms & Privacy in blue */
+.css-j7qwjs > div:nth-child(8) > p,
+.css-j7qwjs > div:nth-child(9) > p {
+    color: var(--chakra-colors-blue-400);
+}
+
+/* Put email and timer in white */
+.css-1dodils,
+.css-1g7lxfg {
+    color: var(--chakra-colors-secondaryWhite);
+    margin-top: 10px;
+}
+
+/* Put Upload Photo text in custom avatar in white to be more visible */
+.css-1jcj2pk {
+    color: white;
+}
+
+/* Billing error box */
+.css-dixmdy {
+    background-color: #161616;
+    border: 1px solid #6C6C6C;
+    border-radius: 10px;
+    color: var(--chakra-colors-secondaryWhite);
+}
+
+/* ========================================================================
+   Chat page
+======================================================================== */
+/* Add border to textarea when focus */
+.css-ymugf1:focus {
+    border: 0px;
+    border-radius: 32px;
+    box-shadow: 0 0 0 1px rgb(139, 109, 255), 0 0 0 2px rgb(254, 132, 132);
+}
+/* Remove the resize icon on textarea on chat page */
+.css-ymugf1:not(:focus),
+.css-ymugf1:focus {
+    resize: none;
+}
+    
+/* Hide voice counter and reduce button on avatar */
+/* Text button */
+.css-2bir3m,
+/* Voice button */
+.css-y0ybx5,
+/* Reduce button */
+.css-fk8dne {
+    display: none;
+}
+
+/* Hide names in bubbles to save place */
+.css-ppua9z,
+.css-19hb772 {
+    display: none;
+}
+.css-127w3cl {
+    margin-left: 0px;
+}
+
+/* Put our name and text aligned on the right */
+.css-19hb772,
+.css-13683nx {
+    align-items: end;
+    text-align: right;
+}
+
+/* Modification of rounded corners for our bubbles */
+.css-1j9xj7u {
+    border-radius: 20px 8px 20px 20px;
+}
+
+/* Modification of rounded corners for AI bubbles */
+.css-teti0a,
+.css-1ulhpcc,
+.css-1tg26k8,
+.css-1t9c0mz {
+    border-radius: 8px 20px 20px 20px;
+}
+
+/* Bigger text in bubbles and textarea */
+.css-6obdga,
+.css-1gi22a8,
+.css-w2nlit {
+    font-size: 20px;
+}
+
+/* Put a not allowed cursor on spinner, microphone icon, play button, picture generating when needed */
+.chakra-spinner,
+.css-zkr1dl,
+.css-jy2vee,
+.css-kjafn5 [disabled] + button {
+    cursor: not-allowed;
+}
+
+/* Put Regenerate and Journal buttons inline */
+.css-1lvpjll > div.chatScrollParent.css-735j5d > div.css-1lbk8wf > div:nth-child(20) > div.css-1jby15f {
+    bottom: 100px;
+    right: 10px;
+    position: fixed;
+}
+.css-100dd8p {
+    gap: 120px !important;
+    flex-direction: row-reverse !important;
+}
+
+/* Heart background */
+.css-1lvpjll {
+    background: url(https://i.ibb.co/fYQkYyc/heart-pattern.png) var(--chakra-colors-secondaryBlack) fixed 100%;
+}
+
+/* Initial letter */
+.css-70qvj9 {
+    height: 0px;
+}
+.css-yhhl9h > .css-teti0a > .css-70qvj9 > .css-127w3cl,
+.css-yhhl9h > .css-teti0a > .css-70qvj9 > .css-1yzcrgj {
+    height: 36px;
+    width: 36px;
+    margin-left: -70px;
+}
+.css-yhhl9h {
+    margin-left: 50px;
+}
+.css-qfa1mb {
+    display: none;
+}
+
+/* Put Regenerate and Journal buttons on left side 
+.css-100dd8p {
+    bottom: 80px;
+    flex-direction: row-reverse !important;
+    gap: 80px;
+    right: 73%;
+    position: absolute;
+} */
+
+/* ========================================================================
+   Selfie page
+======================================================================== */
+/* Wide selfie page */   
+.css-1ivym2n,
+.css-10ytma2 {
+    max-width: 100%;
+}
+.css-13da5b {
+    display: none;
+}
+.css-1dq4ssc {
+    padding-bottom: 30px;
+}
+.css-1dq4ssc,
+.css-2cd1of {
+    gap: 20px;
+    justify-content: center;
+}
+.css-1fltgj7 {
+    padding: 0px 40px;
+}
+.css-fskrnz {
+    width: 84vh;
+}
+.css-3vu8ng,
+.css-kuf6b {
+    height: auto;
+    width: 290px;
+}
+.css-j8mh8q,
+.css-mtk9ei {
+    color: var(--chakra-colors-secondaryWhite);
+    font-size: 18px;
+}
+.css-105olw3 {
+    max-width: 96%;
+}
+/* Request selfie button */
+.css-1ygmn3g {
+    max-width: 1060px;
+}
+
+/* Load More button */
+.css-dvxtzn,
+.css-1q03dzc {    
+    background: linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
+    border-radius: 56px;
+    height: fit-content;
+    padding-bottom: var(--chakra-space-2);
+    padding-top: var(--chakra-space-2);
+    width: fit-content;
+}
+.css-1q03dzc:hover {
+    text-decoration: none;
+}
+
+.css-1q03dzc,
+.css-1mepe2v {
+    color: var(--chakra-colors-pureWhite);    
+    font-size: 18px;
+}
+
+/* Image border on hover */
+div.css-3vu8ng > .css-1regj17 {
+    transition: 0.2s linear;
+}
+div.css-3vu8ng > .css-1regj17:hover {
+    border: 5px solid rgb(254, 132, 132);
+    border-radius: 16px;
+}
+
+/* Put delete image button in red */
+.css-jh1suc,
+.css-15g5rpl,
+.css-15g5rpl svg path {
+    color: var(--chakra-colors-red);
+}
+
+/* ========================================================================
+   Voice call page
+======================================================================== */
+/* Add a border on the modal */
+#chakra-modal-\:r12k\: {
+    border: 1px solid #6C6C6C;
+}
+
+/* Bigger text */
+.css-14mmx5r,
+.css-1vqt2yh {
+    font-size: 16px;    
+}
+
+/* ========================================================================
+   For 900p wide screen and more
+======================================================================== */
+@media screen and (min-width: 900px) {
+/* ========================================================================
+   Menu
+======================================================================== */
+    /* Large menu */
+    .css-1raxatq,
+    .css-xhpjzu {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    /* Email box */
+    .css-1dodils {
+        align-self: center;
+        gap: 0px;
+        margin-top: 5% !important;
+        padding-right: 15px;
+    }
+
+    /* Subcriber icon */
+    .css-1dodils > img {
+        height: auto !important;
+        width: 44px;
+    }
+
+    /* Email */
+    .css-gnnge1 {
+        font-size: 24px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+    }
+
+    /* Menu */
+    .css-1raxatq > div > div > div > div.css-j7qwjs {
+        display: grid;
+        align-content: center;
+        gap: 50px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        margin-top: 10%;
+        justify-content: space-between !important
+    }
+
+    /* Subscribe button */
+    .css-1fu7n7b,
+    .css-o32bv9 {
+        order: 2;
+    }
+
+    /* Log out button */
+    .css-j7qwjs > div:nth-child(10) {
+        position: absolute;
+        right: 5%;
+        top: 70%;
+    }
+
+    /* Reset Kindroid button */
+    .css-16qb61r {
+        position: absolute;
+        right: 4%;
+        top: 80%;
+    }
+
+    /* Bigger menu text */
+    .css-dghbxk,
+    .css-1jbciej,
+    .css-3sp0ue {
+        font-size: 30px
+    }
+    
+    /* Move and fix the Save button in all menu page */
+    .css-cbfcqn,
+    .css-1raxatq > div.css-1xh8vw6 > button,
+    .css-1raxatq > div.css-ouwkos > button {
+        bottom: 50px;
+        margin: 39% 0px 0px 83%;
+        position: fixed;
+    }
+
+    /* Backstory and Key memories */
+    .css-1xh8vw6 > .css-188uayk > .css-j7qwjs > .css-1kxonj9 > .css-126ipcs > textarea.css-1y068e {
+        height: 600px !important;
+    }
+    #accordion-panel-\:r6i\: > div.css-mifb2i > div.css-1uyzhnb > p.chakra-text.css-7wdzg1,
+    #accordion-panel-\:r6f\: > p.chakra-text.css-7wdzg1 {
+        min-width: 100% !important;
+    }
+
+    /* Voice */
+    .css-1raxatq > div.css-ouwkos > div > p.chakra-text.css-7wdzg1 {
+        max-width: 100% !important;
+    }
+
+    /* Split menu for avatars */
+    .css-7nleni,
+    .css-1jk1ov6 {
+        max-width: 50% !important;
+    }
+    .css-1yxzzu5 > div > p {
+        display: block;
+        margin-left: 47%;
+        position: absolute;
+        top: 10px;
+        max-width: 50% !important;
+    }
+    .css-n4vub9 {
+        margin-left: 47%;
+        position: absolute;
+        top: 8%;
+        max-width: 45% !important;
+    }
+    .css-ue4bfp {
+        display: block;
+        margin-left: 95% !important;
+        position: absolute;
+        max-width: 45% !important;
+    }
+    .css-mifb2i {
+        width: 50%;
+    }
+
+    /* 1st avatar size */
+    .css-1k5gc4r,
+    .css-dfpqc0 {
+        height: auto;
+        margin-left: 25%;
+        width: 50%;
+    }
+
+    /* 2nd avatar size */
+    .css-1mvfzwi {
+        height: auto;
+        margin-left: 5%;
+        position: relative;
+        width: 25%;
+    }
+
+    /* Bigger text and ligne height in avatar window */
+    #__next > ion-app > div > div > div > div.css-1raxatq > div.css-1y4vgns > div.css-188uayk > div.chakra-stack.css-1jk1ov6 > div.chakra-stack.css-1yxzzu5 > form.css-0 > p,
+    #accordion-panel-\:r7m\: > div.css-mifb2i > div.css-1uyzhnb > p.chakra-text.css-7wdzg1,
+    #__next > ion-app > div > div > div > div.css-1raxatq > div.css-1y4vgns > div.css-188uayk > div.chakra-stack.css-1jk1ov6 > div.chakra-stack.css-1yxzzu5 > div > p,
+    #__next > ion-app > div > div > div > div.css-1raxatq > div.css-1y4vgns > div.css-188uayk > div.chakra-stack.css-1jk1ov6 > div.chakra-stack.css-1yxzzu5 > form.css-ue4bfp > div.chakra-form-control.css-1kxonj9 > p:nth-child(1),
+    .css-1fm8jup > p.chakra-text.css-7wdzg1 {
+        font-size: 20px;
+        line-height: 25px;
+        max-width: 100% !important;
+    }
+    .chakra-accordion.css-0 > .css-tf0j9o > .chakra-collapse > .css-1fm8jup > p.css-7wdzg1 {
+        font-size: 20px;
+        line-height: 25px;
+        width: 50% !important;        
+    }
+    .css-mifb2i > div.css-1uyzhnb > p.chakra-text.css-7wdzg1 {
+        font-size: 20px;
+        line-height: 25px;
+        max-width: 100% !important;    
+    }
+
+    /* Hide arrows */
+    .css-g7h3az {
+        display: none;
+    }
+
+    /* Uncollapse "Advanced: secondary avatar" and "Advanced: custom avatar fidelity" */
+    .css-1y4vgns > div.chakra-accordion.css-0 > div > div,
+    .css-1v3caum > div > div {
+        display: block !important;
+        height: auto !important;
+        opacity: 1 !important;
+    }
+
+    /* Move and fix the Save button in avatar menu page */
+    .css-1y4vgns > button {
+        margin: 39% 0px 0px 83%;
+        position: fixed;
+    }
+
+    /* FAQs and Terms & Privacy pages */
+    .css-1udr2et,
+    .css-1pgxq2r {
+        max-width: 100%;
+    }
+
+    /* Remove the space between the header and the chat*/
+    .css-g2goff {
+        padding: 0px;
+    }
+/* ========================================================================
+   Chat page
+======================================================================== */
+    /* Resize header */
+    .css-x3odei {
+        background-color: var(--chakra-colors-secondaryBlack) !important;
+        max-width: 100%;
+        padding: 0px 10px 0px 0.3%;
+    }
+    
+    /* Bigger avatar */
+    .css-13tht1l,
+    .css-g2goff {
+        border-radius: 20px;
+        height: 512px;
+        left: 0.6%;
+        max-width: 512px;
+        padding: 0px;
+        position: absolute;
+        top: 13vh;
+        transition: 0.3s linear;
+        width: 512px;
+    }
+    /* Hover zoom on avatar */
+    .css-13tht1l:hover {
+        border-radius: 0px;
+        height: 933px;
+        left: -12px;
+        max-width: 933px;
+        top: calc(0px - 13vh);
+        width: 933px;
+        z-index: 9999;
+    }
+
+    /* Put chat and textarea more on right*/
+    .css-735j5d{
+        padding: 0px 0px 20px 5px;
+        width: 100%;
+    }
+    .css-1lvpjll {
+        height: 100%;
+        top: 0px;
+    }
+    
+    .css-1lbk8wf {
+        padding: 0px 10px 0px 540px;
+        width: 100%;
+    }
+    .css-g9r8dt,
+    .css-is4lk1 {
+        align-self: start;
+        bottom: 0px;
+        margin-left: 540px;
+        width: calc(100% - 555px);
+    }    
+    .css-b9bzmp {
+        padding: 0px 10px 0px 28%;
+        width: 100%;
+    }
+    
+    /* Dark system bubbles OLD
+    .css-do4s31,
+    .css-94x4at{
+        background-color: #161616;
+        border-color: #6C6C6C;
+        color: var(--chakra-colors-secondaryWhite);
+    } */
+
+    /* Dark system bubbles */
+    .css-1y2ps2x {
+        display: none;
+    }
+    .css-do4s31 {
+        background-color: transparent;
+        border: none;    
+        color: var(--chakra-colors-secondaryWhite);
+        display: grid;
+        font-size: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: -10% !important;
+        margin-top: 144%;
+        --menu-shadow: transparent !important;
+        opacity: 100% !important;
+        visibility: visible !important;        
+    }
+    .css-do4s31 button:hover {
+        background: -webkit-linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .css-94x4at {
+        background-color: transparent;
+    }
+    
+/* ========================================================================
+   Selfie page
+======================================================================== */    
+    /* Put Request image button at the top */
+    .css-65tag0 {
+        margin-bottom: 39%;
+        position: fixed;
+        z-index: 9999;
+    }
+}
+
+/* ===================================================================================================================================
+   For height 1080px and more
+=================================================================================================================================== */
+@media screen and (min-height: 1080px) {
+    /* Hover zoom on avatar */
+    .css-oies6c:hover,
+    .css-v2kfba:hover,
+    .css-13tht1l:hover {
+        border-radius: 0px;
+        height: 1080px;
+        left: -10px;
+        max-height: 1080px;
+        max-width: 1080px;
+        width: 1080px;
+        z-index: 9999;
+    }
+    
+    /* Dark system bubbles OLD
+    .css-do4s31,
+    .css-94x4at{
+        background-color: #161616;
+        border-color: #6C6C6C;
+        color: var(--chakra-colors-secondaryWhite);
+    } */
+
+    /* Dark system bubbles */
+    .css-1y2ps2x {
+        display: none;
+    }    
+    .css-do4s31 {
+        background-color: transparent;
+        border: none;    
+        color: var(--chakra-colors-secondaryWhite);
+        display: grid;
+        font-size: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: -10% !important;
+        margin-top: 170%;
+        --menu-shadow: transparent !important;
+        opacity: 100% !important;
+        visibility: visible !important
+    }
+    .css-94x4at {
+        background-color: transparent;
+    }
+}
+
+/* ===================================================================================================================================
+   For height 1080px
+=================================================================================================================================== */
+@media screen and (height: 1080px) {
+    /* Hover zoom on avatar */
+    .css-v2kfba:hover,
+    .css-13tht1l:hover {
+        border-radius: 0px;
+        height: 1080px;
+        left: -10px;
+        max-height: 1080px;
+        max-width: 1080px;
+        width: 1080px;
+        z-index: 9999;
+    }
+    
+    /* Put Request image button at the top */
+    .css-65tag0 {
+        margin-bottom: 46.8%;
+        position: fixed;
+        z-index: 9999;
+    }
+}
+
+/* ===================================================================================================================================
+   For height 1440px
+=================================================================================================================================== */
+@media screen and (height: 1440px) {
+    /* Dark system bubbles */
+    .css-1y2ps2x {
+        display: none;
+    }
+    .css-do4s31 {
+        background-color: transparent;
+        border: none;    
+        color: var(--chakra-colors-secondaryWhite);
+        display: grid;
+        font-size: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: -10% !important;
+        margin-top: 325%;
+        --menu-shadow: transparent !important;
+        opacity: 100% !important;
+        visibility: visible !important
+    }
+    .css-do4s31 button:hover {
+        background: -webkit-linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .css-94x4at {
+        background-color: transparent;
+    }
+}
+
+/* ===================================================================================================================================
+   For height 2160px
+=================================================================================================================================== */
+@media screen and (height: 2160px) {    
+    /* Put textarea more on right*/    
+    .css-b9bzmp {
+        padding: 0px 10px 0px 32%;
+        width: 100%;
+    }
+}
+
+/* ===================================================================================================================================
+   For height 4K
+=================================================================================================================================== */
+@media screen and (min-height: 1760px) {
+    /* Put Request image button at the top */
+    .css-65tag0 {
+        margin-bottom: 39%;
+        position: fixed;
+        z-index: 9999;
+    }
+}
