@@ -153,7 +153,7 @@ https://discord.com/channels/1116127115574779905/1145809654044176485
 	</ul>
 <h3>selfies page</h3>
 	<ul>
-		<li>add a checkbox to open a prompt generator (pc version only)</li>
+		<li>add a checkbox to open a prompt generator</li>
 		<li>add a checkbox to see all images</li>
 		<li>add a button to download all images (use it after enable see all images)</li>
 	</ul>
