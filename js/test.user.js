@@ -21,7 +21,7 @@
         // User interface
         var uiContainer = document.createElement('div');
         uiContainer.style.position = 'fixed';
-        uiContainer.style.left = '20%';
+        uiContainer.style.left = '15%';
         uiContainer.style.color = '#cbcbcb';
         uiContainer.style.zIndex = '9999';
 
@@ -39,7 +39,7 @@
         row1.appendChild(cell1);
 
         var autoCreateModalLabel = document.createElement('label');
-        autoCreateModalLabel.innerHTML = '<abbr title="Help Create Prompts">HCP</abbr>';
+        autoCreateModalLabel.innerHTML = '<abbr title="Help Create Prompts">HCP </abbr>';
         autoCreateModalLabel.setAttribute('for', 'showModalCheckbox');
         autoCreateModalLabel.style.cursor = 'pointer'; // Make the label clickable
 
@@ -222,42 +222,18 @@
         var modal = document.createElement('div');
         modal.id = 'promptModal';
         modal.style.position = 'fixed';
-        modal.style.top = '0px';
-        modal.style.left = '25%';
-        modal.style.width = '100%';
-        modal.style.maxWidth = '910px';
-        modal.style.height = '100%';
+        modal.style.top = '20%';
+        modal.style.left = '10%';
+        modal.style.width = '80%';
+        modal.style.height = 'auto';
         modal.style.zIndex = '9998';
-
-        // Create the iframe
-        var iframe = document.createElement('iframe');
-        iframe.src = 'https://www.feedough.com/stable-diffusion-prompt-generator/';
-        iframe.style.width = '80%';
-        iframe.style.height = '80%';
-        iframe.style.position = 'absolute';
-        iframe.style.top = '10%';
-        iframe.style.left = '10%';
-        iframe.style.borderRadius = '10px';
-        iframe.style.border = '1px solid #cbcbcb';
-
-        modal.appendChild(iframe);
-
-        // Create the background
-        var background = document.createElement('div');
-        background.style.position = 'absolute';
-        background.style.top = '0%';
-        background.style.left = '10%';
-        background.style.width = '80%';
-        background.style.height = '10%';
-        background.style.backgroundColor = '#161616';
-
-        modal.appendChild(background);
 
         // Create the legend
         var legend = document.createElement('div');
         legend.innerText = 'If the content is blocked, click the link to open it in new tab:';
         legend.style.marginRight = '5px';
         legend.style.color = '#cbcbcb';
+legend.style.background = '#161616';
 
         // Create the link with the site name
         var link = document.createElement('a');
@@ -276,6 +252,10 @@
         container.style.position = 'absolute';
         container.style.left = '15%';
         container.style.top = '5%';
+container.style.background = '#161616';
+container.style.padding = '10px';
+container.style.borderRadius = '10px';
+container.style.border = '1px solid #cbcbcb';
 
         // Add the link and legend to the container
         container.appendChild(legend);
