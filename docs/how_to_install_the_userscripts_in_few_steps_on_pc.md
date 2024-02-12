@@ -21,11 +21,6 @@
         - many more
 
 2. Go on:
-   - [Kindroid AI: Chat page new features](https://raw.githubusercontent.com/breatfr/kindroid/master/kindroid.ai_chat_page_new_features_v1.xx.user.js) page and click on `Install` on left.
-   - [Kindroid AI: Selfies page new features](https://raw.githubusercontent.com/breatfr/kindroid/master/kindroid.ai_selfies_page_new_features_v1.xx.user.js) page and click on `Install` on left.
+   -  [Kindroid: New features bundle](https://raw.githubusercontent.com/breatfr/Kindroid/main/js/kindroid_new_features_bundle.user.js)
 
-3. to update script juste click on the corresponding button here
-![Preview](https://raw.githubusercontent.com/breatfr/kindroid/main/docs/update_scripts.jpg)
-after any script update you'll need press `F5` or close/reopen kindroid website to load the new script version.
-
-4. Enjoy :)
+3. Enjoy :)
