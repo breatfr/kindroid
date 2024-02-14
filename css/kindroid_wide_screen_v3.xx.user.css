@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name            Kindroid AI: Wide screen + customizations v3.xx
 @description     Put Kindroid on whole page for screen with width 900px and more and add customizations features.
-@version         3.14.1
+@version         3.15
 @author          BreatFR (https://breat.fr)
 @namespace       https://github.com/breatfr
 @homepageURL     https://github.com/breatfr/kindroid
@@ -82,7 +82,7 @@ X (twitter)     https://x.com/breatfroff
 =================================================================================================================================== */
     /* Versions */
     :root {
-        --themeversion: 'Theme v3.14.1';
+        --themeversion: 'Theme v3.15';
         --chatversionpc: 'Chat script PC v1.06';
         --chatversionmobile: 'Chat script mobile v1.07';
         --selfiesversionpc: 'Selfies script PC v1.03';
@@ -374,80 +374,99 @@ X (twitter)     https://x.com/breatfroff
     
     /* Actions texts */
     if (actionsstyle=="actionsdefault") {
-        p.css-6obdga > span {
+        p.css-6obdga > span,
+        p.css-1gi22a8 > span {
             color: rgb(168, 168, 168) !important;
             font-style: italic !important;
         }
     }
     if (actionsstyle=="asterisks") {
         p.css-6obdga > span:before,
-        p.css-6obdga > span:after{
+        p.css-6obdga > span:after,
+        p.css-1gi22a8 > span:before,
+        p.css-1gi22a8 > span:after {
             content: "*" !important;
         }
-        p.css-6obdga > span {
+        p.css-6obdga > span,
+        p.css-1gi22a8 > span  {
             font-weight: bold !important;
         }
     }
     if (actionsstyle=="asterisksbold") {
         p.css-6obdga > span:before,
-        p.css-6obdga > span:after{
+        p.css-6obdga > span:after,
+        p.css-1gi22a8 > span:before,
+        p.css-1gi22a8 > span:after {
             content: "*" !important;
         }
-        p.css-6obdga > span {
+        p.css-6obdga > span,
+        p.css-1gi22a8 > span  {
             font-weight: bold !important;
         }
     }
     if (actionsstyle=="asterisksboldnoitalic") {
         p.css-6obdga > span:before,
-        p.css-6obdga > span:after{
+        p.css-6obdga > span:after,
+        p.css-1gi22a8 > span:before,
+        p.css-1gi22a8 > span:after {
             content: "*" !important;
         }
-        p.css-6obdga > span {
+        p.css-6obdga > span,
+        p.css-1gi22a8 > span {
             font-style: normal !important;
             font-weight: bold !important;
         }
     }    
     if (actionsstyle=="asterisksboldnoitalicsamecolor") {
         p.css-6obdga > span:before,
-        p.css-6obdga > span:after{
+        p.css-6obdga > span:after,
+        p.css-1gi22a8 > span:before,
+        p.css-1gi22a8 > span:after {
             content: "*" !important;
         }
-        p.css-6obdga > span {
+        p.css-6obdga > span,
+        p.css-1gi22a8 > span  {
             color: var(--chakra-colors-secondaryWhite) !important;
             font-style: normal !important;
             font-weight: bold !important;
         }
     }
     if (actionsstyle=="bold") {
-        p.css-6obdga > span {
+        p.css-6obdga > span,
+        p.css-1gi22a8 > span {
             font-weight: bold !important;
         }
     }
     if (actionsstyle=="boldnoitalic") {
-        p.css-6obdga > span {
+        p.css-6obdga > span,
+        p.css-1gi22a8 > span {
             font-style: normal !important;
             font-weight: bold !important;
         }
     }
     if (actionsstyle=="boldnoitalicsamecolor") {
-        p.css-6obdga > span {
+        p.css-6obdga > span,
+        p.css-1gi22a8 > span {
             color: var(--chakra-colors-secondaryWhite) !important;
             font-style: normal !important;
             font-weight: bold !important;
         }
     }
     if (actionsstyle=="noitalic") {
-        p.css-6obdga > span {
+        p.css-6obdga > span,
+        p.css-1gi22a8 > span {
             font-style: normal !important;
         }
     }
     if (actionsstyle=="samecolor") {
-        p.css-6obdga > span {
+        p.css-6obdga > span,
+        p.css-1gi22a8 > span {
             color: var(--chakra-colors-secondaryWhite) !important;
         }
     }
     if actionscolor {
-        p.css-6obdga > span {
+        p.css-6obdga > span,
+        p.css-1gi22a8 > span {
             color: actionscolor !important;
         }
     }
