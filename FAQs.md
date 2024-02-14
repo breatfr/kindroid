@@ -28,7 +28,7 @@
   <summary><h3>I installed the theme but I can't see kin's avatar.</h3></summary>
   <ul>
     <li>Disable my theme</li>
-    <li>Click on <img src="https://raw.githubusercontent.com/breatfr/kindroid/main/docs/arrow.svg" alt="arrow"/></li>
+    <li>Click on <img src="https://raw.githubusercontent.com/breatfr/kindroid/main/docs/arrow.jpg" alt="arrow"/></li>
     <li>Enable my theme</li>
     <li>If still don't work, so contact me (look: <a href="https://github.com/breatfr/Kindroid/blob/main/FAQs.md#i-cant-find-my-problem-in-the-faqs">I can't find my problem in the FAQs</a>).</li>
   </ul>
