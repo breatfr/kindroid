@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name            Kindroid AI: Wide screen + customizations v3.xx
 @description     Put Kindroid on whole page for screen with width 900px and more and add customizations features.
-@version         3.15
+@version         3.16
 @author          BreatFR (https://breat.fr)
 @namespace       https://github.com/breatfr
 @homepageURL     https://github.com/breatfr/kindroid
@@ -82,7 +82,7 @@ X (twitter)     https://x.com/breatfroff
 =================================================================================================================================== */
     /* Versions */
     :root {
-        --themeversion: 'Theme v3.15';
+        --themeversion: 'Theme v3.16';
         --chatversionpc: 'Chat script PC v1.06';
         --chatversionmobile: 'Chat script mobile v1.07';
         --selfiesversionpc: 'Selfies script PC v1.03';
@@ -1095,7 +1095,7 @@ X (twitter)     https://x.com/breatfroff
                 font-size: 20px;
                 grid-template-columns: 1fr 1fr 1fr;
                 margin-left: -10% !important;
-                margin-top: 143%;
+                margin-top: 141%;
                 --menu-shadow: transparent !important;
                 opacity: 100% !important;
                 visibility: visible !important;        
@@ -1113,11 +1113,6 @@ X (twitter)     https://x.com/breatfroff
             .css-94x4at {
                 background-color: transparent;
             }
-            .css-b9bzmp,
-            .css-14dkl09 {
-                right: 10px;
-                max-width: 170%;
-            }
         }
 
         @media screen and (min-height: 1080px) {
@@ -1132,7 +1127,7 @@ X (twitter)     https://x.com/breatfroff
                 font-size: 20px;
                 grid-template-columns: 1fr 1fr 1fr;
                 margin-left: -10% !important;
-                margin-top: 170%;
+                margin-top: 168%;
                 --menu-shadow: transparent !important;
                 opacity: 100% !important;
                 visibility: visible !important;
@@ -1149,13 +1144,6 @@ X (twitter)     https://x.com/breatfroff
             }
             .css-94x4at {
                 background-color: transparent;
-            }
-            .css-b9bzmp,
-            .css-14dkl09 {
-                bottom: 20px;
-                position: fixed;
-                right: 10px;
-                max-width: 72%;
             }
         }
         
@@ -1193,13 +1181,13 @@ X (twitter)     https://x.com/breatfroff
             .css-94x4at {
                 background-color: transparent;
             }
-            .css-b9bzmp,
+            /* .css-b9bzmp,
             .css-14dkl09 {
                 bottom: 20px;
                 position: fixed;
                 right: 10px;
                 max-width: 78%;
-            }
+            } */
         }
 
         @media screen and (min-height: 1329px) {
@@ -1235,13 +1223,13 @@ X (twitter)     https://x.com/breatfroff
             .css-94x4at {
                 background-color: transparent;
             }
-            .css-b9bzmp,
+            /* .css-b9bzmp,
             .css-14dkl09 {
                 bottom: 20px;
                 position: fixed;
                 right: 10px;
                 max-width: 78%;
-            }
+            } */
         }
 
         @media screen and (height: 1440px) {
@@ -1274,13 +1262,13 @@ X (twitter)     https://x.com/breatfroff
             .css-94x4at {
                 background-color: transparent;
             }
-            .css-b9bzmp,
+            /* .css-b9bzmp,
             .css-14dkl09 {
                 bottom: 20px;
                 position: fixed;
                 right: 10px;
                 max-width: 72%;
-            }
+            } */
         }
     }
     if (systembubblesstyle=="systembubblesdark") {
