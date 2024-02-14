@@ -20,6 +20,12 @@
 </details>
 
 <details>
+  <summary><h3>How can I access theme settings?</h3></summary>
+  <p>Just click here:</p>
+  <img src="https://raw.githubusercontent.com/breatfr/kindroid/main/docs/theme_settings.jpg" alt="theme settings">
+</details>
+
+<details>
   <summary><h3>Can I edit code of the theme?</h3></summary>
   <p>Yes, but keep in mind if you do it you won't get my updates anymore, so I highly recommand you to create new one with your modifications.</p>
 </details>
