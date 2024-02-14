@@ -36,8 +36,7 @@
 
 <details>
   <summary><h3>I don't like install from github, are the theme and scripts available outside github?</h3></summary>
-  Sure.
-  Both are available too on <a href="https://gitlab.com/breatfr/Kindroid" target="_blank">gitlab</a>.
+  Sure. Both are available too on <a href="https://gitlab.com/breatfr/Kindroid" target="_blank">gitlab</a> or here:
   <ul>
     <li>Theme
       <ul>
