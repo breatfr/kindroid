@@ -15,7 +15,7 @@ Put [Kindroid](https://kindroid.ai/) on whole page for screens with min width 90
 </table>
 
 ## Changelog
-https://discord.com/channels/1116127115574779905/1195415564101886102
+https://github.com/breatfr/Kindroid/blob/main/CHANGELOG.md or https://discord.com/channels/1116127115574779905/1195415564101886102
 
 ## FAQs
 https://github.com/breatfr/Kindroid/blob/main/FAQs.md
