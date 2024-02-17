@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## Chat page mobile script 1.08 - 2024-02-17
+
+### Removed
+- Remove auto confirm feature
+
+## Chat page script 1.07 - 2024-02-17
+
+### Removed
+- Remove auto confirm feature
+
+## Theme 3.16.1 - 2024-02-17
+
+### Added
+- Update scripts versions at the top of screen
+
 ## Theme 3.16 - 2024-02-14
 
 ### Fixed
