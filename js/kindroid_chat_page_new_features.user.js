@@ -3,7 +3,7 @@
 // @description New features for Kindroid's chat page
 // @namespace   https://kindroid.ai/home
 // @match       https://kindroid.ai/home
-// @version     1.06
+// @version     1.07
 // @updateURL   https://raw.githubusercontent.com/breatfr/Kindroid/main/js/kindroid_chat_page_new_features.user.js
 // @author      BreatFR
 // @copyright   2023, BreatFR (https://breat.fr)
@@ -38,7 +38,7 @@
     }
 
     // Load user preferences from cookies
-    var autoConfirmEnabled = getCookie('autoConfirmEnabled') === 'true';
+    // var autoConfirmEnabled = getCookie('autoConfirmEnabled') === 'true';
     var autoFocusEnabled = getCookie('autoFocusEnabled') === 'true';
 
     if (window.location.href.includes("/home")) {
@@ -49,7 +49,7 @@
         uiContainer.style.right = '9%';
         uiContainer.style.textAlign = 'right';
         uiContainer.style.color = '#cbcbcb';
-    
+
         var autoConfirmCheckbox = document.createElement('input');
         autoConfirmCheckbox.type = 'checkbox';
         autoConfirmCheckbox.checked = autoConfirmEnabled;
@@ -57,11 +57,11 @@
             autoConfirmEnabled = autoConfirmCheckbox.checked;
             setCookie('autoConfirmEnabled', autoConfirmEnabled, 30); // Save user preference in cookie
         });
-    
-        var autoConfirmLabel = document.createElement('label');
-        autoConfirmLabel.innerText = 'Auto Confirm Regenerate ';
-        autoConfirmLabel.appendChild(autoConfirmCheckbox);
-    
+
+        // var autoConfirmLabel = document.createElement('label');
+        // autoConfirmLabel.innerText = 'Auto Confirm Regenerate ';
+        // autoConfirmLabel.appendChild(autoConfirmCheckbox);
+
         var autoFocusCheckbox = document.createElement('input');
         autoFocusCheckbox.type = 'checkbox';
         autoFocusCheckbox.checked = autoFocusEnabled;
@@ -69,45 +69,45 @@
             autoFocusEnabled = autoFocusCheckbox.checked;
             setCookie('autoFocusEnabled', autoFocusEnabled, 30); // Save user preference in cookie
         });
-    
+
         var autoFocusLabel = document.createElement('label');
         autoFocusLabel.innerText = 'Auto Focus Textarea ';
         autoFocusLabel.appendChild(autoFocusCheckbox);
-    
-        uiContainer.appendChild(autoConfirmLabel);
-        uiContainer.appendChild(document.createElement('br'));
+
+        // uiContainer.appendChild(autoConfirmLabel);
+        // uiContainer.appendChild(document.createElement('br'));
         uiContainer.appendChild(autoFocusLabel);
-    
+
         document.body.appendChild(uiContainer);
     } else {
       // Masquer l'interface de la page chat
     }
 
     // Autoconfirm regenerate
-    function autoConfirmRegenerate() {
-        if (!autoConfirmEnabled) {
-            return;
-        }
+    // function autoConfirmRegenerate() {
+    //     if (!autoConfirmEnabled) {
+    //         return;
+    //     }
 
         // Cherchez le bouton "Confirm" dans le message de régénération
-        const confirmButton1 = document.querySelector('.css-mqmatd .chakra-text');
-        const confirmButton2 = document.querySelector('.css-1jbciej'); // Ajout du sélecteur pour le bouton Confirm
+    //     const confirmButton1 = document.querySelector('.css-mqmatd .chakra-text');
+    //     const confirmButton2 = document.querySelector('.css-1jbciej'); // Ajout du sélecteur pour le bouton Confirm
 
         // Vérifiez d'abord si le texte spécifique est présent avant de sélectionner le bouton Confirm
-        const confirmationText = document.querySelector('.css-10813k0');
-        if (confirmationText && confirmationText.textContent.includes("Are you sure you want to regenerate this message?")) {
-            if (confirmButton1 && confirmButton1.textContent === 'Confirm') {
-                confirmButton1.click();
-            } else if (confirmButton2) { // Utilisation du deuxième sélecteur si le premier n'est pas trouvé
-                confirmButton2.click();
-            }
-        }
+    //     const confirmationText = document.querySelector('.css-10813k0');
+    //     if (confirmationText && confirmationText.textContent.includes("Are you sure you want to regenerate this message?")) {
+    //         if (confirmButton1 && confirmButton1.textContent === 'Confirm') {
+    //             confirmButton1.click();
+    //         } else if (confirmButton2) { // Utilisation du deuxième sélecteur si le premier n'est pas trouvé
+    //             confirmButton2.click();
+    //         }
+    //     }
 
         // Vérifiez régulièrement si le bouton réapparaît
-        setTimeout(autoConfirmRegenerate, 500);
-    }
+    //     setTimeout(autoConfirmRegenerate, 500);
+    // }
 
-    autoConfirmRegenerate();
+    // autoConfirmRegenerate();
 
     // Autofocus on textarea
     function focusTextarea() {
