@@ -50,13 +50,13 @@
         uiContainer.style.textAlign = 'right';
         uiContainer.style.color = '#cbcbcb';
 
-        var autoConfirmCheckbox = document.createElement('input');
-        autoConfirmCheckbox.type = 'checkbox';
-        autoConfirmCheckbox.checked = autoConfirmEnabled;
-        autoConfirmCheckbox.addEventListener('change', function() {
-            autoConfirmEnabled = autoConfirmCheckbox.checked;
-            setCookie('autoConfirmEnabled', autoConfirmEnabled, 30); // Save user preference in cookie
-        });
+        // var autoConfirmCheckbox = document.createElement('input');
+        // autoConfirmCheckbox.type = 'checkbox';
+        // autoConfirmCheckbox.checked = autoConfirmEnabled;
+        // autoConfirmCheckbox.addEventListener('change', function() {
+        //     autoConfirmEnabled = autoConfirmCheckbox.checked;
+        //     setCookie('autoConfirmEnabled', autoConfirmEnabled, 30); // Save user preference in cookie
+        // });
 
         // var autoConfirmLabel = document.createElement('label');
         // autoConfirmLabel.innerText = 'Auto Confirm Regenerate ';
