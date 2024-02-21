@@ -147,7 +147,6 @@ https://discord.com/channels/1116127115574779905/1145809654044176485
   <summary><h2>Userscripts features</h2></summary>
 <h3>chat page</h3>
 	<ul>
-		<li>add autoconfirm regenerate</li>
 		<li>add autofocus textarea (chat page only)</li>
 		<li>blur bubbles content and image you send to ai to share in privacy (chat page and mobile script version only)</li>
 	</ul>
