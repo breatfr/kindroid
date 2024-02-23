@@ -2,12 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
-## Chat page mobile script 1.08 - 2024-02-17
+## Chat page script 1.08 & Chat page mobile script 1.09 - 2024-02-23
 
-### Removed
-- Remove auto confirm feature
+### Added
+- Now the textarea isn't required, put back the autoconfirm setting for people who don't want use the suggestion
 
-## Chat page script 1.07 - 2024-02-17
+## Theme 3.16.2 - 2024-02-23
+
+### Added
+- Update scripts versions at the top of screen
+
+## Chat page script 1.07 & Chat page mobile script 1.08 - 2024-02-17
 
 ### Removed
 - Remove auto confirm feature
