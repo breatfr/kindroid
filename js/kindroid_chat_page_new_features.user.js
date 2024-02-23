@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name        Kindroid - Chat page new features
 // @description New features for Kindroid's chat page
-// @namespace   https://kindroid.ai/home
+// @namespace   https://kindroid.ai
 // @match       https://kindroid.ai/home
 // @match       https://kindroid.ai/groupchat/*
-// @version     1.08
+// @version     1.09
 // @updateURL   https://raw.githubusercontent.com/breatfr/Kindroid/main/js/kindroid_chat_page_new_features.user.js
 // @author      BreatFR
 // @copyright   2023, BreatFR (https://breat.fr)
