@@ -47,7 +47,7 @@
         var uiContainer = document.createElement('div');
         uiContainer.style.position = 'fixed';
         uiContainer.style.top = '5px';
-        uiContainer.style.right = '9%';
+        uiContainer.style.right = '10px';
         uiContainer.style.textAlign = 'right';
         uiContainer.style.color = '#cbcbcb';
 
