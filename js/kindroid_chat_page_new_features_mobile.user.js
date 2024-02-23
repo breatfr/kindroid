@@ -3,7 +3,7 @@
 // @description New features for Kindroid's chat page
 // @namespace   https://kindroid.ai/home
 // @match       https://kindroid.ai/home
-// @version     1.08
+// @version     1.09
 // @updateURL   https://raw.githubusercontent.com/breatfr/Kindroid/main/js/kindroid_chat_page_new_features_mobile.user.js
 // @author      BreatFR
 // @copyright   2023, BreatFR (https://breat.fr)
@@ -38,7 +38,7 @@
     }
 
     // Load user preferences from cookies
-    // var autoConfirmEnabled = getCookie('autoConfirmEnabled') === 'true';
+    var autoConfirmEnabled = getCookie('autoConfirmEnabled') === 'true';
     var autoFocusEnabled = getCookie('autoFocusEnabled') === 'true';
     var blurContentEnabled = getCookie('blurContentEnabled') === 'true';
 
@@ -50,17 +50,17 @@
         uiContainer.style.color = '#cbcbcb';
         uiContainer.style.zIndex = '9999';
 
-        // var autoConfirmCheckbox = document.createElement('input');
-        // autoConfirmCheckbox.type = 'checkbox';
-        // autoConfirmCheckbox.checked = autoConfirmEnabled;
-        // autoConfirmCheckbox.addEventListener('change', function() {
-        //     autoConfirmEnabled = autoConfirmCheckbox.checked;
-        //     setCookie('autoConfirmEnabled', autoConfirmEnabled, 30); // Save user preference in cookie
-        // });
+        var autoConfirmCheckbox = document.createElement('input');
+        autoConfirmCheckbox.type = 'checkbox';
+        autoConfirmCheckbox.checked = autoConfirmEnabled;
+        autoConfirmCheckbox.addEventListener('change', function() {
+            autoConfirmEnabled = autoConfirmCheckbox.checked;
+            setCookie('autoConfirmEnabled', autoConfirmEnabled, 30); // Save user preference in cookie
+        });
 
-        // var autoConfirmLabel = document.createElement('label');
-        // autoConfirmLabel.innerHTML = '<abbr title="Auto Confirm Regenerate">ACR </abbr>';
-        // autoConfirmLabel.appendChild(autoConfirmCheckbox);
+        var autoConfirmLabel = document.createElement('label');
+        autoConfirmLabel.innerHTML = '<abbr title="Auto Confirm Regenerate">ACR </abbr>';
+        autoConfirmLabel.appendChild(autoConfirmCheckbox);
 
         var autoFocusCheckbox = document.createElement('input');
         autoFocusCheckbox.type = 'checkbox';
@@ -90,10 +90,10 @@
         var spacer = document.createElement('span');
         spacer.innerHTML = '&nbsp;&nbsp;&nbsp;'; // Adjust as needed
 
-        // uiContainer.appendChild(autoConfirmLabel);
-        // uiContainer.appendChild(spacer); // Add spacer
+        uiContainer.appendChild(autoConfirmLabel);
+        uiContainer.appendChild(spacer); // Add spacer
         uiContainer.appendChild(blurContentLabel); // Move BLUR after ACR
-        // uiContainer.appendChild(document.createElement('br')); // Add line break
+        uiContainer.appendChild(document.createElement('br')); // Add line break
         uiContainer.appendChild(autoFocusLabel);
 
         document.body.appendChild(uiContainer);
@@ -102,30 +102,31 @@
     }
 
     // Autoconfirm regenerate
-    // function autoConfirmRegenerate() {
-    //     if (!autoConfirmEnabled) {
-    //       return;
-    //     }
+    function autoConfirmRegenerate() {
+        if (!autoConfirmEnabled) {
+          return;
+        }
 
         // Cherchez le bouton "Confirm" dans le message de régénération
-    //     const confirmButton1 = document.querySelector('.css-mqmatd .chakra-text');
-    //     const confirmButton2 = document.querySelector('.css-1jbciej'); // Ajout du sélecteur pour le bouton Confirm
+        const confirmButton1 = document.querySelector('.css-mqmatd');
+        const confirmButton2 = document.querySelector('.css-gtytcb');
+        const confirmButton3 = document.querySelector('.css-1jbciej');
 
         // Vérifiez d'abord si le texte spécifique est présent avant de sélectionner le bouton Confirm
-    //     const confirmationText = document.querySelector('.css-10813k0');
-    //     if (confirmationText && confirmationText.textContent.includes("Are you sure you want to regenerate this message?")) {
-    //         if (confirmButton1 && confirmButton1.textContent === 'Confirm') {
-    //             confirmButton1.click();
-    //         } else if (confirmButton2) { // Utilisation du deuxième sélecteur si le premier n'est pas trouvé
-    //             confirmButton2.click();
-    //         }
-    //     }
+        const confirmationText = document.querySelector('.css-6a2m2n');
+        if (confirmationText && confirmationText.textContent.includes("Suggest a revision")) {
+            if (confirmButton1 && confirmButton1.textContent === 'Confirm') {
+                confirmButton1.click();
+            } else if (confirmButton2) { // Utilisation du deuxième sélecteur si le premier n'est pas trouvé
+                confirmButton2.click();
+            }
+        }
 
         // Vérifiez régulièrement si le bouton réapparaît
-    //     setTimeout(autoConfirmRegenerate, 500);
-    // }
+        setTimeout(autoConfirmRegenerate, 500);
+    }
 
-    // autoConfirmRegenerate();
+    autoConfirmRegenerate();
 
     // Autofocus on textarea
     function focusTextarea() {
