@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name            Kindroid: Wide screen + customizations v3.xx
 @description     Put Kindroid on whole page for screen with width 900px and more and add customizations features.
-@version         3.16.2
+@version         3.17
 @author          BreatFR (https://breat.fr)
 @namespace       https://github.com/breatfr
 @homepageURL     https://github.com/breatfr/kindroid
@@ -82,8 +82,8 @@ X (twitter)     https://x.com/breatfroff
 =================================================================================================================================== */
     /* Versions */
     :root {
-        --themeversion: 'Theme v3.16';
-        --chatversionpc: 'Chat script PC v1.08';
+        --themeversion: 'Theme v3.17';
+        --chatversionpc: 'Chat script PC v1.09';
         --chatversionmobile: 'Chat script mobile v1.09';
         --selfiesversionpc: 'Selfies script PC v1.03';
         --selfiesversionmobile: 'Selfies script mobile v1.03';
@@ -276,6 +276,341 @@ X (twitter)     https://x.com/breatfroff
         color: var(--chakra-colors-secondaryWhite);
     }
     
+        @media screen and (min-width: 900px) {
+        /* Large menu */
+        .css-1raxatq,
+        .css-xhpjzu {
+            max-width: 100% !important;
+            width: 100% !important;
+        }
+
+        /* Email box */
+        .css-1dodils {
+            align-self: center;
+            gap: 0px;
+            margin-top: 5% !important;
+            padding-right: 15px;
+        }
+
+        /* Subcriber icon */
+        .css-1dodils > img {
+            height: auto !important;
+            width: 44px;
+        }
+
+        /* Email */
+        .css-gnnge1 {
+            font-size: 24px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+        }
+
+        /* Menu */
+        .css-1raxatq > div > div > div > div.css-j7qwjs {
+            display: grid;
+            align-content: center;
+            gap: 50px;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-top: 10%;
+            justify-content: space-between !important;
+        }
+        .css-yk3l44 {
+            gap: 100px;
+        }
+        .css-yk3l44 > h2 {
+            font-size: 20px;
+        }
+
+        /* Subscribe button */
+        .css-1fu7n7b,
+        .css-o32bv9 {
+            order: 2;
+        }
+
+        /* Bigger menu text */
+        .css-dghbxk,
+        .css-1jbciej,
+        .css-3sp0ue {
+            font-size: 30px;
+        }
+
+        /* Move and fix the Save button in all menu page */
+        .css-cbfcqn,
+        .css-1raxatq > div.css-1xh8vw6 > button,
+        .css-1raxatq > div.css-ouwkos > button,
+        .css-1sfbjfs,
+        .css-1dmnlsh{
+            bottom: 20px;
+            margin: 39% 0px 0px 83%;
+            position: fixed;
+        }
+        
+        /* My kindroids */
+        .css-12jdxbf,
+        .css-iludz4 {
+            height: auto;
+            width: 300px;
+        }
+        .css-1raxatq > div.css-1h56vtb {
+            padding-top: 0px;            
+        }
+        .css-cbfcqn {
+            position: absolute;
+            right: 50px;
+        }
+        /* Modify size of groups */
+        .css-1avgoq8 {
+            width: 300px;
+        }
+        
+        /* Modify size and position of Create group */
+        .css-1ky9fv8 {
+            bottom: 27%;
+            position: absolute;
+            right: 5.2%;
+            width: 300px;
+        }
+                
+        /* Fix position of Go to groupchat button*/
+        .chakra-button.no-invert.css-1dmnlsh {
+            bottom: 20px;
+            right: 5%;
+            position: fixed;
+        }
+                
+        /* Create a new group chat */
+        /* Bigger modal */
+        .css-i8vj7y {
+            height: 70%;
+            min-width: 90%;
+        }
+        .css-i8vj7y > .css-1ly87gx > .css-1yxzzu5 > .css-ciw22z {
+            margin-left: 150%;
+            width: 100%;
+        }
+        /* Split modal */
+        .css-1yxzzu5 {
+            max-width: 47%;
+        }
+        
+        /* Goup name */
+        .css-i8vj7y > .css-1ly87gx > .css-1yxzzu5 > div:nth-child(4) > .css-1cv5dpr {
+            position: absolute;
+            right: 50px;
+            top: 12%;
+            width: 47%;
+        }
+        .css-i8vj7y > .css-1ly87gx > .css-1yxzzu5 > div:nth-child(4) > .css-1qvxg76 {
+            position: absolute;
+            right: 50px;
+            top: 18%;
+            width: 47%;
+        }
+        .css-i8vj7y > .css-1ly87gx > .css-1yxzzu5 > div:nth-child(4) > .css-dhnoom {
+            position: absolute;
+            right: 50px;
+            top: 30%;
+            width: 47%;
+        }
+        
+        /* Group context */
+        .css-i8vj7y > .css-1ly87gx > .css-1yxzzu5 > div:nth-child(5) > .css-1cv5dpr {
+            position: absolute;
+            right: 50px;
+            top: 35%;
+            width: 47%;
+        }
+        .css-i8vj7y > .css-1ly87gx > .css-1yxzzu5 > div:nth-child(5) > .css-1m3hlb1 {
+            position: absolute;
+            right: 50px;
+            top: 41%;
+            width: 47%;
+        }
+        .css-i8vj7y > .css-1ly87gx > .css-1yxzzu5 > div:nth-child(5) > .css-dhnoom {
+            position: absolute;
+            right: 50px;
+            top: 68%;
+            width: 47%;
+        }
+        
+        /* Turn-taking style */
+        .css-i8vj7y > .css-1ly87gx > .css-1yxzzu5 > div:nth-child(6) > .css-1cv5dpr {
+            position: absolute;
+            left: -42%;
+            top: 43%;
+            width: 45%;
+        }
+        .css-i8vj7y > .css-1ly87gx > .css-1yxzzu5 > div:nth-child(6) > .css-2aa4oa {
+            position: absolute;
+            left: -42%;
+            top: 50%;
+            width: 45%;
+        }        
+        .css-i8vj7y > .css-1ly87gx > .css-1yxzzu5 > div:nth-child(6) > div {
+            position: absolute;
+            top: 60%;
+            width: 44%;
+        }
+        
+        /* Create group button */
+        .css-i8vj7y > .css-1ly87gx > div > button {
+            position: absolute;
+            left: 5%;
+            top: 75%;
+            width: 90%;
+        }
+        
+        /* General Settings */
+        #__next > ion-app > div > div > div > div.css-1raxatq > div.css-1h56vtb > div > div.css-j7qwjs > div:nth-child(3),
+        #__next > ion-app > div > div > div > div.css-1raxatq > div.css-1h56vtb > div > div.css-j7qwjs > div:nth-child(4) {
+            width: 100%;
+        }
+        
+        /* Add some arrows when needed */
+        :root {
+            --arrow: url("https://unpkg.com/ionicons@7.1.0/dist/svg/chevron-down-outline.svg")
+        }        
+        button > .css-1cfkm3f::after {
+            background-image: var(--arrow);
+            background-size: contain;
+            background-repeat: no-repeat;
+            content: "";
+            display: inline-block;
+            filter: invert(79%) sepia(6%) saturate(37%) hue-rotate(161deg) brightness(92%) contrast(86%);
+            height: 20px;
+            width: 20px;
+        }
+        
+        /* Danger zone: delete account */
+        .css-yk3l44 {
+            bottom: 150px;
+        }
+        .css-19zv6py {
+            font-weight: 600;
+            font-size: 18px;
+            width: max-content;
+        }
+
+        /* Voice */
+        .css-1raxatq > div.css-ouwkos > div > p.chakra-text.css-7wdzg1 {
+            max-width: 100% !important;
+        }
+
+        /* Split menu for avatars */
+        .css-7nleni,
+        .css-1jk1ov6 {
+            max-width: 50% !important;
+        }
+        .css-1yxzzu5 > div > p {
+            display: block;
+            margin-left: 47%;
+            position: absolute;
+            top: 10px;
+            max-width: 50% !important;
+        }
+        .css-n4vub9 {
+            margin-left: 47%;
+            position: absolute;
+            top: 8%;
+            max-width: 45% !important;
+        }
+        .css-ue4bfp {
+            display: block;
+            margin-left: 95% !important;
+            position: absolute;
+            max-width: 45% !important;
+        }
+        .css-mifb2i {
+            width: 50%;
+        }
+
+        /* 1st avatar size */
+        .css-1k5gc4r,
+        .css-dfpqc0 {
+            height: auto;
+            margin-left: 25%;
+            width: 50%;
+        }
+
+        /* 2nd avatar size */
+        .css-1mvfzwi {
+            height: auto;
+            margin-left: 5%;
+            position: relative;
+            width: 25%;
+        }
+
+        /* Bigger text and line height in avatar window */
+        #__next > ion-app > div > div > div > div.css-1raxatq > div.css-1y4vgns > div.css-188uayk > div.chakra-stack.css-1jk1ov6 > div.chakra-stack.css-1yxzzu5 > form.css-0 > p,
+        #accordion-panel-\:r7m\: > div.css-mifb2i > div.css-1uyzhnb > p.chakra-text.css-7wdzg1,
+        #__next > ion-app > div > div > div > div.css-1raxatq > div.css-1y4vgns > div.css-188uayk > div.chakra-stack.css-1jk1ov6 > div.chakra-stack.css-1yxzzu5 > div > p,
+        #__next > ion-app > div > div > div > div.css-1raxatq > div.css-1y4vgns > div.css-188uayk > div.chakra-stack.css-1jk1ov6 > div.chakra-stack.css-1yxzzu5 > form.css-ue4bfp > div.chakra-form-control.css-1kxonj9 > p:nth-child(1),
+        .css-1fm8jup > p.chakra-text.css-7wdzg1 {
+            font-size: 20px;
+            line-height: 25px;
+            max-width: 100% !important;
+        }
+        .chakra-accordion.css-0 > .css-tf0j9o > .chakra-collapse > .css-1fm8jup > p.css-7wdzg1 {
+            font-size: 20px;
+            line-height: 25px;
+            width: 50% !important;        
+        }
+        .css-mifb2i > div.css-1uyzhnb > p.chakra-text.css-7wdzg1 {
+            font-size: 20px;
+            line-height: 25px;
+            max-width: 100% !important;    
+        }
+
+        /* Hide arrows */
+        .css-g7h3az {
+            display: none;
+        }
+
+        /* Uncollapse "Advanced: secondary avatar" and "Advanced: custom avatar fidelity" */
+        .css-tf0j9o > div,
+        .css-1v3caum > div {
+            display: block !important;
+            height: auto !important;
+            opacity: 1 !important;
+        }
+
+        /* Move and fix the Save button in avatar menu page */
+        .css-1y4vgns > button {
+            margin: 39% 0px 0px 83%;
+            position: fixed;
+        }
+
+        /* Remove the space between the header and the chat*/
+        .css-g2goff {
+            padding: 0px;
+        }
+        .css-1lbk8wf {
+            padding-top: 70px !important;
+        }
+        
+        /* Removes top right icons in header */
+        .css-1rdhwuq {
+            display: none !important;
+        }
+        
+        /* Resize header */
+        .css-x3odei {
+            background-color: var(--chakra-colors-secondaryBlack) !important;
+            max-width: 100%;
+            padding: 0px 10px 0px 0.3%;
+        }
+    }
+    @media screen and (height: 2160px) {    
+        /* Put textarea more on right*/    
+        .css-b9bzmp {
+            padding: 0px 10px 0px 32%;
+            width: 100%;
+        }
+    }
+
+/* ===================================================================================================================================
+    Chat
+=================================================================================================================================== */    
     /* Add border to textarea when focus */
     textarea:focus {
         border: 0px;
@@ -468,233 +803,6 @@ X (twitter)     https://x.com/breatfroff
         p.css-6obdga > span,
         p.css-1gi22a8 > span {
             color: actionscolor !important;
-        }
-    }
-    
-    @media screen and (min-width: 900px) {
-        /* Large menu */
-        .css-1raxatq,
-        .css-xhpjzu {
-            max-width: 100% !important;
-            width: 100% !important;
-        }
-
-        /* Email box */
-        .css-1dodils {
-            align-self: center;
-            gap: 0px;
-            margin-top: 5% !important;
-            padding-right: 15px;
-        }
-
-        /* Subcriber icon */
-        .css-1dodils > img {
-            height: auto !important;
-            width: 44px;
-        }
-
-        /* Email */
-        .css-gnnge1 {
-            font-size: 24px;
-            padding-bottom: 5px;
-            padding-left: 5px;
-        }
-
-        /* Menu */
-        .css-1raxatq > div > div > div > div.css-j7qwjs {
-            display: grid;
-            align-content: center;
-            gap: 50px;
-            grid-template-columns: 1fr 1fr 1fr;
-            margin-top: 10%;
-            justify-content: space-between !important;
-        }
-        .css-yk3l44 {
-            gap: 100px;
-        }
-        .css-yk3l44 > h2 {
-            font-size: 20px;
-        }
-
-        /* Subscribe button */
-        .css-1fu7n7b,
-        .css-o32bv9 {
-            order: 2;
-        }
-
-        /* Bigger menu text */
-        .css-dghbxk,
-        .css-1jbciej,
-        .css-3sp0ue {
-            font-size: 30px;
-        }
-
-        /* Move and fix the Save button in all menu page */
-        .css-cbfcqn,
-        .css-1raxatq > div.css-1xh8vw6 > button,
-        .css-1raxatq > div.css-ouwkos > button,
-        .css-1sfbjfs,
-        .css-1dmnlsh {
-            bottom: 20px;
-            margin: 39% 0px 0px 83%;
-            position: fixed;
-        }
-        
-        /* My kindroids */
-        .css-12jdxbf,
-        .css-iludz4 {
-            height: auto;
-            width: 300px;
-        }
-        .css-1raxatq > div.css-1h56vtb > div > p {
-            position: absolute;
-            top: 10px;
-        }
-        .css-cbfcqn {
-            position: absolute;
-            right: 50px;
-        }
-        
-        /* General Settings */
-        #__next > ion-app > div > div > div > div.css-1raxatq > div.css-1h56vtb > div > div.css-j7qwjs > div:nth-child(3),
-        #__next > ion-app > div > div > div > div.css-1raxatq > div.css-1h56vtb > div > div.css-j7qwjs > div:nth-child(4){
-            width: 100%;
-        }
-        
-        /* add some arrows when needed */
-        :root {
-            --arrow: url("https://unpkg.com/ionicons@7.1.0/dist/svg/chevron-down-outline.svg")
-        }        
-        button > .css-1cfkm3f::after {
-            background-image: var(--arrow);
-            background-size: contain;
-            background-repeat: no-repeat;
-            content: "";
-            display: inline-block;
-            filter: invert(79%) sepia(6%) saturate(37%) hue-rotate(161deg) brightness(92%) contrast(86%);
-            height: 20px;
-            width: 20px;
-        }
-        
-        /* Danger zone: delete account */
-        .css-yk3l44 {
-            bottom: 150px;
-        }
-        .css-19zv6py {
-            font-weight: 600;
-            font-size: 18px;
-            width: max-content;
-        }
-
-        /* Voice */
-        .css-1raxatq > div.css-ouwkos > div > p.chakra-text.css-7wdzg1 {
-            max-width: 100% !important;
-        }
-
-        /* Split menu for avatars */
-        .css-7nleni,
-        .css-1jk1ov6 {
-            max-width: 50% !important;
-        }
-        .css-1yxzzu5 > div > p {
-            display: block;
-            margin-left: 47%;
-            position: absolute;
-            top: 10px;
-            max-width: 50% !important;
-        }
-        .css-n4vub9 {
-            margin-left: 47%;
-            position: absolute;
-            top: 8%;
-            max-width: 45% !important;
-        }
-        .css-ue4bfp {
-            display: block;
-            margin-left: 95% !important;
-            position: absolute;
-            max-width: 45% !important;
-        }
-        .css-mifb2i {
-            width: 50%;
-        }
-
-        /* 1st avatar size */
-        .css-1k5gc4r,
-        .css-dfpqc0 {
-            height: auto;
-            margin-left: 25%;
-            width: 50%;
-        }
-
-        /* 2nd avatar size */
-        .css-1mvfzwi {
-            height: auto;
-            margin-left: 5%;
-            position: relative;
-            width: 25%;
-        }
-
-        /* Bigger text and line height in avatar window */
-        #__next > ion-app > div > div > div > div.css-1raxatq > div.css-1y4vgns > div.css-188uayk > div.chakra-stack.css-1jk1ov6 > div.chakra-stack.css-1yxzzu5 > form.css-0 > p,
-        #accordion-panel-\:r7m\: > div.css-mifb2i > div.css-1uyzhnb > p.chakra-text.css-7wdzg1,
-        #__next > ion-app > div > div > div > div.css-1raxatq > div.css-1y4vgns > div.css-188uayk > div.chakra-stack.css-1jk1ov6 > div.chakra-stack.css-1yxzzu5 > div > p,
-        #__next > ion-app > div > div > div > div.css-1raxatq > div.css-1y4vgns > div.css-188uayk > div.chakra-stack.css-1jk1ov6 > div.chakra-stack.css-1yxzzu5 > form.css-ue4bfp > div.chakra-form-control.css-1kxonj9 > p:nth-child(1),
-        .css-1fm8jup > p.chakra-text.css-7wdzg1 {
-            font-size: 20px;
-            line-height: 25px;
-            max-width: 100% !important;
-        }
-        .chakra-accordion.css-0 > .css-tf0j9o > .chakra-collapse > .css-1fm8jup > p.css-7wdzg1 {
-            font-size: 20px;
-            line-height: 25px;
-            width: 50% !important;        
-        }
-        .css-mifb2i > div.css-1uyzhnb > p.chakra-text.css-7wdzg1 {
-            font-size: 20px;
-            line-height: 25px;
-            max-width: 100% !important;    
-        }
-
-        /* Hide arrows */
-        .css-g7h3az {
-            display: none;
-        }
-
-        /* Uncollapse "Advanced: secondary avatar" and "Advanced: custom avatar fidelity" */
-        .css-tf0j9o > div,
-        .css-1v3caum > div {
-            display: block !important;
-            height: auto !important;
-            opacity: 1 !important;
-        }
-
-        /* Move and fix the Save button in avatar menu page */
-        .css-1y4vgns > button {
-            margin: 39% 0px 0px 83%;
-            position: fixed;
-        }
-
-        /* Remove the space between the header and the chat*/
-        .css-g2goff {
-            padding: 0px;
-        }
-        .css-1lbk8wf {
-            padding-top: 70px !important;
-        }
-        
-        /* Resize header */
-        .css-x3odei {
-            background-color: var(--chakra-colors-secondaryBlack) !important;
-            max-width: 100%;
-            padding: 0px 10px 0px 0.3%;
-        }
-    }
-    @media screen and (height: 2160px) {    
-        /* Put textarea more on right*/    
-        .css-b9bzmp {
-            padding: 0px 10px 0px 32%;
-            width: 100%;
         }
     }
     
@@ -1098,7 +1206,7 @@ X (twitter)     https://x.com/breatfroff
                 margin-top: 141%;
                 --menu-shadow: transparent !important;
                 opacity: 100% !important;
-                visibility: visible !important;        
+                visibility: visible !important;
             }
             .css-do4s31 button:hover {
                 background: linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
@@ -1181,13 +1289,6 @@ X (twitter)     https://x.com/breatfroff
             .css-94x4at {
                 background-color: transparent;
             }
-            /* .css-b9bzmp,
-            .css-14dkl09 {
-                bottom: 20px;
-                position: fixed;
-                right: 10px;
-                max-width: 78%;
-            } */
         }
 
         @media screen and (min-height: 1329px) {
@@ -1223,13 +1324,6 @@ X (twitter)     https://x.com/breatfroff
             .css-94x4at {
                 background-color: transparent;
             }
-            /* .css-b9bzmp,
-            .css-14dkl09 {
-                bottom: 20px;
-                position: fixed;
-                right: 10px;
-                max-width: 78%;
-            } */
         }
 
         @media screen and (height: 1440px) {
@@ -1262,13 +1356,6 @@ X (twitter)     https://x.com/breatfroff
             .css-94x4at {
                 background-color: transparent;
             }
-            /* .css-b9bzmp,
-            .css-14dkl09 {
-                bottom: 20px;
-                position: fixed;
-                right: 10px;
-                max-width: 72%;
-            } */
         }
     }
     if (systembubblesstyle=="systembubblesdark") {
@@ -1302,6 +1389,7 @@ X (twitter)     https://x.com/breatfroff
     if blurcontent {
         .css-1hmzamm,
         .css-gnnge1,
+        .css-isgfme,
         .css-1j9xj7u > .css-0 > p,
         .css-teti0a > .css-0 > p {
             filter: blur(8px);
@@ -1326,9 +1414,369 @@ X (twitter)     https://x.com/breatfroff
         }
         .css-yhhl9h > .css-teti0a > .css-70qvj9 > .css-127w3cl,
         .css-yhhl9h > .css-teti0a > .css-70qvj9 > .css-1yzcrgj {
-            height: 36px;
-            width: 36px;
-            margin-left: -70px;
+            height: 40px;
+            width: 40px;
+            margin-left: -75px;
+        }
+        .css-yhhl9h {
+            margin-left: 50px;
+        }
+        .css-qfa1mb {
+            display: none;
+        }
+    }
+}
+
+@-moz-document url-prefix("https://kindroid.ai/groupchat/") {
+/* ===================================================================================================================================
+    Group chat
+=================================================================================================================================== */
+    /* Remove the space between the header and the chat*/
+    .css-g2goff {
+        padding: 0px;
+    }
+
+    /* Removes top right icons in header */
+    .css-1rdhwuq {
+        display: none !important;
+    }
+
+    /* Resize header */
+    .css-x3odei {
+        background-color: var(--chakra-colors-secondaryBlack) !important;
+        max-width: 100%;
+        padding: 0px 10px 0px 0.3%;
+    }
+    
+    @media screen and (height: 2160px) {    
+        /* Put textarea more on right*/    
+        .css-b9bzmp {
+            padding: 0px 10px 0px 32%;
+            width: 100%;
+        }
+    }
+    
+    /* Add border to textarea when focus */
+    textarea:focus {
+        border: 0px;
+        border-radius: 32px;
+        box-shadow: 0 0 0 1px rgb(139, 109, 255), 0 0 0 2px rgb(254, 132, 132);
+    }
+    /* Remove the resize icon on textarea on chat page */
+    textarea:not(:focus),
+    textarea:focus {
+        resize: none;
+    }
+
+    /* Hide voice counter and reduce button on avatar */
+    /* Text button */
+    .css-2bir3m,
+    /* Voice button */
+    .css-y0ybx5,
+    /* Reduce button */
+    .css-fk8dne {
+        display: none;
+    }
+
+    /* Modification of rounded corners for our bubbles */
+    .css-1j9xj7u {
+        border-radius: 20px 8px 20px 20px;
+    }
+
+    /* Modification of rounded corners for AI bubbles */
+    .css-teti0a,
+    .css-1ulhpcc,
+    .css-1tg26k8,
+    .css-1t9c0mz {
+        border-radius: 8px 20px 20px 20px;
+    }
+    
+    /* Bigger text in bubbles and textarea */
+    if bubblescolor {
+        .css-6obdga,
+        .css-1gi22a8 {
+            color: bubblescolor;
+        }
+    }
+    if bubblestext {
+        .css-6obdga,
+        .css-1gi22a8 {
+            font-size: bubblestext;
+            line-height: 2px + bubblestext;
+        }
+    } 
+    if chattextareasize {
+        .css-14m2to8 {
+            font-size: chattextareasize;
+            line-height: 2px + chattextareasize;
+        }
+    }
+    
+    if kinbubblesbgcolor {
+        .css-teti0a {
+            background-color: kinbubblesbgcolor;
+        }
+    }
+    if kinbubblesbgurl {
+        .css-teti0a {
+            background-color: kinbubblesbgcolor;
+            background-image: url(kinbubblesbgurl);
+        }
+    }
+    if ourbubblesbgcolor {
+        .css-1j9xj7u {
+            background: ourbubblesbgcolor;
+        }
+    }
+    if ourbubblesbgurl {
+        .css-1j9xj7u {
+            background-color: ourbubblesbgcolor;
+            background-image: url(ourbubblesbgurl);
+        }
+    }
+
+    /* Put a not allowed cursor on spinner, microphone icon, play button, picture generating when needed */
+    .chakra-spinner,
+    .css-zkr1dl,
+    .css-jy2vee,
+    .css-kjafn5 [disabled] + button {
+        cursor: not-allowed;
+    }
+
+    /* Put Regenerate and Journal buttons inline */
+    .css-1lvpjll > div.chatScrollParent.css-735j5d > div.css-1lbk8wf > div:nth-child(20) > div.css-1jby15f {
+        right: 10px;
+    }
+    .css-100dd8p {
+        gap: 90px !important;
+        flex-direction: row-reverse !important;
+    }
+    
+    /* Background */
+    if (bgchoice=="heartbg") {
+        .css-1lbk8wf {
+            background: url(https://i.ibb.co/fYQkYyc/heart-pattern.png) bgcolor fixed 100% !important;
+        }
+    }    
+    if (bgchoice=="nobg") {
+        /* No background */
+        .css-1lbk8wf {
+            background: var(--chakra-colors-secondaryBlack) !important;
+        }
+    }    
+    if (bgchoice=="custombg") {
+        /* Custom background */
+        .css-1lbk8wf {
+            background: url(custombgurl) bgcolor fixed 100% !important;
+        }
+    }
+    if bgcolor {
+        .css-1lbk8wf {
+            background-color: bgcolor;
+        }
+    }
+    
+    /* Actions texts */
+    if (actionsstyle=="actionsdefault") {
+        p.css-6obdga > span,
+        p.css-1gi22a8 > span {
+            color: rgb(168, 168, 168) !important;
+            font-style: italic !important;
+        }
+    }
+    if (actionsstyle=="asterisks") {
+        p.css-6obdga > span:before,
+        p.css-6obdga > span:after,
+        p.css-1gi22a8 > span:before,
+        p.css-1gi22a8 > span:after {
+            content: "*" !important;
+        }
+        p.css-6obdga > span,
+        p.css-1gi22a8 > span  {
+            font-weight: bold !important;
+        }
+    }
+    if (actionsstyle=="asterisksbold") {
+        p.css-6obdga > span:before,
+        p.css-6obdga > span:after,
+        p.css-1gi22a8 > span:before,
+        p.css-1gi22a8 > span:after {
+            content: "*" !important;
+        }
+        p.css-6obdga > span,
+        p.css-1gi22a8 > span  {
+            font-weight: bold !important;
+        }
+    }
+    if (actionsstyle=="asterisksboldnoitalic") {
+        p.css-6obdga > span:before,
+        p.css-6obdga > span:after,
+        p.css-1gi22a8 > span:before,
+        p.css-1gi22a8 > span:after {
+            content: "*" !important;
+        }
+        p.css-6obdga > span,
+        p.css-1gi22a8 > span {
+            font-style: normal !important;
+            font-weight: bold !important;
+        }
+    }    
+    if (actionsstyle=="asterisksboldnoitalicsamecolor") {
+        p.css-6obdga > span:before,
+        p.css-6obdga > span:after,
+        p.css-1gi22a8 > span:before,
+        p.css-1gi22a8 > span:after {
+            content: "*" !important;
+        }
+        p.css-6obdga > span,
+        p.css-1gi22a8 > span  {
+            color: var(--chakra-colors-secondaryWhite) !important;
+            font-style: normal !important;
+            font-weight: bold !important;
+        }
+    }
+    if (actionsstyle=="bold") {
+        p.css-6obdga > span,
+        p.css-1gi22a8 > span {
+            font-weight: bold !important;
+        }
+    }
+    if (actionsstyle=="boldnoitalic") {
+        p.css-6obdga > span,
+        p.css-1gi22a8 > span {
+            font-style: normal !important;
+            font-weight: bold !important;
+        }
+    }
+    if (actionsstyle=="boldnoitalicsamecolor") {
+        p.css-6obdga > span,
+        p.css-1gi22a8 > span {
+            color: var(--chakra-colors-secondaryWhite) !important;
+            font-style: normal !important;
+            font-weight: bold !important;
+        }
+    }
+    if (actionsstyle=="noitalic") {
+        p.css-6obdga > span,
+        p.css-1gi22a8 > span {
+            font-style: normal !important;
+        }
+    }
+    if (actionsstyle=="samecolor") {
+        p.css-6obdga > span,
+        p.css-1gi22a8 > span {
+            color: var(--chakra-colors-secondaryWhite) !important;
+        }
+    }
+    if actionscolor {
+        p.css-6obdga > span,
+        p.css-1gi22a8 > span {
+            color: actionscolor !important;
+        }
+    }
+        
+    /* No avatar */
+    .css-oies6c,
+    .css-13tht1l,
+    .css-g2goff {
+        display: none;
+        height: 0px;
+        width: 0px;
+    }
+    .css-735j5d {
+        padding: 0px 0px 20px 0px;
+        width: 100%;
+    }
+    .css-1lvpjll {
+        height: 100%;
+        top: 0px;
+    }
+    .css-1lbk8wf {
+        padding: 0px 50px 0px 10px;
+        width: 100%;
+    }
+    .css-b9bzmp {
+        padding: 0px 10px 0px 6%;
+        width: 100%;
+    }
+    /* Modofication of Continue conversation button */
+    .css-snc6k5,
+    .css-1huuq74,
+    .css-wgxnqr {
+        color: var(--chakra-colors-secondaryWhite);
+        font-size: 17px;
+    }
+    .css-snc6k5:hover,
+    .css-1huuq74:hover,
+    .css-wgxnqr:hover {
+        background: linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
+        background: -moz-linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
+        background-clip: text;
+        color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    /* System bubbles style */
+    .css-do4s31,
+    .css-94x4at{
+        background-color: #161616;
+        border-color: #6C6C6C;
+        color: var(--chakra-colors-secondaryWhite);
+    }
+    .css-100dd8p {
+        gap: 50px !important;
+        flex-direction: row-reverse !important;
+    }
+    .css-b9bzmp,
+    .css-14dkl09 {
+        bottom: 20px;
+        position: fixed;
+        right: 10px;
+        width: 98.5% !important;
+    }
+    .css-1lbk8wf {
+        margin-bottom: 72px;
+        width: 100%;
+    }
+    .css-1y2ps2x {
+        color: var(--chakra-colors-secondaryWhite);
+        margin-left: 50px;
+    }
+    
+    if blurcontent {
+        .css-1hmzamm,
+        .css-gnnge1,
+        .css-reootw,
+        .css-1j9xj7u > .css-0 > p,
+        .css-teti0a > .css-0 > p {
+            filter: blur(8px);
+            -moz-filter: blur(8px);
+            -webkit-filter: blur(8px);
+        }
+    }
+    
+    if hidenames {
+        /* Hide names in bubbles to save place */
+        .css-ppua9z,
+        .css-19hb772 {
+            display: none;
+        }
+        .css-127w3cl {
+            margin-left: 0px;
+        }
+        
+        /* Initial letter */
+        .css-70qvj9 {
+            height: 0px;
+        }
+        .css-yhhl9h > .css-teti0a > .css-70qvj9 > .css-127w3cl,
+        .css-yhhl9h > .css-teti0a > .css-70qvj9 > .css-1yzcrgj {
+            height: 40px;
+            width: 40px;
+            margin-left: -75px;
         }
         .css-yhhl9h {
             margin-left: 50px;
