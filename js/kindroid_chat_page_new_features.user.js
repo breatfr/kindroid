@@ -42,7 +42,7 @@
     var autoConfirmEnabled = getCookie('autoConfirmEnabled') === 'true';
     var autoFocusEnabled = getCookie('autoFocusEnabled') === 'true';
 
-    if (window.location.href.includes("/home")) {
+    if (window.location.href.includes("/home")) || /\/groupchat\/.*/.test(window.location.href)) {
         // User interface
         var uiContainer = document.createElement('div');
         uiContainer.style.position = 'fixed';
