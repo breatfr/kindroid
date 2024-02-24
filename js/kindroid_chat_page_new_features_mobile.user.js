@@ -131,9 +131,12 @@
 
     // Autofocus on textarea
     function focusTextarea() {
-        var textareaElement = document.querySelector('.css-1yghwom');
-        if (textareaElement) {
-            textareaElement.focus();
+        var textareaElement1 = document.querySelector('.css-ymugf1');
+        var textareaElement2 = document.querySelector('.css-14m2to8');
+        if (textareaElement1) {
+            textareaElement1.focus();
+        } else if (textareaElement2) {
+            textareaElement2.focus();
         }
     }
 
