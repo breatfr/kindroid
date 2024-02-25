@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name            Kindroid: Wide screen + customizations v3.xx
 @description     Put Kindroid on whole page for screen with width 900px and more and add customizations features.
-@version         3.17
+@version         3.18
 @author          BreatFR (https://breat.fr)
 @namespace       https://github.com/breatfr
 @homepageURL     https://github.com/breatfr/kindroid
@@ -82,7 +82,7 @@ X (twitter)     https://x.com/breatfroff
 =================================================================================================================================== */
     /* Versions */
     :root {
-        --themeversion: 'Theme v3.17';
+        --themeversion: 'Theme v3.18';
         --chatversionpc: 'Chat script PC v1.09';
         --chatversionmobile: 'Chat script mobile v1.09';
         --selfiesversionpc: 'Selfies script PC v1.03';
@@ -600,13 +600,6 @@ X (twitter)     https://x.com/breatfroff
             padding: 0px 10px 0px 0.3%;
         }
     }
-    @media screen and (height: 2160px) {    
-        /* Put textarea more on right*/    
-        .css-b9bzmp {
-            padding: 0px 10px 0px 32%;
-            width: 100%;
-        }
-    }
 
 /* ===================================================================================================================================
     Chat
@@ -914,10 +907,6 @@ X (twitter)     https://x.com/breatfroff
                 bottom: 0px;
                 margin-left: 540px;
                 width: calc(100% - 555px);
-            }    
-            .css-b9bzmp {
-                padding: 0px 10px 0px 28%;
-                width: 100%;
             }
         }
     }
@@ -957,10 +946,6 @@ X (twitter)     https://x.com/breatfroff
                 bottom: 0px;
                 margin-left: 348px;
                 width: calc(100% - 555px);
-            }    
-            .css-b9bzmp {
-                padding: 0px 10px 0px 28%;
-                width: 100%;
             }
         }
     }
@@ -1001,10 +986,6 @@ X (twitter)     https://x.com/breatfroff
                 bottom: 0px;
                 margin-left: 348px;
                 width: calc(100% - 555px);
-            }    
-            .css-b9bzmp {
-                padding: 0px 10px 0px 28%;
-                width: 100%;
             }
         }
     }
@@ -1221,6 +1202,19 @@ X (twitter)     https://x.com/breatfroff
             .css-94x4at {
                 background-color: transparent;
             }
+            .css-1lbk8wf {
+                margin-bottom: 70px;
+            }
+            .css-b9bzmp {
+                background-color: var(--chakra-colors-secondaryBlack);
+                bottom: 20px;
+                display: flex;
+                flex-direction: column;
+                padding-top: 10px;
+                position: fixed;
+                right: 10px;
+                width: 72%;
+            }
         }
 
         @media screen and (min-height: 1080px) {
@@ -1253,6 +1247,19 @@ X (twitter)     https://x.com/breatfroff
             .css-94x4at {
                 background-color: transparent;
             }
+            .css-1lbk8wf {
+                margin-bottom: 70px;
+            }
+            .css-b9bzmp {
+                background-color: var(--chakra-colors-secondaryBlack);
+                bottom: 20px;
+                display: flex;
+                flex-direction: column;
+                padding-top: 10px;
+                position: fixed;
+                right: 10px;
+                width: 72%;
+            }
         }
         
         /* Vivaldi statusbar fix for min-height 1440 */
@@ -1283,11 +1290,21 @@ X (twitter)     https://x.com/breatfroff
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
-            .css-1lbk8wf {
-                margin-bottom: 72px;
-            }
             .css-94x4at {
                 background-color: transparent;
+            }
+            .css-1lbk8wf {
+                margin-bottom: 70px;
+            }
+            .css-b9bzmp {
+                background-color: var(--chakra-colors-secondaryBlack);
+                bottom: 20px;
+                display: flex;
+                flex-direction: column;
+                padding-top: 10px;
+                position: fixed;
+                right: 10px;
+                width: 72%;
             }
         }
 
@@ -1318,11 +1335,21 @@ X (twitter)     https://x.com/breatfroff
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
-            .css-1lbk8wf {
-                margin-bottom: 72px;
-            }
             .css-94x4at {
                 background-color: transparent;
+            }
+            .css-1lbk8wf {
+                margin-bottom: 70px;
+            }
+            .css-b9bzmp {
+                background-color: var(--chakra-colors-secondaryBlack);
+                bottom: 20px;
+                display: flex;
+                flex-direction: column;
+                padding-top: 10px;
+                position: fixed;
+                right: 10px;
+                width: 72%;
             }
         }
 
@@ -1356,6 +1383,64 @@ X (twitter)     https://x.com/breatfroff
             .css-94x4at {
                 background-color: transparent;
             }
+            .css-1lbk8wf {
+                margin-bottom: 70px;
+            }
+            .css-b9bzmp {
+                background-color: var(--chakra-colors-secondaryBlack);
+                bottom: 20px;
+                display: flex;
+                flex-direction: column;
+                padding-top: 10px;
+                position: fixed;
+                right: 10px;
+                width: 72%;
+            }
+        }
+
+        @media screen and (height: 2160px) {
+            .css-1y2ps2x {
+                display: none;
+            }
+            .css-do4s31 {
+                background-color: transparent;
+                border: none;    
+                color: var(--chakra-colors-secondaryWhite);
+                display: grid;
+                font-size: 20px;
+                grid-template-columns: 1fr 1fr 1fr;
+                margin-left: -10% !important;
+                margin-top: 325%;
+                --menu-shadow: transparent !important;
+                opacity: 100% !important;
+                visibility: visible !important;
+            }
+            .css-do4s31 button:hover {
+                background: linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
+                background: -moz-linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
+                background-clip: text;
+                color: transparent;
+                -moz-background-clip: text;
+                -moz-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            .css-94x4at {
+                background-color: transparent;
+            }
+            .css-1lbk8wf {
+                margin-bottom: 70px;
+            }
+            .css-b9bzmp {
+                background-color: var(--chakra-colors-secondaryBlack);
+                bottom: 20px;
+                display: flex;
+                flex-direction: column;
+                padding-top: 10px;
+                position: fixed;
+                right: 10px;
+                width: 72%;
+            }
         }
     }
     if (systembubblesstyle=="systembubblesdark") {
@@ -1369,16 +1454,17 @@ X (twitter)     https://x.com/breatfroff
             gap: 50px !important;
             flex-direction: row-reverse !important;
         }
-        .css-b9bzmp,
-        .css-14dkl09 {
+        .css-b9bzmp {
+            background-color: var(--chakra-colors-secondaryBlack);
             bottom: 20px;
+            display: flex;
+            flex-direction: column;
             position: fixed;
             right: 10px;
-            width: 98.5% !important;
+            width: calc(100% - 20px);
         }
         .css-1lbk8wf {
             margin-bottom: 72px;
-            width: 100%;
         }
         .css-1y2ps2x {
             color: var(--chakra-colors-secondaryWhite);
@@ -1446,14 +1532,6 @@ X (twitter)     https://x.com/breatfroff
         background-color: var(--chakra-colors-secondaryBlack) !important;
         max-width: 100%;
         padding: 0px 10px 0px 0.3%;
-    }
-    
-    @media screen and (height: 2160px) {    
-        /* Put textarea more on right*/    
-        .css-b9bzmp {
-            padding: 0px 10px 0px 32%;
-            width: 100%;
-        }
     }
     
     /* Add border to textarea when focus */
@@ -1695,10 +1773,7 @@ X (twitter)     https://x.com/breatfroff
         padding: 0px 50px 0px 10px;
         width: 100%;
     }
-    .css-b9bzmp {
-        padding: 0px 10px 0px 6%;
-        width: 100%;
-    }
+    
     /* Modofication of Continue conversation button */
     .css-snc6k5,
     .css-1huuq74,
@@ -1730,16 +1805,18 @@ X (twitter)     https://x.com/breatfroff
         gap: 50px !important;
         flex-direction: row-reverse !important;
     }
-    .css-b9bzmp,
-    .css-14dkl09 {
+    .css-b9bzmp {
+        background-color: var(--chakra-colors-secondaryBlack);
         bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
         position: fixed;
         right: 10px;
-        width: 98.5% !important;
+        width: calc(100% - 20px);
     }
     .css-1lbk8wf {
         margin-bottom: 72px;
-        width: 100%;
     }
     .css-1y2ps2x {
         color: var(--chakra-colors-secondaryWhite);
