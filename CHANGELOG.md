@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
+## Theme v3.18 - 2024-02-25
+- reworked systems bubbles left and dark to fix a problem when we use the `+` button on chat and group chat pages
+
 ## Theme v3.17 - 2024-02-24
 - Modification of my kindroid menu page and the new modal to create a group chat
 - Remove 3 icons (discord, reddit, kindroid) in header because they create problem for my script now kindroid is write entirely
