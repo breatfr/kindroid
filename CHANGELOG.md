@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## Theme v3.19 - 2024-03-01
+- fix delete text color on selfie image to put it red
+- fix the selfie's border-radius when hover when image border is enable in theme settings in delete selfie modal
+- modification of modal when we click on a selfie to get prompt on the right of the selfie
+
 ## Theme v3.18 - 2024-02-25
 - reworked systems bubbles left and dark to fix a problem when we use the `+` button on chat and group chat pages
 
