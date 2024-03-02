@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name            Kindroid: Wide screen + customizations v3.xx
 @description     Put Kindroid on whole page for screen with width 900px and more and add customizations features.
-@version         3.20
+@version         3.21
 @author          BreatFR (https://breat.fr)
 @namespace       https://github.com/breatfr
 @homepageURL     https://github.com/breatfr/kindroid
@@ -82,7 +82,7 @@ X (twitter)     https://x.com/breatfroff
 =================================================================================================================================== */
     /* Versions */
     :root {
-        --themeversion: 'Theme v3.20';
+        --themeversion: 'Theme v3.21';
         --chatversionpc: 'Chat script PC v1.09';
         --chatversionmobile: 'Chat script mobile v1.09';
         --selfiesversionpc: 'Selfies script PC v1.03';
@@ -700,6 +700,30 @@ X (twitter)     https://x.com/breatfroff
         flex-direction: row-reverse !important;
     }
     
+    /* Background */
+    if (bgchoice=="heartbg") {
+        .css-1lbk8wf {
+            background: url(https://i.ibb.co/fYQkYyc/heart-pattern.png) bgcolor fixed 100% !important;
+        }
+    }    
+    if (bgchoice=="nobg") {
+        /* No background */
+        .css-1lbk8wf {
+            background: var(--chakra-colors-secondaryBlack) !important;
+        }
+    }    
+    if (bgchoice=="custombg") {
+        /* Custom background */
+        .css-1lbk8wf {
+            background: url(custombgurl) bgcolor fixed 100% !important;
+        }
+    }
+    if bgcolor {
+        .css-1lbk8wf {
+            background-color: bgcolor;
+        }
+    }
+    
     /* Actions texts */
     if (actionsstyle=="actionsdefault") {
         p.css-6obdga > span,
@@ -888,21 +912,11 @@ X (twitter)     https://x.com/breatfroff
             }
 
             /* Put chat and textarea more on right*/
-            .css-735j5d {
-                padding: 0px 0px 20px 5px;
-                width: 100%;
-            }
-            .css-1lvpjll {
-                height: 100%;
-                top: 0px;
-            }
-
             .css-1lbk8wf {
                 bottom: 20px;
                 padding-left: 560px;
-                position: absolute;
                 right: 10px;
-                width: 100%;
+                width: 100vw;
             }
         }
     }
@@ -923,21 +937,11 @@ X (twitter)     https://x.com/breatfroff
             }
 
             /* Put chat and textarea more on right*/
-            .css-735j5d {
-                padding: 0px 0px 20px 5px;
-                width: 100%;
-            }
-            .css-1lvpjll {
-                height: 100%;
-                top: 0px;
-            }
-
             .css-1lbk8wf {
                 bottom: 20px;
                 padding-left: 360px;
-                position: absolute;
                 right: 10px;
-                width: 100%;
+                width: 100vw;
             }
         }
     }
@@ -956,21 +960,11 @@ X (twitter)     https://x.com/breatfroff
             }
 
             /* Put chat and textarea more on right*/
-            .css-735j5d {
-                padding: 0px 0px 20px 5px;
-                width: 100%;
-            }
-            .css-1lvpjll {
-                height: 100%;
-                top: 0px;
-            }
-            
             .css-1lbk8wf {
                 bottom: 20px;
                 padding-left: 50px + avatarcustomsizevalue;
-                position: absolute;
                 right: 10px;
-                width: 100%;
+                width: 100vw;
             }
         }
     }
@@ -983,21 +977,12 @@ X (twitter)     https://x.com/breatfroff
             height: 0px;
             width: 0px;
         }
-        .css-735j5d {
-            padding: 0px 0px 20px 5px;
-            width: 100%;
-        }
-        .css-1lvpjll {
-            height: 100%;
-            top: 0px;
-        }
         
         .css-1lbk8wf {
             bottom: 20px;
             padding-left: 25px;
-            position: absolute;
             right: 10px;
-            width: 100%;
+            width: 100vw;
         }
     }
     
@@ -1437,7 +1422,7 @@ X (twitter)     https://x.com/breatfroff
             flex-direction: row-reverse !important;
         }
         .css-1lbk8wf {
-            margin-bottom: 72px;
+            margin-bottom: 70px;
         }
         .css-esrlli {
             background-color: var(--chakra-colors-secondaryBlack);
