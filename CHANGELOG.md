@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
+## Theme v3.22 - 2024-03-03
+- fix layout in chat page since website updated
+
 ## Theme v3.21 - 2024-03-02
 - fix scroll feature on chat page
 
