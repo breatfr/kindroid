@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name            Kindroid: Wide screen + customizations v3.xx
 @description     Put Kindroid on whole page for screen with width 900px and more and add customizations features.
-@version         3.21
+@version         3.22
 @author          BreatFR (https://breat.fr)
 @namespace       https://github.com/breatfr
 @homepageURL     https://github.com/breatfr/kindroid
@@ -82,7 +82,7 @@ X (twitter)     https://x.com/breatfroff
 =================================================================================================================================== */
     /* Versions */
     :root {
-        --themeversion: 'Theme v3.21';
+        --themeversion: 'Theme v3.22';
         --chatversionpc: 'Chat script PC v1.09';
         --chatversionmobile: 'Chat script mobile v1.09';
         --selfiesversionpc: 'Selfies script PC v1.03';
@@ -914,8 +914,8 @@ X (twitter)     https://x.com/breatfroff
             /* Put chat and textarea more on right*/
             .css-1lbk8wf {
                 bottom: 20px;
-                padding-left: 560px;
-                right: 10px;
+                padding-left: 540px;
+                padding-right: 10px;
                 width: 100vw;
             }
         }
@@ -939,8 +939,8 @@ X (twitter)     https://x.com/breatfroff
             /* Put chat and textarea more on right*/
             .css-1lbk8wf {
                 bottom: 20px;
-                padding-left: 360px;
-                right: 10px;
+                padding-left: 350px;
+                padding-right: 10px;
                 width: 100vw;
             }
         }
@@ -962,8 +962,8 @@ X (twitter)     https://x.com/breatfroff
             /* Put chat and textarea more on right*/
             .css-1lbk8wf {
                 bottom: 20px;
-                padding-left: 50px + avatarcustomsizevalue;
-                right: 10px;
+                padding-left: 30px + avatarcustomsizevalue;
+                padding-right: 10px;
                 width: 100vw;
             }
         }
@@ -1172,7 +1172,7 @@ X (twitter)     https://x.com/breatfroff
             .css-1lbk8wf {
                 margin-bottom: 70px;
             }
-            .css-esrlli {
+            .css-b9bzmp {
                 background-color: var(--chakra-colors-secondaryBlack);
                 bottom: 10px;
                 display: flex;
@@ -1217,7 +1217,7 @@ X (twitter)     https://x.com/breatfroff
             .css-1lbk8wf {
                 margin-bottom: 70px;
             }
-            .css-esrlli {
+            .css-b9bzmp {
                 background-color: var(--chakra-colors-secondaryBlack);
                 bottom: 10px;
                 display: flex;
@@ -1263,7 +1263,7 @@ X (twitter)     https://x.com/breatfroff
             .css-1lbk8wf {
                 margin-bottom: 70px;
             }
-            .css-esrlli {
+            .css-b9bzmp {
                 background-color: var(--chakra-colors-secondaryBlack);
                 bottom: 10px;
                 display: flex;
@@ -1308,7 +1308,7 @@ X (twitter)     https://x.com/breatfroff
             .css-1lbk8wf {
                 margin-bottom: 70px;
             }
-            .css-esrlli {
+            .css-b9bzmp {
                 background-color: var(--chakra-colors-secondaryBlack);
                 bottom: 10px;
                 display: flex;
@@ -1353,7 +1353,7 @@ X (twitter)     https://x.com/breatfroff
             .css-1lbk8wf {
                 margin-bottom: 70px;
             }
-            .css-esrlli {
+            .css-b9bzmp {
                 background-color: var(--chakra-colors-secondaryBlack);
                 bottom: 10px;
                 display: flex;
@@ -1398,7 +1398,7 @@ X (twitter)     https://x.com/breatfroff
             .css-1lbk8wf {
                 margin-bottom: 70px;
             }
-            .css-esrlli {
+            .css-b9bzmp {
                 background-color: var(--chakra-colors-secondaryBlack);
                 bottom: 10px;
                 display: flex;
@@ -1424,7 +1424,7 @@ X (twitter)     https://x.com/breatfroff
         .css-1lbk8wf {
             margin-bottom: 70px;
         }
-        .css-esrlli {
+        .css-b9bzmp {
             background-color: var(--chakra-colors-secondaryBlack);
             bottom: 10px;
             display: flex;
@@ -1768,7 +1768,7 @@ X (twitter)     https://x.com/breatfroff
     .css-1lbk8wf {
         margin-bottom: 72px;
     }
-    .css-esrlli {
+    .css-b9bzmp {
         background-color: var(--chakra-colors-secondaryBlack);
         bottom: 20px;
         position: absolute;
