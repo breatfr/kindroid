@@ -3,7 +3,7 @@
 All notable changes to this project will be documented in this file.
 
 ## Selfies page & Selfies page mobile scripts v1.04 - 2024-03-07
-- when you download all images in the zip archive, you also get a .txt file with the prompt in for all images
+- when you download all images in the zip archive, you also get a .txt file with the prompt in for all images (thanks to <a href="https://github.com/Kabu4ce1" target="_blank">@Kabu4ce1</a>)
 
 ## Theme 3.22.1 - 2024-03-07
 - Update scripts versions at the top of screen
