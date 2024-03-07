@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## Selfies page & Selfies page mobile scripts v1.04 - 2024-03-07
+- when you download all images in the zip archive, you also get a .txt file with the prompt in for all images
+
+## Theme 3.22.1 - 2024-03-07
+- Update scripts versions at the top of screen
+
 ## Theme v3.22 - 2024-03-03
 - fix layout in chat page since website updated
 
@@ -34,7 +40,6 @@ actually system bubbles left isn't available in group chat and probably won't be
 - Now the textarea isn't required, put back the autoconfirm setting for people who don't want use the suggestion
 
 ## Theme 3.16.2 - 2024-02-23
-
 - Update scripts versions at the top of screen
 
 ## Chat page script 1.07 & Chat page mobile script 1.08 - 2024-02-17
