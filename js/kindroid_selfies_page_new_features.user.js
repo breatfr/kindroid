@@ -165,36 +165,39 @@
     // Download all images
     function downloadAllImages() {
         console.log('Download All Images');
-        var images = document.querySelectorAll('.css-1dq4ssc img.css-1regj17');
+        const images = document.querySelectorAll('.css-1dq4ssc img.css-1regj17');
         console.log('Found Images:', images);
         if (images.length === 0) {
             alert('No images found.');
             return;
         }
 
-        var zip = new JSZip();
-        var count = 0;
-        var totalImages = images.length;
+        const zip = new JSZip();
+        let count = 0;
+        const totalImages = images.length;
         downloadStatus.innerText = ' Downloading... (0/' + totalImages + ')';
         images.forEach(function(image, index) {
             fetch(image.src)
                 .then(response => response.blob())
                 .then(blob => {
-                    var filename = ('0000' + (totalImages - index)).slice(-4) + '.jpg'; // Reverse numbering
-                    zip.file(filename, blob);
-                    count++;
+                    const filename = ('0000' + (totalImages - index)).slice(-4); // Reverse numbering
+                    zip.file(`${filename}.jpg`, blob);
+                    const prompt = image.alt;
+                    const promptFile = new Blob([prompt], { type: 'text/plain' });
+                    zip.file(`${filename}.txt`, promptFile);
+                    ++count;
                     downloadStatus.innerText = ' Downloading... (' + count + '/' + totalImages + ')';
                     if (count === totalImages) {
                         zip.generateAsync({ type: 'blob' })
                             .then(content => {
                                 // Trigger file download
-                                var a = document.createElement('a');
+                                const a = document.createElement('a');
                                 a.href = URL.createObjectURL(content);
                                 a.download = 'Kindroid.zip';
                                 a.click();
                                 downloadStatus.innerText = '';
                                 // Show the "Load More" button again after download is complete
-                                var loadMoreButton = document.querySelector('button.chakra-button.css-1q03dzc');
+                                const loadMoreButton = document.querySelector('button.chakra-button.css-1q03dzc');
                                 if (loadMoreButton) {
                                     loadMoreButton.style.display = 'block';
                                 }
