@@ -3,7 +3,7 @@
 // @description New features for Kindroid's selfies page
 // @namespace   https://kindroid.ai/selfies
 // @match       https://kindroid.ai/selfies
-// @version     1.03
+// @version     1.04
 // @updateURL   https://raw.githubusercontent.com/breatfr/Kindroid/main/js/kindroid_selfies_page_new_features.user.js
 // @author      BreatFR
 // @copyright   2023, BreatFR (https://breat.fr)
@@ -27,25 +27,25 @@
         uiContainer.style.left = '8%';
         uiContainer.style.color = '#cbcbcb';
         uiContainer.style.zIndex = '9999';
-    
+
         // Create table for layout
         var table = document.createElement('table');
         table.style.borderCollapse = 'collapse'; // Collapse border spacing
         table.style.width = '100%'; // Set table width
-    
+
         // First row for labels and checkboxes
         var row1 = document.createElement('tr');
         table.appendChild(row1);
-    
+
         // Cell for "Help Create Prompts" label and checkbox
         var cell1 = document.createElement('td');
         row1.appendChild(cell1);
-    
+
         var autoCreateModalLabel = document.createElement('label');
         autoCreateModalLabel.innerText = 'Help Create Prompts ';
         autoCreateModalLabel.setAttribute('for', 'showModalCheckbox');
         autoCreateModalLabel.style.cursor = 'pointer'; // Make the label clickable
-    
+
         var showModalCheckbox = document.createElement('input');
         showModalCheckbox.type = 'checkbox';
         showModalCheckbox.id = 'showModalCheckbox';
@@ -61,18 +61,18 @@
                 }
             }
         });
-    
+
         autoCreateModalLabel.appendChild(showModalCheckbox);
         cell1.appendChild(autoCreateModalLabel);
-    
+
         // Cell for "See All Images" label and checkbox
         var cell2 = document.createElement('td');
         row1.appendChild(cell2);
-    
+
         var autoLoadMoreLabel = document.createElement('label');
         autoLoadMoreLabel.innerText = 'See All Images ';
         autoLoadMoreLabel.style.marginRight = '5px'; // Add some margin to separate from checkbox
-    
+
         var autoLoadMoreCheckbox = document.createElement('input');
         autoLoadMoreCheckbox.type = 'checkbox';
         autoLoadMoreCheckbox.checked = getCookie('autoLoadMoreEnabled') === 'true'; // Set checkbox value based on cookie
@@ -83,35 +83,35 @@
             // Trigger autoLoadMore function when the checkbox is changed
             autoLoadMore();
         });
-    
+
         autoLoadMoreLabel.appendChild(autoLoadMoreCheckbox);
         cell2.appendChild(autoLoadMoreLabel);
-    
+
         // Second row for empty space and "Download All Images" button
         var row2 = document.createElement('tr');
         table.appendChild(row2);
-    
+
         // Empty cell to align with "Help Create Prompts" checkbox
         var emptyCell = document.createElement('td');
         row2.appendChild(emptyCell);
-    
+
         // Cell for "Download All Images" button
         var cell3 = document.createElement('td');
         row2.appendChild(cell3);
-    
+
         var downloadAllButton = document.createElement('button');
         downloadAllButton.innerText = 'Download All Images';
         downloadAllButton.title = 'Please make sure to enable "See All Images" before downloading.'; // Add tooltip
         downloadAllButton.addEventListener('click', function() {
             downloadAllImages();
         });
-    
+
         // Create status text for download progress
         var downloadStatus = document.createElement('span');
-    
+
         cell3.appendChild(downloadAllButton);
         cell3.appendChild(downloadStatus);
-    
+
         uiContainer.appendChild(table);
         document.body.appendChild(uiContainer);
         } else {
@@ -165,36 +165,39 @@
     // Download all images
     function downloadAllImages() {
         console.log('Download All Images');
-        var images = document.querySelectorAll('.css-1dq4ssc img.css-1regj17');
+        const images = document.querySelectorAll('.css-1dq4ssc img.css-1regj17');
         console.log('Found Images:', images);
         if (images.length === 0) {
             alert('No images found.');
             return;
         }
 
-        var zip = new JSZip();
-        var count = 0;
-        var totalImages = images.length;
+        const zip = new JSZip();
+        let count = 0;
+        const totalImages = images.length;
         downloadStatus.innerText = ' Downloading... (0/' + totalImages + ')';
         images.forEach(function(image, index) {
             fetch(image.src)
                 .then(response => response.blob())
                 .then(blob => {
-                    var filename = ('0000' + (totalImages - index)).slice(-4) + '.jpg'; // Reverse numbering
-                    zip.file(filename, blob);
-                    count++;
+                    const filename = ('0000' + (totalImages - index)).slice(-4); // Reverse numbering
+                    zip.file(`${filename}.jpg`, blob);
+                    const prompt = image.alt;
+                    const promptFile = new Blob([prompt], { type: 'text/plain' });
+                    zip.file(`${filename}.txt`, promptFile);
+                    ++count;
                     downloadStatus.innerText = ' Downloading... (' + count + '/' + totalImages + ')';
                     if (count === totalImages) {
                         zip.generateAsync({ type: 'blob' })
                             .then(content => {
                                 // Trigger file download
-                                var a = document.createElement('a');
+                                const a = document.createElement('a');
                                 a.href = URL.createObjectURL(content);
                                 a.download = 'Kindroid.zip';
                                 a.click();
                                 downloadStatus.innerText = '';
                                 // Show the "Load More" button again after download is complete
-                                var loadMoreButton = document.querySelector('button.chakra-button.css-1q03dzc');
+                                const loadMoreButton = document.querySelector('button.chakra-button.css-1q03dzc');
                                 if (loadMoreButton) {
                                     loadMoreButton.style.display = 'block';
                                 }
