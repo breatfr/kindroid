@@ -30,24 +30,13 @@
         uiContainer.style.color = '#cbcbcb';
         uiContainer.style.zIndex = '9999';
 
-        // Create table for layout
-        var table = document.createElement('table');
-        table.style.borderCollapse = 'collapse'; // Collapse border spacing
-        table.style.width = '100%'; // Set table width
-
-        // First row for labels and checkboxes
-        var row1 = document.createElement('tr');
-        table.appendChild(row1);
-
-        // Cell for "Help Create Prompts" label and checkbox
-        var cell1 = document.createElement('td');
-        row1.appendChild(cell1);
-
+        // Help create prompts label
         var autoCreateModalLabel = document.createElement('label');
         autoCreateModalLabel.innerText = 'Help Create Prompts ';
         autoCreateModalLabel.setAttribute('for', 'showModalCheckbox');
         autoCreateModalLabel.style.cursor = 'pointer'; // Make the label clickable
 
+        // Help create prompts checkbox
         var showModalCheckbox = document.createElement('input');
         showModalCheckbox.type = 'checkbox';
         showModalCheckbox.id = 'showModalCheckbox';
@@ -64,17 +53,12 @@
             }
         });
 
-        autoCreateModalLabel.appendChild(showModalCheckbox);
-        cell1.appendChild(autoCreateModalLabel);
-
-        // Cell for "See All Images" label and checkbox
-        var cell2 = document.createElement('td');
-        row1.appendChild(cell2);
-
+        // Load all images label
         var autoLoadMoreLabel = document.createElement('label');
         autoLoadMoreLabel.innerText = 'See All Images ';
         autoLoadMoreLabel.style.marginRight = '5px'; // Add some margin to separate from checkbox
 
+        // Load all images checkbox
         var autoLoadMoreCheckbox = document.createElement('input');
         autoLoadMoreCheckbox.type = 'checkbox';
         autoLoadMoreCheckbox.checked = getCookie('autoLoadMoreEnabled') === 'true'; // Set checkbox value based on cookie
@@ -86,21 +70,7 @@
             autoLoadMore();
         });
 
-        autoLoadMoreLabel.appendChild(autoLoadMoreCheckbox);
-        cell2.appendChild(autoLoadMoreLabel);
-
-        // Second row for empty space and "Download All Images" button
-        var row2 = document.createElement('tr');
-        table.appendChild(row2);
-
-        // Empty cell to align with "Help Create Prompts" checkbox
-        var emptyCell = document.createElement('td');
-        row2.appendChild(emptyCell);
-
-        // Cell for "Download All Images" button
-        var cell3 = document.createElement('td');
-        row2.appendChild(cell3);
-
+        // Download all images button
         var downloadAllButton = document.createElement('button');
         downloadAllButton.innerText = 'Download All Images';
         downloadAllButton.title = 'Please make sure to enable "See All Images" before downloading.'; // Add tooltip
@@ -108,42 +78,61 @@
             downloadAllImages();
         });
 
+        // Include prompts label and checkbox
         const includePromptsLabel = document.createElement('label');
-        includePromptsLabel.innerText = 'Include prompts ';
-        includePromptsLabel.style.marginRight = '5px'; // Add some margin to separate from checkbox
+        includePromptsLabel.innerText = 'Include Prompts ';
+        includePromptsLabel.style.marginRight = '15px'; // Add some margin to separate from checkbox
         includePromptsInDownload = getCookie('includePromptsInDownload') === 'true';
-        const includePrompts = document.createElement('input');
-        includePrompts.type = 'checkbox';
-        includePrompts.checked = includePromptsInDownload;
-
-        includePrompts.addEventListener('change', function () {
-            includePromptsInDownload = includePrompts.checked;
+        const includePromptsCheckbox = document.createElement('input');
+        includePromptsCheckbox.type = 'checkbox';
+        includePromptsCheckbox.checked = includePromptsInDownload;
+        includePromptsCheckbox.addEventListener('change', function () {
+            includePromptsInDownload = includePromptsCheckbox.checked;
             // Set cookie to remember user choice
             setCookie('includePromptsInDownload', includePromptsInDownload, 30);
         });
 
-        // Create status text for download progress
+        // Table creation starts here
+        // Create table for layout
+        var table = document.createElement('table');
+        table.style.borderCollapse = 'collapse'; // Collapse border spacing
+        table.style.width = '100%'; // Set table width
+
+        var row1 = document.createElement('tr');
+        table.appendChild(row1);
+        var row2 = document.createElement('tr');
+        table.appendChild(row2);
+
+        // Cell for "Help Create Prompts" label and checkbox
+        var helpCreatePromptsCell = document.createElement('td');
+        autoCreateModalLabel.appendChild(showModalCheckbox);
+        helpCreatePromptsCell.appendChild(autoCreateModalLabel);
+
+        // Cell for "See All Images" label and checkbox
+        var autoLoadMoreCell = document.createElement('td');
+        autoLoadMoreLabel.appendChild(autoLoadMoreCheckbox);
+        autoLoadMoreCell.appendChild(autoLoadMoreLabel);
+
+        // Cell for include prompts label and checkbox
+        var includePromptsCell = document.createElement('td');
+        includePromptsLabel.appendChild(includePromptsCheckbox);
+        includePromptsCell.appendChild(includePromptsLabel);
+
+        // Cell for "Download All Images" button
+        var downloadAllCell = document.createElement('td');
         var downloadStatus = document.createElement('span');
+        downloadAllCell.appendChild(downloadAllButton);
+        downloadAllCell.appendChild(downloadStatus);
 
-        cell3.appendChild(downloadAllButton);
-        cell3.appendChild(downloadStatus);
-
-        const row3 = document.createElement('tr');
-        table.appendChild(row3);
-        // Empty cell to align with "Help Create Prompts" checkbox again
-        emptyCell = document.createElement('td');
-        row3.appendChild(emptyCell);
-        // Cell for "Include prompts" container
-        var cell4 = document.createElement('td');
-        row3.appendChild(cell4);
-
-        cell4.appendChild(includePromptsLabel);
-        cell4.appendChild(includePrompts);
+        row1.appendChild(helpCreatePromptsCell);
+        row1.appendChild(autoLoadMoreCell);
+        row2.appendChild(includePromptsCell);
+        row2.appendChild(downloadAllCell);
 
         uiContainer.appendChild(table);
         document.body.appendChild(uiContainer);
-        } else {
-          // Masquer l'interface de la page chat
+    } else {
+        // Masquer l'interface de la page chat
     }
 
     // Check if autoLoadMore is enabled from cookie
