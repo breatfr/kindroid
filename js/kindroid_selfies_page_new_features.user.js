@@ -19,6 +19,8 @@
     script.src = 'https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js';
     document.head.appendChild(script);
 
+    let includePromptsInDownload = false;
+
     if (window.location.href.includes("/selfies")) {
         // User interface
         var uiContainer = document.createElement('div');
@@ -105,12 +107,38 @@
         downloadAllButton.addEventListener('click', function() {
             downloadAllImages();
         });
-    
+
+        const includePromptsLabel = document.createElement('label');
+        includePromptsLabel.innerText = 'Include prompts ';
+        includePromptsLabel.style.marginRight = '5px'; // Add some margin to separate from checkbox
+        includePromptsInDownload = getCookie('includePromptsInDownload') === 'true';
+        const includePrompts = document.createElement('input');
+        includePrompts.type = 'checkbox';
+        includePrompts.checked = includePromptsInDownload;
+
+        includePrompts.addEventListener('change', function () {
+            includePromptsInDownload = includePrompts.checked;
+            // Set cookie to remember user choice
+            setCookie('includePromptsInDownload', includePromptsInDownload, 30);
+        });
+
         // Create status text for download progress
         var downloadStatus = document.createElement('span');
     
         cell3.appendChild(downloadAllButton);
         cell3.appendChild(downloadStatus);
+
+        const row3 = document.createElement('tr');
+        table.appendChild(row3);
+        // Empty cell to align with "Help Create Prompts" checkbox again
+        emptyCell = document.createElement('td');
+        row3.appendChild(emptyCell);
+        // Cell for "Include prompts" container
+        var cell4 = document.createElement('td');
+        row3.appendChild(cell4);
+
+        cell4.appendChild(includePromptsLabel);
+        cell4.appendChild(includePrompts);
     
         uiContainer.appendChild(table);
         document.body.appendChild(uiContainer);
@@ -182,9 +210,11 @@
                 .then(blob => {
                     const filename = ('0000' + (totalImages - index)).slice(-4); // Reverse numbering
                     zip.file(`${filename}.jpg`, blob);
-                    const prompt = image.alt;
-                    const promptFile = new Blob([prompt], { type: 'text/plain' });
-                    zip.file(`${filename}.txt`, promptFile);
+                    if (includePromptsInDownload) {
+                        const prompt = image.alt;
+                        const promptFile = new Blob([prompt], { type: 'text/plain' });
+                        zip.file(`${filename}.txt`, promptFile);
+                    }
                     ++count;
                     downloadStatus.innerText = ' Downloading... (' + count + '/' + totalImages + ')';
                     if (count === totalImages) {
