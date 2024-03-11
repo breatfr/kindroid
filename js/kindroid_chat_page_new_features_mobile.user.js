@@ -4,7 +4,7 @@
 // @namespace   https://kindroid.ai
 // @match       https://kindroid.ai/home
 // @match       https://kindroid.ai/groupchat/*
-// @version     1.09
+// @version     1.10
 // @updateURL   https://raw.githubusercontent.com/breatfr/Kindroid/main/js/kindroid_chat_page_new_features_mobile.user.js
 // @author      BreatFR
 // @copyright   2023, BreatFR (https://breat.fr)
@@ -106,7 +106,7 @@
     // Autoconfirm regenerate
     function autoConfirmRegenerate() {
         if (!autoConfirmEnabled) {
-          return;
+            return;
         }
 
         // Cherchez le bouton "Confirm" dans le message de régénération
@@ -116,11 +116,13 @@
 
         // Vérifiez d'abord si le texte spécifique est présent avant de sélectionner le bouton Confirm
         const confirmationText = document.querySelector('.css-6a2m2n');
-        if (confirmationText && confirmationText.textContent.includes("Suggest a revision")) {
-            if (confirmButton1 && confirmButton1.textContent === 'Confirm') {
+        if (confirmationText && confirmationText.textContent.includes("Regenerate or suggest a change")) {
+            if (confirmButton1 && confirmButton1.textContent === 'Regenerate') {
                 confirmButton1.click();
             } else if (confirmButton2) { // Utilisation du deuxième sélecteur si le premier n'est pas trouvé
                 confirmButton2.click();
+            } else if (confirmButton3) { // Utilisation du deuxième sélecteur si le premier n'est pas trouvé
+                confirmButton3.click();
             }
         }
 
