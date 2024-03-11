@@ -38,8 +38,11 @@
         var row1 = document.createElement('tr');
         table.appendChild(row1);
 
+        const cellBorderStyle = 'solid 3px #fff0f0';
+
         // Cell for "Help Create Prompts" label and checkbox
         var cell1 = document.createElement('td');
+        cell1.style.borderRight = cellBorderStyle;
         row1.appendChild(cell1);
 
         var autoCreateModalLabel = document.createElement('label');
@@ -66,8 +69,12 @@
         autoCreateModalLabel.appendChild(showModalCheckbox);
         cell1.appendChild(autoCreateModalLabel);
 
+        const paddingLeft = '5px';
+
         // Cell for "See All Images" label and checkbox
         var cell2 = document.createElement('td');
+        cell2.style.borderLeft = cellBorderStyle;
+        cell2.style.paddingLeft = paddingLeft;
         row1.appendChild(cell2);
 
         var autoLoadMoreLabel = document.createElement('label');
@@ -107,13 +114,15 @@
         table.appendChild(row2);
         
         const includePromptsCell = document.createElement('td');
-        includePromptsCell.style.borderRight = tdStyle;
+        includePromptsCell.style.borderRight = cellBorderStyle;
         includePromptsLabel.appendChild(includePromptsCheckbox);
         includePromptsCell.appendChild(includePromptsLabel);
         row2.appendChild(includePromptsCell);
 
         // Cell for "Download All Images" button
         var cell3 = document.createElement('td');
+        cell3.style.borderLeft = cellBorderStyle;
+        cell3.style.paddingLeft = paddingLeft;
         row2.appendChild(cell3);
 
         var downloadAllButton = document.createElement('button');
