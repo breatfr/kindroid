@@ -100,7 +100,7 @@
         const table = document.createElement('table');
         table.style.borderCollapse = 'collapse'; // Collapse border spacing
         table.style.width = '100%'; // Set table width
-        const tdStyle = 'solid 3px #fff0f0';
+        const cellBorderStyle = 'solid 3px #fff0f0';
         const paddingLeft = '5px';
 
         const row1 = document.createElement('tr');
@@ -110,26 +110,26 @@
 
         // Cell for "Help Create Prompts" label and checkbox
         const helpCreatePromptsCell = document.createElement('td');
-        helpCreatePromptsCell.style.borderRight = tdStyle;
+        helpCreatePromptsCell.style.borderRight = cellBorderStyle;
         autoCreateModalLabel.appendChild(showModalCheckbox);
         helpCreatePromptsCell.appendChild(autoCreateModalLabel);
 
         // Cell for "See All Images" label and checkbox
         const autoLoadMoreCell = document.createElement('td');
-        autoLoadMoreCell.style.borderLeft = tdStyle;
+        autoLoadMoreCell.style.borderLeft = cellBorderStyle;
         autoLoadMoreCell.style.paddingLeft = paddingLeft;
         autoLoadMoreLabel.appendChild(autoLoadMoreCheckbox);
         autoLoadMoreCell.appendChild(autoLoadMoreLabel);
 
         // Cell for include prompts label and checkbox
         const includePromptsCell = document.createElement('td');
-        includePromptsCell.style.borderRight = tdStyle;
+        includePromptsCell.style.borderRight = cellBorderStyle;
         includePromptsLabel.appendChild(includePromptsCheckbox);
         includePromptsCell.appendChild(includePromptsLabel);
 
         // Cell for "Download All Images" button
         const downloadAllCell = document.createElement('td');
-        downloadAllCell.style.borderLeft = tdStyle;
+        downloadAllCell.style.borderLeft = cellBorderStyle;
         downloadAllCell.style.paddingLeft = paddingLeft;
         downloadStatus = document.createElement('span');
         downloadAllCell.appendChild(downloadAllButton);
