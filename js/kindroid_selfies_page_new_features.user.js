@@ -19,11 +19,15 @@
     script.src = 'https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js';
     document.head.appendChild(script);
 
-    let includePromptsInDownload = false;
+    let downloadStatus;
+
+    // Check if autoLoadMore is enabled from cookie
+    let autoLoadMoreEnabled = getCookie('autoLoadMoreEnabled') === 'true';
+    let includePromptsInDownload = getCookie('includePromptsInDownload') === 'true';
 
     if (window.location.href.includes("/selfies")) {
         // User interface
-        var uiContainer = document.createElement('div');
+        const uiContainer = document.createElement('div');
         uiContainer.style.position = 'fixed';
         uiContainer.style.top = '5px';
         uiContainer.style.left = '8%';
@@ -31,13 +35,13 @@
         uiContainer.style.zIndex = '9999';
 
         // Help create prompts label
-        var autoCreateModalLabel = document.createElement('label');
+        const autoCreateModalLabel = document.createElement('label');
         autoCreateModalLabel.innerText = 'Help Create Prompts ';
         autoCreateModalLabel.setAttribute('for', 'showModalCheckbox');
         autoCreateModalLabel.style.cursor = 'pointer'; // Make the label clickable
 
         // Help create prompts checkbox
-        var showModalCheckbox = document.createElement('input');
+        const showModalCheckbox = document.createElement('input');
         showModalCheckbox.type = 'checkbox';
         showModalCheckbox.id = 'showModalCheckbox';
         showModalCheckbox.style.marginRight = '5px'; // Add some margin to separate from label
@@ -54,14 +58,14 @@
         });
 
         // Load all images label
-        var autoLoadMoreLabel = document.createElement('label');
+        const autoLoadMoreLabel = document.createElement('label');
         autoLoadMoreLabel.innerText = 'See All Images ';
         autoLoadMoreLabel.style.marginRight = '5px'; // Add some margin to separate from checkbox
 
         // Load all images checkbox
-        var autoLoadMoreCheckbox = document.createElement('input');
+        const autoLoadMoreCheckbox = document.createElement('input');
         autoLoadMoreCheckbox.type = 'checkbox';
-        autoLoadMoreCheckbox.checked = getCookie('autoLoadMoreEnabled') === 'true'; // Set checkbox value based on cookie
+        autoLoadMoreCheckbox.checked = autoLoadMoreEnabled; // Set checkbox value based on cookie
         autoLoadMoreCheckbox.addEventListener('change', function() {
             autoLoadMoreEnabled = autoLoadMoreCheckbox.checked;
             // Set cookie to remember user choice
@@ -71,7 +75,7 @@
         });
 
         // Download all images button
-        var downloadAllButton = document.createElement('button');
+        const downloadAllButton = document.createElement('button');
         downloadAllButton.innerText = 'Download All Images';
         downloadAllButton.title = 'Please make sure to enable "See All Images" before downloading.'; // Add tooltip
         downloadAllButton.addEventListener('click', function() {
@@ -82,7 +86,6 @@
         const includePromptsLabel = document.createElement('label');
         includePromptsLabel.innerText = 'Include Prompts ';
         includePromptsLabel.style.marginRight = '15px'; // Add some margin to separate from checkbox
-        includePromptsInDownload = getCookie('includePromptsInDownload') === 'true';
         const includePromptsCheckbox = document.createElement('input');
         includePromptsCheckbox.type = 'checkbox';
         includePromptsCheckbox.checked = includePromptsInDownload;
@@ -94,33 +97,41 @@
 
         // Table creation starts here
         // Create table for layout
-        var table = document.createElement('table');
+        const table = document.createElement('table');
         table.style.borderCollapse = 'collapse'; // Collapse border spacing
         table.style.width = '100%'; // Set table width
+        const tdStyle = 'solid 3px #fff0f0';
+        const paddingLeft = '5px';
 
-        var row1 = document.createElement('tr');
+        const row1 = document.createElement('tr');
         table.appendChild(row1);
-        var row2 = document.createElement('tr');
+        const row2 = document.createElement('tr');
         table.appendChild(row2);
 
         // Cell for "Help Create Prompts" label and checkbox
-        var helpCreatePromptsCell = document.createElement('td');
+        const helpCreatePromptsCell = document.createElement('td');
+        helpCreatePromptsCell.style.borderRight = tdStyle;
         autoCreateModalLabel.appendChild(showModalCheckbox);
         helpCreatePromptsCell.appendChild(autoCreateModalLabel);
 
         // Cell for "See All Images" label and checkbox
-        var autoLoadMoreCell = document.createElement('td');
+        const autoLoadMoreCell = document.createElement('td');
+        autoLoadMoreCell.style.borderLeft = tdStyle;
+        autoLoadMoreCell.style.paddingLeft = paddingLeft;
         autoLoadMoreLabel.appendChild(autoLoadMoreCheckbox);
         autoLoadMoreCell.appendChild(autoLoadMoreLabel);
 
         // Cell for include prompts label and checkbox
-        var includePromptsCell = document.createElement('td');
+        const includePromptsCell = document.createElement('td');
+        includePromptsCell.style.borderRight = tdStyle;
         includePromptsLabel.appendChild(includePromptsCheckbox);
         includePromptsCell.appendChild(includePromptsLabel);
 
         // Cell for "Download All Images" button
-        var downloadAllCell = document.createElement('td');
-        var downloadStatus = document.createElement('span');
+        const downloadAllCell = document.createElement('td');
+        downloadAllCell.style.borderLeft = tdStyle;
+        downloadAllCell.style.paddingLeft = paddingLeft;
+        downloadStatus = document.createElement('span');
         downloadAllCell.appendChild(downloadAllButton);
         downloadAllCell.appendChild(downloadStatus);
 
@@ -134,9 +145,6 @@
     } else {
         // Masquer l'interface de la page chat
     }
-
-    // Check if autoLoadMore is enabled from cookie
-    var autoLoadMoreEnabled = autoLoadMoreCheckbox.checked;
 
     // Function to set cookie
     function setCookie(name, value, days) {
