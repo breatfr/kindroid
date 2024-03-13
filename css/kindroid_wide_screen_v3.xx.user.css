@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name            Kindroid: Wide screen + customizations v3.xx
 @description     Put Kindroid on whole page for screen with width 900px and more and add customizations features.
-@version         3.22.2
+@version         3.23
 @author          BreatFR (https://breat.fr)
 @namespace       https://github.com/breatfr
 @homepageURL     https://github.com/breatfr/kindroid
@@ -23,8 +23,8 @@
     "Same color": "samecolor"
 }
 @var color      actionscolor                "Actions texts color choice"            rgb(168, 168, 168)
-@var checkbox   avatarchoice                "Avatar choice"                         0
-@var text       avatarchoiceurl             "Avatar choice URL"                     "URL between quotes"
+@var checkbox   avatarchoice                "Avatar changer"                        0
+@var text       avatarchoiceurl             "Avatar changer URL"                    "URL between quotes"
 @var select     avatarposition              "Avatar position" {
     "Large Middle": "avatarlargemiddle",
     "Large Top": "avatarlargetop",
@@ -42,7 +42,8 @@
 }
 @var checkbox   avatarcustomsize            "Avatar custom size"                    0
 @var text       avatarcustomsizevalue       "Avatar custom size value"              512px
-@var checkbox   avatarzoom                  "Avatar hoverzoom"                      1
+@var checkbox   avatarrectangle             "Avatar rectangle"                      1
+@var checkbox   avatarzoom                  "Avatar hoverzoom"                      0
 @var select     bgchoice                    "Background choice" {
     "❤️ Hearts": "heartbg",
     "⬜ None": "nobg",
@@ -82,7 +83,7 @@ X (twitter)     https://x.com/breatfroff
 =================================================================================================================================== */
     /* Versions */
     :root {
-        --themeversion: 'Theme v3.22.2';
+        --themeversion: 'Theme v3.23';
         --chatversionpc: 'Chat script PC v1.10';
         --chatversionmobile: 'Chat script mobile v1.10';
         --selfiesversionpc: 'Selfies script PC v1.04';
@@ -830,7 +831,7 @@ X (twitter)     https://x.com/breatfroff
             .css-13tht1l,
             .css-g2goff {
                 position: absolute;
-                top: 12vh;
+                top: 8vh;
             }
         }
     }
@@ -914,7 +915,7 @@ X (twitter)     https://x.com/breatfroff
             /* Put chat and textarea more on right*/
             .css-1lbk8wf {
                 bottom: 20px;
-                padding-left: 540px;
+                padding-left: 545px;
                 padding-right: 10px;
                 width: 100vw;
             }
@@ -992,7 +993,7 @@ X (twitter)     https://x.com/breatfroff
         .css-1bwrjj6 {
             height: 0px;
         }
-        .css-g2goff {
+        .css-13tht1l {
             background: url(avatarchoiceurl) no-repeat;
             background-size: cover;
             max-width: avatarsize;
@@ -1000,7 +1001,7 @@ X (twitter)     https://x.com/breatfroff
         
         if avatarzoom {
             @media screen and (min-width: 900px) {
-                .css-g2goff:hover {
+                .css-13tht1l:hover {
                     border-radius: 0px;
                     height: 933px;
                     left: -12px;
@@ -1011,7 +1012,7 @@ X (twitter)     https://x.com/breatfroff
                 }
             }
             @media screen and (min-height: 1080px) {
-                .css-g2goff:hover {
+                .css-13tht1l:hover {
                     border-radius: 0px;
                     height: 1080px;
                     left: -10px;
@@ -1023,7 +1024,7 @@ X (twitter)     https://x.com/breatfroff
                 }
             }
             @media screen and (height: 1080px) {
-                .css-g2goff:hover {
+                .css-13tht1l:hover {
                     border-radius: 0px;
                     height: 1080px;
                     left: -10px;
@@ -1039,10 +1040,9 @@ X (twitter)     https://x.com/breatfroff
         if (avatarposition=="avatarlargemiddle") {
             @media screen and (min-width: 900px) {
                 .css-oies6c,
-                .css-13tht1l,
-                .css-g2goff {
+                .css-13tht1l {
                     position: absolute;
-                    top: 14vh;
+                    top: 8vh;
                 }
             }
         }
@@ -1098,40 +1098,85 @@ X (twitter)     https://x.com/breatfroff
         }
     }
     
+    if avatarrectangle {
+        /* Bigger avatar */
+        .css-oies6c,
+        .css-13tht1l,
+        .css-g2goff {
+            border-radius: 20px;
+            max-height: calc(100% - 40px);
+            min-height: calc(100% - 40px);
+            padding: 0px;
+            top: 0px;
+            transition: 0.3s linear;
+            width: 100%;
+        }
+        .css-1bwrjj6 {
+            object-fit: cover;
+        }
+        
+        if avatarchoice {
+            .css-oies6c,
+            .css-1bwrjj6,
+            .css-g2goff {
+                border-radius: 20px;
+                height: 0px;
+                padding: 0px;
+                top: 0px;
+                transition: 0.3s linear;
+                
+            }            
+            .css-13tht1l {
+                background: url(avatarchoiceurl);
+                background-position: center;
+                background-size: cover;
+            }
+        }
+    }
+    
     if avatarzoom {
         @media screen and (min-width: 900px) {
-            .css-13tht1l:hover {
+            .css-oies6c:hover,
+            .css-v2kfba:hover,
+            .css-13tht1l:hover,
+            .css-1bwrjj6:hover {
                 border-radius: 0px;
-                height: 933px;
-                left: -12px;
+                bottom: 0px !important;
+                left: 0px;
                 max-width: 933px;
-                top: calc(0px - 13vh);
-                width: 933px;
+                min-height: 100%;
+                position: fixed !important;
+                top: 0px !important;
                 z-index: 9999;
             }
         }
         @media screen and (min-height: 1080px) {
             .css-oies6c:hover,
             .css-v2kfba:hover,
-            .css-13tht1l:hover {
+            .css-13tht1l:hover,
+            .css-1bwrjj6:hover {
                 border-radius: 0px;
-                height: 1080px;
-                left: -10px;
-                max-height: 1080px;
+                bottom: 0px !important;
+                left: 0px;
                 max-width: 1080px;
-                width: 1080px;
+                min-height: 100%;
+                position: fixed;
+                top: 0px !important;
                 z-index: 9999;
             }
         }
         @media screen and (height: 1080px) {
+            .css-oies6c:hover,
             .css-v2kfba:hover,
-            .css-13tht1l:hover {
+            .css-13tht1l:hover,
+            .css-1bwrjj6:hover {
                 border-radius: 0px;
-                height: 1080px;
-                left: -10px;
-                max-height: 1080px;
+                bottom: 0px !important;
+                left: 0px;
                 max-width: 1080px;
-                width: 1080px;
+                min-height: 100%;
+                position: fixed;
+                top: 0px !important;
                 z-index: 9999;
             }
         }
@@ -1145,16 +1190,18 @@ X (twitter)     https://x.com/breatfroff
             }
             .css-do4s31 {
                 background-color: transparent;
-                border: none;    
+                border: none;
+                bottom: 0px;
                 color: var(--chakra-colors-secondaryWhite);
                 display: grid;
-                font-size: 20px;
-                grid-template-columns: 1fr 1fr 1fr;
-                margin-left: -10% !important;
-                margin-top: 141%;
-                --menu-shadow: transparent !important;
-                opacity: 100% !important;
+                gap: 10px;
+                grid-template-columns: 1fr 1fr;
+                --menu-shadow: transparent;
+                opacity: 1 !important;
+                position: fixed;
+                transform: none !important;
                 visibility: visible !important;
+                z-index: unset !important;
             }
             .css-do4s31 button:hover {
                 background: linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
@@ -1190,16 +1237,18 @@ X (twitter)     https://x.com/breatfroff
             }    
             .css-do4s31 {
                 background-color: transparent;
-                border: none;    
+                border: none;
+                bottom: 0px;
                 color: var(--chakra-colors-secondaryWhite);
                 display: grid;
-                font-size: 20px;
-                grid-template-columns: 1fr 1fr 1fr;
-                margin-left: -10% !important;
-                margin-top: 168%;
-                --menu-shadow: transparent !important;
-                opacity: 100% !important;
+                gap: 10px;
+                grid-template-columns: 1fr 1fr;
+                --menu-shadow: transparent;
+                opacity: 1 !important;
+                position: fixed;
+                transform: none !important;
                 visibility: visible !important;
+                z-index: 0 !important;
             }
             .css-do4s31 button:hover {
                 background: linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
@@ -1236,16 +1285,18 @@ X (twitter)     https://x.com/breatfroff
             }
             .css-do4s31 {
                 background-color: transparent;
-                border: none;    
+                border: none;
+                bottom: 0px;
                 color: var(--chakra-colors-secondaryWhite);
                 display: grid;
-                font-size: 20px;
-                grid-template-columns: 1fr 1fr 1fr;
-                margin-left: -10% !important;
-                margin-top: 212%;
-                --menu-shadow: transparent !important;
-                opacity: 100% !important;
+                gap: 10px;
+                grid-template-columns: 1fr 1fr;
+                --menu-shadow: transparent;
+                opacity: 1 !important;
+                position: fixed;
+                transform: none !important;
                 visibility: visible !important;
+                z-index: 0 !important;
             }
             .css-do4s31 button:hover {
                 background: linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
@@ -1281,16 +1332,18 @@ X (twitter)     https://x.com/breatfroff
             }
             .css-do4s31 {
                 background-color: transparent;
-                border: none;    
+                border: none;
+                bottom: 0px;
                 color: var(--chakra-colors-secondaryWhite);
                 display: grid;
-                font-size: 20px;
-                grid-template-columns: 1fr 1fr 1fr;
-                margin-left: -10% !important;
-                margin-top: 212%;
-                --menu-shadow: transparent !important;
-                opacity: 100% !important;
+                gap: 10px;
+                grid-template-columns: 1fr 1fr;
+                --menu-shadow: transparent;
+                opacity: 1 !important;
+                position: fixed;
+                transform: none !important;
                 visibility: visible !important;
+                z-index: 0 !important;
             }
             .css-do4s31 button:hover {
                 background: linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
@@ -1326,16 +1379,18 @@ X (twitter)     https://x.com/breatfroff
             }
             .css-do4s31 {
                 background-color: transparent;
-                border: none;    
+                border: none;
+                bottom: 0px;
                 color: var(--chakra-colors-secondaryWhite);
                 display: grid;
-                font-size: 20px;
-                grid-template-columns: 1fr 1fr 1fr;
-                margin-left: -10% !important;
-                margin-top: 325%;
-                --menu-shadow: transparent !important;
-                opacity: 100% !important;
+                gap: 10px;
+                grid-template-columns: 1fr 1fr;
+                --menu-shadow: transparent;
+                opacity: 1 !important;
+                position: fixed;
+                transform: none !important;
                 visibility: visible !important;
+                z-index: 0 !important;
             }
             .css-do4s31 button:hover {
                 background: linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
@@ -1371,16 +1426,18 @@ X (twitter)     https://x.com/breatfroff
             }
             .css-do4s31 {
                 background-color: transparent;
-                border: none;    
+                border: none;
+                bottom: 0px;
                 color: var(--chakra-colors-secondaryWhite);
                 display: grid;
-                font-size: 20px;
-                grid-template-columns: 1fr 1fr 1fr;
-                margin-left: -10% !important;
-                margin-top: 325%;
-                --menu-shadow: transparent !important;
-                opacity: 100% !important;
+                gap: 10px;
+                grid-template-columns: 1fr 1fr;
+                --menu-shadow: transparent;
+                opacity: 1 !important;
+                position: fixed;
+                transform: none !important;
                 visibility: visible !important;
+                z-index: 0 !important;
             }
             .css-do4s31 button:hover {
                 background: linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
@@ -1500,6 +1557,7 @@ X (twitter)     https://x.com/breatfroff
         background-color: var(--chakra-colors-secondaryBlack) !important;
         max-width: 100%;
         padding: 0px 10px 0px 0.3%;
+        z-index: unset !important;
     }
     
     /* Add border to textarea when focus */
