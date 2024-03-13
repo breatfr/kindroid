@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## Theme v3.23 - 2024-03-13
+- Renamed avatar choice to avatar changer in theme settings to be more clear
+- Add rectangle avatar setting for vanilla avatar and avatar changer (works better with the face in the middle because the theme cut sides automatically to fit the area)
+- Modification of default settings:
+	- Avatar hoverzoom was enabled by default and now it's disabled by default
+	- Put new avatar rectangle option enabled by default
+- Fix avatar large middle position with a vanilla avatar
+- Fix avatar zoom
+- Fix and customize a little the system bubble left setting due to last website update
+
 ## Chat page & chat page mobile scripts v1.10 - 2024-03-11
 - fix auto confirm regenerate since website update
 
