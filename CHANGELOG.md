@@ -3,7 +3,7 @@
 All notable changes to this project will be documented in this file.
 
 ## Theme v3.24 - 2024-03-14
-- Add customization of the avatar's height when you use the rectangle setting`
+- Add customization of the avatar's height when you use the rectangle setting
 
 ## Theme v3.23 - 2024-03-13
 - Renamed avatar choice to avatar changer in theme settings to be more clear
