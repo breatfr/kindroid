@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name            Kindroid: Wide screen + customizations v3.xx
 @description     Put Kindroid on whole page for screen with width 900px and more and add customizations features.
-@version         3.23
+@version         3.24
 @author          BreatFR (https://breat.fr)
 @namespace       https://github.com/breatfr
 @homepageURL     https://github.com/breatfr/kindroid
@@ -10,7 +10,7 @@
 @license         GPL-3.0-or-later; http://www.gnu.org/licenses/gpl-3.0.txt
 @preprocessor    stylus
 
-@var select     actionsstyle                "Actions texts style" {
+@var select     actionsstyle                        "Actions texts style" {
     "Default": "actionsdefault",
     "Asterisks": "asterisks",
     "Asterisks + bold": "asterisksbold",
@@ -22,10 +22,10 @@
     "No italic": "noitalic",
     "Same color": "samecolor"
 }
-@var color      actionscolor                "Actions texts color choice"            rgb(168, 168, 168)
-@var checkbox   avatarchoice                "Avatar changer"                        0
-@var text       avatarchoiceurl             "Avatar changer URL"                    "URL between quotes"
-@var select     avatarposition              "Avatar position" {
+@var color      actionscolor                        "Actions texts color choice"            rgb(168, 168, 168)
+@var checkbox   avatarchoice                        "Avatar changer"                        0
+@var text       avatarchoiceurl                     "Avatar changer URL"                    "URL between quotes"
+@var select     avatarposition                      "Avatar position" {
     "Large Middle": "avatarlargemiddle",
     "Large Top": "avatarlargetop",
     "Large Bottom": "avatarlargebottom",
@@ -33,40 +33,42 @@
     "Small Top": "avatarsmalltop",
     "Small Bottom": "avatarsmallbottom",
 }
-@var checkbox   avatarcustomposition        "Avatar custom position"                0
-@var text       avatarcustompositionvalue   "Avatar custom position value"          12vh
-@var select     avatarsize                  "Avatar size" {
+@var checkbox   avatarcustomposition                "Avatar custom position"                0
+@var text       avatarcustompositionvalue           "Avatar custom position value"          12vh
+@var select     avatarsize                          "Avatar size" {
     "Large": "avatarlarge",
     "Small": "avatarsmall",
     "Hidden": "avatarhidden"
 }
-@var checkbox   avatarcustomsize            "Avatar custom size"                    0
-@var text       avatarcustomsizevalue       "Avatar custom size value"              512px
-@var checkbox   avatarrectangle             "Avatar rectangle"                      1
-@var checkbox   avatarzoom                  "Avatar hoverzoom"                      0
-@var select     bgchoice                    "Background choice" {
+@var checkbox   avatarcustomsize                    "Avatar custom size"                    0
+@var text       avatarcustomsizevalue               "Avatar custom size value"              512px
+@var checkbox   avatarrectangle                     "Avatar rectangle"                      1
+@var checkbox   avatarrectanglecustomheight         "Avatar rectangle custom height"        0
+@var text       avatarrectanglecustomheightvalue    "Avatar custom height value"            256px
+@var checkbox   avatarzoom                      "Avatar hoverzoom"                          0
+@var select     bgchoice                        "Background choice" {
     "❤️ Hearts": "heartbg",
     "⬜ None": "nobg",
     "❔ Custom": "custombg"
 }
-@var color      bgcolor                     "Background color"                      #101010
-@var text       custombgurl                 "Background URL"                        "URL between quotes"
-@var checkbox   blurcontent                 "Blur content in bubbles"               0
-@var color      bubblescolor                "Bubbles font color"                    #CBCBCB
-@var text       bubblestext                 "Bubbles font size"                     20px
-@var checkbox   hidenames                   "Hide names in bubbles"                 1
-@var color      kinbubblesbgcolor           "Kin bubbles background color"          rgb(33, 27, 25)
-@var text       kinbubblesbgurl             "Kin bubbles background URL"            "URL between quotes"
-@var color      ourbubblesbgcolor           "Our bubbles background color"          rgb(27, 28, 30)
-@var text       ourbubblesbgurl             "Our bubbles background URL"            "URL between quotes"
-@var select     systembubblesstyle          "System bubbles style" {
+@var color      bgcolor                         "Background color"                          #101010
+@var text       custombgurl                     "Background URL"                            "URL between quotes"
+@var checkbox   blurcontent                     "Blur content in bubbles"                   0
+@var color      bubblescolor                    "Bubbles font color"                        #CBCBCB
+@var text       bubblestext                     "Bubbles font size"                         20px
+@var checkbox   hidenames                       "Hide names in bubbles"                     1
+@var color      kinbubblesbgcolor               "Kin bubbles background color"              rgb(33, 27, 25)
+@var text       kinbubblesbgurl                 "Kin bubbles background URL"                "URL between quotes"
+@var color      ourbubblesbgcolor               "Our bubbles background color"              rgb(27, 28, 30)
+@var text       ourbubblesbgurl                 "Our bubbles background URL"                "URL between quotes"
+@var select     systembubblesstyle              "System bubbles style" {
     "Left": "systembubblesleft",
     "Dark": "systembubblesdark"
 }
-@var text       chattextareasize            "Textarea font size"                    20px
+@var text       chattextareasize                "Textarea font size"                        20px
 
-@var checkbox   imageborder                 "Image border on hover"                 1
-@var checkbox   requestimage                "Request image button at top"           1
+@var checkbox   imageborder                     "Image border on hover"                     1
+@var checkbox   requestimage                    "Request image button at top"               1
 ==/UserStyle== */
 
 /* === Credits ===
@@ -83,7 +85,7 @@ X (twitter)     https://x.com/breatfroff
 =================================================================================================================================== */
     /* Versions */
     :root {
-        --themeversion: 'Theme v3.23';
+        --themeversion: 'Theme v3.24';
         --chatversionpc: 'Chat script PC v1.10';
         --chatversionmobile: 'Chat script mobile v1.10';
         --selfiesversionpc: 'Selfies script PC v1.04';
@@ -1124,12 +1126,46 @@ X (twitter)     https://x.com/breatfroff
                 padding: 0px;
                 top: 0px;
                 transition: 0.3s linear;
-                
             }            
             .css-13tht1l {
                 background: url(avatarchoiceurl);
                 background-position: center;
                 background-size: cover;
+            }
+        }
+        
+        if avatarrectanglecustomheight {
+            /* Bigger avatar */
+            .css-oies6c,
+            .css-13tht1l,
+            .css-g2goff {
+                border-radius: 20px;
+                max-height: avatarrectanglecustomheightvalue;
+                min-height: avatarrectanglecustomheightvalue;
+                padding: 0px;
+                top: 0px;
+                transition: 0.3s linear;
+                width: 100%;
+            }
+            .css-1bwrjj6 {
+                object-fit: cover;
+            }
+
+            if avatarchoice {
+                .css-oies6c,
+                .css-1bwrjj6,
+                .css-g2goff {
+                    border-radius: 20px;
+                    height: 0px;
+                    padding: 0px;
+                    top: 0px;
+                    transition: 0.3s linear;
+                }            
+                .css-13tht1l {
+                    background: url(avatarchoiceurl);
+                    background-position: center;
+                    background-size: cover;
+                }
             }
         }
     }
