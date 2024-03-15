@@ -54,6 +54,13 @@ https://discord.com/channels/1116127115574779905/1145809654044176485
 				<li>avatar custom position</li>
 			</ul>
 		</li>
+		<li> avatar chat style (require avatar choices)</li>
+		<li>avatar circle</li>
+		<li>avatar rectangle
+			<ul>
+				<li>avatar rectangle</li>
+				<li>avatar rectangle height customization</li>
+		</li>
 		<li>avatar size
 			<ul>
 				<li>large</li>
