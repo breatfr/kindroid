@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name            Kindroid: Wide screen + customizations v3.xx
 @description     Put Kindroid on whole page for screen with width 900px and more and add customizations features.
-@version         3.24
+@version         3.25
 @author          BreatFR (https://breat.fr)
 @namespace       https://github.com/breatfr
 @homepageURL     https://github.com/breatfr/kindroid
@@ -33,6 +33,10 @@
     "Small Top": "avatarsmalltop",
     "Small Bottom": "avatarsmallbottom",
 }
+@var checkbox   avatarchat                          "Avatar chat"                           0
+@var checkbox   ouravatarchoice                     "Avatar changer for us"                 0
+@var text       ouravatarchoiceurl                  "Avatar changer for us URL"             "URL between quotes"
+@var checkbox   avatarcircle                        "Avatar circle"                         0
 @var checkbox   avatarcustomposition                "Avatar custom position"                0
 @var text       avatarcustompositionvalue           "Avatar custom position value"          12vh
 @var select     avatarsize                          "Avatar size" {
@@ -85,7 +89,7 @@ X (twitter)     https://x.com/breatfroff
 =================================================================================================================================== */
     /* Versions */
     :root {
-        --themeversion: 'Theme v3.24';
+        --themeversion: 'Theme v3.25';
         --chatversionpc: 'Chat script PC v1.10';
         --chatversionmobile: 'Chat script mobile v1.10';
         --selfiesversionpc: 'Selfies script PC v1.04';
@@ -1166,6 +1170,92 @@ X (twitter)     https://x.com/breatfroff
                     background-position: center;
                     background-size: cover;
                 }
+            }
+        }
+    }
+    
+    if avatarcircle {
+        .css-13tht1l,
+        .css-g2goff {
+            border-radius: 50%;
+        }
+    }
+    
+    if avatarchat {
+        .css-oies6c,
+        .css-13tht1l,
+        .css-g2goff {
+            display: none;
+            height: 0px;
+            width: 0px;
+        }        
+        .css-1lbk8wf {
+            left: 0px;
+            padding: 0px 10px 0px 15px;
+            width: 100vw;
+        }
+        
+        if avatarchoice {
+            .css-1lbk8wf {
+                left: 0px;
+                padding: 0px 10px 0px 0px;
+                width: 100vw;
+            }
+            /* kin bubbles */
+            .css-1lbk8wf > .css-yhhl9h {
+                position: relative;
+            }
+            .css-1lbk8wf > .css-yhhl9h:before {
+                background-image: url(avatarchoiceurl);
+                background-position: center;
+                background-size: cover;
+                border-radius: 16px;
+                content: "";
+                height: 106px;
+                left: -1.5%;
+                position: absolute;
+                top: 0px;
+                width: 50px;
+            }
+            .css-teti0a {
+                margin-left: 90px;
+
+            }        
+            .css-127w3cl {
+                transform: translateY(60%);
+            }
+        }
+        
+        if ouravatarchoice {
+            .css-1lbk8wf {
+                left: 0px;
+                padding-right: 5px;
+                width: 100vw;
+            }
+            /* Our bubbles */
+            .css-1lbk8wf > .css-1dhayxc {
+                position: relative;
+            }
+            .css-1lbk8wf > .css-1dhayxc:after {
+                background-image: url(ouravatarchoiceurl);
+                background-position: center;
+                background-size: cover;
+                border-radius: 16px;
+                content: "";
+                height: 106px;
+                right: 0.5%;
+                position: absolute;
+                top: 0px;
+                width: 50px;
+            }
+            .css-1j9xj7u {
+                margin-right: 80px;
+
+            }
+
+            .css-yhhl9h,
+            .css-1dhayxc {
+                padding: 16px 0px 16px 0px;
             }
         }
     }
