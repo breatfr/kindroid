@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## Theme v3.25 - 2024-03-15
+- Add avatar circle setting
+- Add an avatar for us setting
+- Highly asked when i published my 1st version, add avatar chat (imessages/google messages style) setting and **REQUIRE**:
+	- avatar chat enabled (enabled alone it's like avatar hidden setting)
+	- avatar changer enabled to get kin's image
+	- avatar changer for us enabled to get our image
+Why i say avatar chat enabled even if it's logic, just to let you know you need 3 settings enabled to get really 1 setting, with all these 3 settings enabled you'll get the real avatar chat setting.
+I separate all 3 to let you customize like you want.
+For avatar chat: avartar zoom, circle, size, position don't work at this moment.
+
 ## Theme v3.24 - 2024-03-14
 - Add customization of the avatar's height when you use the rectangle setting
 
