@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name            Kindroid: Wide screen + customizations v3.xx
 @description     Put Kindroid on whole page for screen with width 900px and more and add customizations features.
-@version         3.25
+@version         3.26
 @author          BreatFR (https://breat.fr)
 @namespace       https://github.com/breatfr
 @homepageURL     https://github.com/breatfr/kindroid
@@ -89,7 +89,7 @@ X (twitter)     https://x.com/breatfroff
 =================================================================================================================================== */
     /* Versions */
     :root {
-        --themeversion: 'Theme v3.25';
+        --themeversion: 'Theme v3.26';
         --chatversionpc: 'Chat script PC v1.10';
         --chatversionmobile: 'Chat script mobile v1.10';
         --selfiesversionpc: 'Selfies script PC v1.04';
@@ -342,11 +342,11 @@ X (twitter)     https://x.com/breatfroff
         }
 
         /* Move and fix the Save button in all menu page */
-        .css-cbfcqn,
+        .css-1h56vtb > div > div.css-j7qwjs > button,
         .css-1raxatq > div.css-1xh8vw6 > button,
         .css-1raxatq > div.css-ouwkos > button,
         .css-1sfbjfs,
-        .css-1dmnlsh{
+        .css-1dmnlsh {
             bottom: 20px;
             margin: 39% 0px 0px 83%;
             position: fixed;
