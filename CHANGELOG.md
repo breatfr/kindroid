@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
+## Theme v3.26 - 2024-03-16
+- fix the position of save button in general settings
+
 ## Theme v3.25 - 2024-03-15
 - Add avatar circle setting
 - Add an avatar for us setting
