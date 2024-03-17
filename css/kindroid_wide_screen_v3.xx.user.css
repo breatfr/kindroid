@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name            Kindroid: Wide screen + customizations v3.xx
 @description     Put Kindroid on whole page for screen with width 900px and more and add customizations features.
-@version         3.26
+@version         3.27
 @author          BreatFR (https://breat.fr)
 @namespace       https://github.com/breatfr
 @homepageURL     https://github.com/breatfr/kindroid
@@ -89,7 +89,7 @@ X (twitter)     https://x.com/breatfroff
 =================================================================================================================================== */
     /* Versions */
     :root {
-        --themeversion: 'Theme v3.26';
+        --themeversion: 'Theme v3.27';
         --chatversionpc: 'Chat script PC v1.10';
         --chatversionmobile: 'Chat script mobile v1.10';
         --selfiesversionpc: 'Selfies script PC v1.04';
@@ -111,7 +111,7 @@ X (twitter)     https://x.com/breatfroff
         left: 50%;
         position: absolute;
         text-align: center;
-        top: 50%;
+        top: 49%;
         transform: translate(-50%, -50%);
         -webkit-transform: translate(-50%, -50%);
         width: max-content;
@@ -1650,7 +1650,8 @@ X (twitter)     https://x.com/breatfroff
             height: 0px;
         }
         .css-yhhl9h > .css-teti0a > .css-70qvj9 > .css-127w3cl,
-        .css-yhhl9h > .css-teti0a > .css-70qvj9 > .css-1yzcrgj {
+        .css-yhhl9h > .css-teti0a > .css-70qvj9 > .css-1yzcrgj,
+        .css-yhhl9h > .css-teti0a > .css-70qvj9 > .css-1rxo5q3 {
             height: 40px;
             width: 40px;
             margin-left: -75px;
@@ -1991,7 +1992,8 @@ X (twitter)     https://x.com/breatfroff
             height: 0px;
         }
         .css-yhhl9h > .css-teti0a > .css-70qvj9 > .css-127w3cl,
-        .css-yhhl9h > .css-teti0a > .css-70qvj9 > .css-1yzcrgj {
+        .css-yhhl9h > .css-teti0a > .css-70qvj9 > .css-1yzcrgj,
+        .css-yhhl9h > .css-teti0a > .css-70qvj9 > .css-1rxo5q3 {
             height: 40px;
             width: 40px;
             margin-left: -75px;
