@@ -2,8 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## Theme v3.27 - 2024-03-17
+- Fix play buttons to avoid they reduce during loadings
+
 ## Theme v3.26 - 2024-03-16
-- fix the position of save button in general settings
+- Fix the position of save button in general settings
 
 ## Theme v3.25 - 2024-03-15
 - Add avatar circle setting
