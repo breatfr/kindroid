@@ -196,16 +196,6 @@ X (twitter)     https://x.com/breatfroff
             background-color: bgcolor;
         }
     }
-    
-    /* Buttons hover */
-    if iconshover {
-        img:hover,
-        svg:hover {
-            border-radius: 20px;
-            box-shadow: rgba(139, 109, 255, 0.4) -5px -5px 5px 5px, rgba(254, 133, 133, 0.4) 5px 5px 5px 5px, rgba(254, 133, 133, 0.4) 5px -5px 5px 5px, rgba(139, 110, 255, 0.4) -5px 5px 5px 5px;
-            box-sizing: border-box;
-        }   
-    }
 }
 @-moz-document url("https://kindroid.ai/home") {
 /* ===================================================================================================================================
@@ -1483,6 +1473,16 @@ X (twitter)     https://x.com/breatfroff
             display: none;
         }
     }
+    
+    /* Buttons hover */
+    if iconshover {
+        img:hover,
+        svg:hover {
+            border-radius: 20px;
+            box-shadow: rgba(139, 109, 255, 0.4) -5px -5px 5px 5px, rgba(254, 133, 133, 0.4) 5px 5px 5px 5px, rgba(254, 133, 133, 0.4) 5px -5px 5px 5px, rgba(139, 110, 255, 0.4) -5px 5px 5px 5px;
+            box-sizing: border-box;
+        }   
+    }
 }
 
 @-moz-document url-prefix("https://kindroid.ai/groupchat/") {
@@ -1825,6 +1825,16 @@ X (twitter)     https://x.com/breatfroff
         .css-qfa1mb {
             display: none;
         }
+    }
+    
+    /* Buttons hover */
+    if iconshover {
+        img:hover,
+        svg:hover {
+            border-radius: 20px;
+            box-shadow: rgba(139, 109, 255, 0.4) -5px -5px 5px 5px, rgba(254, 133, 133, 0.4) 5px 5px 5px 5px, rgba(254, 133, 133, 0.4) 5px -5px 5px 5px, rgba(139, 110, 255, 0.4) -5px 5px 5px 5px;
+            box-sizing: border-box;
+        }   
     }
 }
 @-moz-document url("https://kindroid.ai/selfies") {
