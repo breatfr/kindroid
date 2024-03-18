@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## Theme v3.28 - 2024-03-18
+- Add an "icons hover" setting enabled by default to add a light on icons to avoid miss click
+- Fix the little too large space above and below textarea with both system bubbles left and dark
+- Put regenerate and journal icons a little higher
+- Modification of the order in system bubble left and dark
+- Add same color modification on hover in system bubble dark as left setting but without the new lightning border
+
 ## Theme v3.27 - 2024-03-17
 - Fix play buttons to avoid they reduce during loadings
 
