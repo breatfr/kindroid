@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name            Kindroid: Wide screen + customizations v3.xx
 @description     Put Kindroid on whole page for screen with width 900px and more and add customizations features.
-@version         3.27
+@version         3.28
 @author          BreatFR (https://breat.fr)
 @namespace       https://github.com/breatfr
 @homepageURL     https://github.com/breatfr/kindroid
@@ -69,6 +69,7 @@
     "Left": "systembubblesleft",
     "Dark": "systembubblesdark"
 }
+@var checkbox   iconshover                      "Icons hover"                               1
 @var text       chattextareasize                "Textarea font size"                        20px
 
 @var checkbox   imageborder                     "Image border on hover"                     1
@@ -89,7 +90,7 @@ X (twitter)     https://x.com/breatfroff
 =================================================================================================================================== */
     /* Versions */
     :root {
-        --themeversion: 'Theme v3.27';
+        --themeversion: 'Theme v3.28';
         --chatversionpc: 'Chat script PC v1.10';
         --chatversionmobile: 'Chat script mobile v1.10';
         --selfiesversionpc: 'Selfies script PC v1.04';
@@ -194,6 +195,16 @@ X (twitter)     https://x.com/breatfroff
         .css-11m3l17 {
             background-color: bgcolor;
         }
+    }
+    
+    /* Buttons hover */
+    if iconshover {
+        img:hover,
+        svg:hover {
+            border-radius: 20px;
+            box-shadow: rgba(139, 109, 255, 0.4) -5px -5px 5px 5px, rgba(254, 133, 133, 0.4) 5px 5px 5px 5px, rgba(254, 133, 133, 0.4) 5px -5px 5px 5px, rgba(139, 110, 255, 0.4) -5px 5px 5px 5px;
+            box-sizing: border-box;
+        }   
     }
 }
 @-moz-document url("https://kindroid.ai/home") {
@@ -378,7 +389,7 @@ X (twitter)     https://x.com/breatfroff
             width: 300px;
         }
                 
-        /* Fix position of Go to groupchat button*/
+        /* Fix position of Go to groupchat button */
         .chakra-button.no-invert.css-1dmnlsh {
             bottom: 20px;
             right: 5%;
@@ -699,8 +710,9 @@ X (twitter)     https://x.com/breatfroff
     }
 
     /* Put Regenerate and Journal buttons inline */
-    .css-1lvpjll > div.chatScrollParent.css-735j5d > div.css-1lbk8wf > div:nth-child(20) > div.css-1jby15f {
+    .css-1jby15f {
         right: 10px;
+        transform: translateY(-25%);
     }
     .css-100dd8p {
         gap: 90px !important;
@@ -1310,289 +1322,72 @@ X (twitter)     https://x.com/breatfroff
     
     /* System bubbles style */
     if (systembubblesstyle=="systembubblesleft") {
-        @media screen and (min-width: 900px) {
-            .css-1y2ps2x {
-                display: none;
-            }
-            .css-do4s31 {
-                background-color: transparent;
-                border: none;
-                bottom: 0px;
-                color: var(--chakra-colors-secondaryWhite);
-                display: grid;
-                gap: 10px;
-                grid-template-columns: 1fr 1fr;
-                --menu-shadow: transparent;
-                opacity: 1 !important;
-                position: fixed;
-                transform: none !important;
-                visibility: visible !important;
-                z-index: unset !important;
-            }
-            .css-do4s31 button:hover {
-                background: linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
-                background: -moz-linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
-                background-clip: text;
-                color: transparent;
-                -moz-background-clip: text;
-                -moz-text-fill-color: transparent;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-            .css-94x4at {
-                background-color: transparent;
-            }
-            .css-1lbk8wf {
-                margin-bottom: 70px;
-            }
-            .css-b9bzmp {
-                background-color: var(--chakra-colors-secondaryBlack);
-                bottom: 10px;
-                display: flex;
-                flex-direction: column;
-                padding: 10px 0px 10px 0px;
-                position: fixed;
-                right: 10px;
-                width: 72%;
-            }
+        .css-1y2ps2x {
+            display: none;
         }
-
-        @media screen and (min-height: 1080px) {
-            .css-1y2ps2x {
-                display: none;
-            }    
-            .css-do4s31 {
-                background-color: transparent;
-                border: none;
-                bottom: 0px;
-                color: var(--chakra-colors-secondaryWhite);
-                display: grid;
-                gap: 10px;
-                grid-template-columns: 1fr 1fr;
-                --menu-shadow: transparent;
-                opacity: 1 !important;
-                position: fixed;
-                transform: none !important;
-                visibility: visible !important;
-                z-index: 0 !important;
-            }
-            .css-do4s31 button:hover {
-                background: linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
-                background: -moz-linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
-                background-clip: text;
-                color: transparent;
-                -moz-background-clip: text;
-                -moz-text-fill-color: transparent;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-            .css-94x4at {
-                background-color: transparent;
-            }
-            .css-1lbk8wf {
-                margin-bottom: 70px;
-            }
-            .css-b9bzmp {
-                background-color: var(--chakra-colors-secondaryBlack);
-                bottom: 10px;
-                display: flex;
-                flex-direction: column;
-                padding: 10px 0px 10px 0px;
-                position: fixed;
-                right: 10px;
-                width: 72%;
-            }
+        .css-do4s31 {
+            background-color: transparent;
+            border: none;
+            bottom: 0px;
+            color: var(--chakra-colors-secondaryWhite);
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr;
+            --menu-shadow: transparent;
+            margin-left: 10px;
+            opacity: 1 !important;
+            position: fixed;
+            transform: none !important;
+            visibility: visible !important;
+            z-index: unset !important;
         }
-        
-        /* Vivaldi statusbar fix for min-height 1440 */
-        @media screen and (min-height: 1300px) {
-            .css-1y2ps2x {
-                display: none;
-            }
-            .css-do4s31 {
-                background-color: transparent;
-                border: none;
-                bottom: 0px;
-                color: var(--chakra-colors-secondaryWhite);
-                display: grid;
-                gap: 10px;
-                grid-template-columns: 1fr 1fr;
-                --menu-shadow: transparent;
-                opacity: 1 !important;
-                position: fixed;
-                transform: none !important;
-                visibility: visible !important;
-                z-index: 0 !important;
-            }
-            .css-do4s31 button:hover {
-                background: linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
-                background: -moz-linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
-                background-clip: text;
-                color: transparent;
-                -moz-background-clip: text;
-                -moz-text-fill-color: transparent;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-            .css-94x4at {
-                background-color: transparent;
-            }
-            .css-1lbk8wf {
-                margin-bottom: 70px;
-            }
-            .css-b9bzmp {
-                background-color: var(--chakra-colors-secondaryBlack);
-                bottom: 10px;
-                display: flex;
-                flex-direction: column;
-                padding: 10px 0px 10px 0px;
-                position: fixed;
-                right: 10px;
-                width: 72%;
-            }
+        .css-do4s31 button:hover {
+            background: linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
+            background: -moz-linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
+            border-radius: 20px;
+            box-shadow: rgba(139, 109, 255, 0.4) -5px -5px 5px 5px, rgba(254, 133, 133, 0.4) 5px 5px 5px 5px, rgba(254, 133, 133, 0.4) 5px -5px 5px 5px, rgba(139, 110, 255, 0.4) -5px 5px 5px 5px;
+            box-sizing: border-box;
+            background-clip: text;
+            color: transparent;
+            -moz-background-clip: text;
+            -moz-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
-
-        @media screen and (min-height: 1329px) {
-            .css-1y2ps2x {
-                display: none;
-            }
-            .css-do4s31 {
-                background-color: transparent;
-                border: none;
-                bottom: 0px;
-                color: var(--chakra-colors-secondaryWhite);
-                display: grid;
-                gap: 10px;
-                grid-template-columns: 1fr 1fr;
-                --menu-shadow: transparent;
-                opacity: 1 !important;
-                position: fixed;
-                transform: none !important;
-                visibility: visible !important;
-                z-index: 0 !important;
-            }
-            .css-do4s31 button:hover {
-                background: linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
-                background: -moz-linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
-                background-clip: text;
-                color: transparent;
-                -moz-background-clip: text;
-                -moz-text-fill-color: transparent;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-            .css-94x4at {
-                background-color: transparent;
-            }
-            .css-1lbk8wf {
-                margin-bottom: 70px;
-            }
-            .css-b9bzmp {
-                background-color: var(--chakra-colors-secondaryBlack);
-                bottom: 10px;
-                display: flex;
-                flex-direction: column;
-                padding: 10px 0px 10px 0px;
-                position: fixed;
-                right: 10px;
-                width: 72%;
-            }
+        .css-94x4at {
+            background-color: transparent;
         }
-
-        @media screen and (height: 1440px) {
-            .css-1y2ps2x {
-                display: none;
-            }
-            .css-do4s31 {
-                background-color: transparent;
-                border: none;
-                bottom: 0px;
-                color: var(--chakra-colors-secondaryWhite);
-                display: grid;
-                gap: 10px;
-                grid-template-columns: 1fr 1fr;
-                --menu-shadow: transparent;
-                opacity: 1 !important;
-                position: fixed;
-                transform: none !important;
-                visibility: visible !important;
-                z-index: 0 !important;
-            }
-            .css-do4s31 button:hover {
-                background: linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
-                background: -moz-linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
-                background-clip: text;
-                color: transparent;
-                -moz-background-clip: text;
-                -moz-text-fill-color: transparent;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-            .css-94x4at {
-                background-color: transparent;
-            }
-            .css-1lbk8wf {
-                margin-bottom: 70px;
-            }
-            .css-b9bzmp {
-                background-color: var(--chakra-colors-secondaryBlack);
-                bottom: 10px;
-                display: flex;
-                flex-direction: column;
-                padding: 10px 0px 10px 0px;
-                position: fixed;
-                right: 10px;
-                width: 72%;
-            }
+        .css-1lbk8wf {
+            margin-bottom: 65px;
         }
-
-        @media screen and (height: 2160px) {
-            .css-1y2ps2x {
-                display: none;
-            }
-            .css-do4s31 {
-                background-color: transparent;
-                border: none;
-                bottom: 0px;
-                color: var(--chakra-colors-secondaryWhite);
-                display: grid;
-                gap: 10px;
-                grid-template-columns: 1fr 1fr;
-                --menu-shadow: transparent;
-                opacity: 1 !important;
-                position: fixed;
-                transform: none !important;
-                visibility: visible !important;
-                z-index: 0 !important;
-            }
-            .css-do4s31 button:hover {
-                background: linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
-                background: -moz-linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
-                background-clip: text;
-                color: transparent;
-                -moz-background-clip: text;
-                -moz-text-fill-color: transparent;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-            .css-94x4at {
-                background-color: transparent;
-            }
-            .css-1lbk8wf {
-                margin-bottom: 70px;
-            }
-            .css-b9bzmp {
-                background-color: var(--chakra-colors-secondaryBlack);
-                bottom: 10px;
-                display: flex;
-                flex-direction: column;
-                padding: 10px 0px 10px 0px;
-                position: fixed;
-                right: 10px;
-                width: 72%;
-            }
+        .css-b9bzmp {
+            background-color: var(--chakra-colors-secondaryBlack);
+            bottom: 5px;
+            display: flex;
+            flex-direction: column;
+            padding: 5px 0px 10px 0px;
+            position: fixed;
+            right: 10px;
+            width: 72%;
+        }
+        .css-94x4at {
+            display: flex;
+            justify-content: center;
+        }
+        .chakra-menu__menuitem.css-94x4at:nth-child(1) {
+            order: 3;
+        }
+        .chakra-menu__menuitem.css-94x4at:nth-child(2) {
+            order: 1;
+        }
+        .chakra-menu__menuitem.css-94x4at:nth-child(3) {
+            order: 2;
+        }
+        .chakra-menu__menuitem.css-94x4at:nth-child(4) {
+            order: 4;
         }
     }
+    
     if (systembubblesstyle=="systembubblesdark") {
         .css-do4s31,
         .css-94x4at{
@@ -1605,14 +1400,14 @@ X (twitter)     https://x.com/breatfroff
             flex-direction: row-reverse !important;
         }
         .css-1lbk8wf {
-            margin-bottom: 70px;
+            margin-bottom: 60px;
         }
         .css-b9bzmp {
             background-color: var(--chakra-colors-secondaryBlack);
-            bottom: 10px;
+            bottom: 3px;
             display: flex;
             flex-direction: column;
-            padding: 10px 0px 10px 20px;
+            padding: 5px 0px 10px 20px;
             position: fixed;
             right: 10px;
             width: 100%;
@@ -1620,6 +1415,31 @@ X (twitter)     https://x.com/breatfroff
         .css-1y2ps2x {
             color: var(--chakra-colors-secondaryWhite);
             margin-left: 50px;
+        }
+        .css-do4s31 {
+            display: grid;
+        }
+        .css-do4s31 button:hover {
+            background: linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
+            background: -moz-linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
+            background-clip: text;
+            color: transparent;
+            -moz-background-clip: text;
+            -moz-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .chakra-menu__menuitem.css-94x4at:nth-child(1) {
+            order: 3;
+        }
+        .chakra-menu__menuitem.css-94x4at:nth-child(2) {
+            order: 1;
+        }
+        .chakra-menu__menuitem.css-94x4at:nth-child(3) {
+            order: 2;
+        }
+        .chakra-menu__menuitem.css-94x4at:nth-child(4) {
+            order: 4;
         }
     }
     
@@ -1775,8 +1595,9 @@ X (twitter)     https://x.com/breatfroff
     }
 
     /* Put Regenerate and Journal buttons inline */
-    .css-1lvpjll > div.chatScrollParent.css-735j5d > div.css-1lbk8wf > div:nth-child(20) > div.css-1jby15f {
+    .css-1jby15f {
         right: 10px;
+        transform: translateY(-25%);
     }
     .css-100dd8p {
         gap: 90px !important;
@@ -2094,7 +1915,7 @@ X (twitter)     https://x.com/breatfroff
             border-radius: 16px;
             box-shadow: rgba(139, 109, 255, 0.4) -5px -5px 5px 5px, rgba(254, 133, 133, 0.4) 5px 5px 5px 5px, rgba(254, 133, 133, 0.4) 5px -5px 5px 5px, rgba(139, 110, 255, 0.4) -5px 5px 5px 5px;
             transition: 0.2s linear;
-        }        
+        }
     }    
 
     /* Put delete image button in red */
