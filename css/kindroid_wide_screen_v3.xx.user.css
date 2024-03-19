@@ -1324,10 +1324,9 @@ X (twitter)     https://x.com/breatfroff
             gap: 10px;
             grid-template-columns: 1fr 1fr;
             --menu-shadow: transparent;
-            margin-left: 10px;
             opacity: 1 !important;
             position: fixed;
-            transform: none !important;
+            transform: translateX(48px) !important;
             visibility: visible !important;
             z-index: unset !important;
         }
@@ -1348,11 +1347,11 @@ X (twitter)     https://x.com/breatfroff
             background-color: transparent;
         }
         .css-1lbk8wf {
-            margin-bottom: 65px;
+            margin-bottom: 60px;
         }
         .css-b9bzmp {
             background-color: var(--chakra-colors-secondaryBlack);
-            bottom: 5px;
+            bottom: 3px;
             display: flex;
             flex-direction: column;
             padding: 5px 0px 10px 0px;
@@ -1463,11 +1462,11 @@ X (twitter)     https://x.com/breatfroff
         .css-yhhl9h > .css-teti0a > .css-70qvj9 > .css-1yzcrgj,
         .css-yhhl9h > .css-teti0a > .css-70qvj9 > .css-1rxo5q3 {
             height: 40px;
+            margin-left: -70px;
             width: 40px;
-            margin-left: -75px;
         }
         .css-yhhl9h {
-            margin-left: 50px;
+            margin-left: 45px;
         }
         .css-qfa1mb {
             display: none;
@@ -1816,8 +1815,8 @@ X (twitter)     https://x.com/breatfroff
         .css-yhhl9h > .css-teti0a > .css-70qvj9 > .css-1yzcrgj,
         .css-yhhl9h > .css-teti0a > .css-70qvj9 > .css-1rxo5q3 {
             height: 40px;
-            width: 40px;
             margin-left: -75px;
+            width: 40px;
         }
         .css-yhhl9h {
             margin-left: 50px;
