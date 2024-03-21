@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name            Kindroid: Wide screen + customizations v3.xx
 @description     Put Kindroid on whole page for screen with width 900px and more and add customizations features.
-@version         3.28
+@version         3.29
 @author          BreatFR (https://breat.fr)
 @namespace       https://github.com/breatfr
 @homepageURL     https://github.com/breatfr/kindroid
@@ -90,7 +90,7 @@ X (twitter)     https://x.com/breatfroff
 =================================================================================================================================== */
     /* Versions */
     :root {
-        --themeversion: 'Theme v3.28';
+        --themeversion: 'Theme v3.29';
         --chatversionpc: 'Chat script PC v1.10';
         --chatversionmobile: 'Chat script mobile v1.10';
         --selfiesversionpc: 'Selfies script PC v1.04';
@@ -258,9 +258,9 @@ X (twitter)     https://x.com/breatfroff
         color: var(--chakra-colors-yellow-400);
     }
 
-    /* Put FAQs and Terms & Privacy in blue */
-    .css-4i8yew,
-    .css-yk3l44 > h2:nth-child(2) {
+    /* Put User Guide and Announcements and Terms in blue */
+    .css-yk3l44 > h2,
+    .css-j7qwjs > div:nth-child(7) > p {
         color: var(--chakra-colors-blue-400);
     }
 
