@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
+## Theme v3.29 - 2024-03-21
+- Add blue color on new User Guide in menu
+
 ## Theme v3.28 - 2024-03-18
 - Add an "icons hover" setting enabled by default to add a light on icons to avoid miss click
 - Fix the little too large space above and below textarea with both system bubbles left and dark
