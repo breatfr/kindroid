@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## Theme v3.30 - 2024-04-11
+- Selfies page theme to include new tags feature and fix broken code from last website update
+
+## Selfies scripts pc and mobile v1.05 - 2024-04-11
+- Update download option to fix the image detection since the last website update
+
 ## Theme v3.29 - 2024-03-21
 - Add blue color on new User Guide in menu
 
