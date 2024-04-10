@@ -3,7 +3,7 @@
 // @description New features for Kindroid's selfies page
 // @namespace   https://kindroid.ai/selfies
 // @match       https://kindroid.ai/selfies
-// @version     1.04
+// @version     1.05
 // @updateURL   https://raw.githubusercontent.com/breatfr/Kindroid/main/js/kindroid_selfies_page_new_features.user.js
 // @author      BreatFR
 // @copyright   2023, BreatFR (https://breat.fr)
@@ -165,7 +165,7 @@
     // Download all images
     function downloadAllImages() {
         console.log('Download All Images');
-        const images = document.querySelectorAll('.css-1dq4ssc img.css-1regj17');
+        const images = document.querySelectorAll('.css-3vu8ng img.css-1regj17');
         console.log('Found Images:', images);
         if (images.length === 0) {
             alert('No images found.');
