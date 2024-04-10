@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name            Kindroid: Wide screen + customizations v3.xx
 @description     Put Kindroid on whole page for screen with width 900px and more and add customizations features.
-@version         3.29
+@version         3.30
 @author          BreatFR (https://breat.fr)
 @namespace       https://github.com/breatfr
 @homepageURL     https://github.com/breatfr/kindroid
@@ -90,11 +90,11 @@ X (twitter)     https://x.com/breatfroff
 =================================================================================================================================== */
     /* Versions */
     :root {
-        --themeversion: 'Theme v3.29';
+        --themeversion: 'Theme v3.30';
         --chatversionpc: 'Chat script PC v1.10';
         --chatversionmobile: 'Chat script mobile v1.10';
-        --selfiesversionpc: 'Selfies script PC v1.04';
-        --selfiesversionmobile: 'Selfies script mobile v1.04';
+        --selfiesversionpc: 'Selfies script PC v1.05';
+        --selfiesversionmobile: 'Selfies script mobile v1.05';
         --author: 'by BreatFR';
         --link: ' github.com/breatfr/kindroid or gitlab.com/breatfr/Kindroid ';
     }
@@ -1845,61 +1845,91 @@ X (twitter)     https://x.com/breatfroff
     .css-10ytma2 {
         max-width: 100%;
     }
-    .css-13da5b {
-        display: none;
-    }
-    .css-1dq4ssc {
-        padding-bottom: 30px;
-    }
-    .css-1dq4ssc,
-    .css-2cd1of {
-        gap: 20px;
-        justify-content: center;
-    }
-    .css-1fltgj7 {
-        padding: 0px 40px;
-    }
     .css-fskrnz {
         width: 84vh;
+    }
+    
+    /* Gallery */
+    .css-ezgmhy {
+        gap: 20px;
+        justify-content: center;
     }
     .css-3vu8ng,
     .css-kuf6b {
         height: auto;
         width: 290px;
     }
-    .css-j8mh8q,
-    .css-mtk9ei {
+    
+    /* Kin's name */
+    .css-6gs9hh {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        position: absolute;
+        width: 100%;
+    }
+    .css-1h018x8 {
+        color: var(--chakra-colors-secondaryWhite);
+        text-align: center;
+        justify-content: center;
+        /* padding-left: 10px; */
+    }
+    .css-1z0jlm7 {
         color: var(--chakra-colors-secondaryWhite);
         font-size: 18px;
+        padding-top: 5px;
+        text-align: center;
     }
+    
+    /* Selfies tokens */
+    .css-18467a {
+        position: absolute;
+        right: 10px;
+        top: 0px;
+    }
+    
+    /* Tags */
+    .css-2q07gq {
+        z-index: 9999;
+    }
+    .css-ewo462,
+    .css-1fm8jup > * {
+        justify-content: end;
+        padding-right: 10px;
+    }
+    
+    /* Put Request image button at the top */
+    if requestimage {
+        .css-65tag0 {
+            left: -40%;
+            top: 1%;
+            position: absolute;
+        }
+    }
+    
+    /* Request selfie */
     .css-105olw3 {
-        max-width: 96%;
+        width: 96%;
     }
-    /* Request selfie button */
-    .css-1ygmn3g {
-        max-width: 1060px;
+    .css-1jva3og {
+        font-size: 18px;
     }
 
     /* Load More button */
-    .css-dvxtzn,
-    .css-1q03dzc {    
+    .css-1m67823 {    
         background: linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
         background: -moz-linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
         background: -webkit-linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
         border-radius: 56px;
+        color: var(--chakra-colors-pureWhite);
+        font-size: 18px;
         height: fit-content;
         padding-bottom: var(--chakra-space-2);
         padding-top: var(--chakra-space-2);
-        width: fit-content;
+        width: 120px;
     }
-    .css-1q03dzc:hover {
+    .css-1m67823:hover {
         text-decoration: none;
-    }
-
-    .css-1q03dzc,
-    .css-1mepe2v {
-        color: var(--chakra-colors-pureWhite);    
-        font-size: 18px;
     }
 
     /* Image border on hover */
@@ -1928,18 +1958,12 @@ X (twitter)     https://x.com/breatfroff
     }    
 
     /* Put delete image button in red */
-    .css-jh1suc,
-    .css-15g5rpl,
-    .css-dhtaha,
-    .css-15g5rpl svg path {
-        color: var(--chakra-colors-red);
+    .css-chdrwy > .css-1icfsi7 > .css-r6z5ec > .css-do4s31,
+    .css-chdrwy > .css-1icfsi7 > .css-r6z5ec > .css-do4s31 > .css-94x4at {
+        background: var(--chakra-colors-secondaryBlack);
     }
-    
-    /* Modification of text under Kin's name selfies */
-    .css-1z0jlm7 {
-        font-size: 18px;
-        padding-top: 5px;
-        padding-bottom: 10px;
+    .css-chdrwy > .css-1icfsi7 > .css-r6z5ec > .css-do4s31 > .css-94x4at > .css-nvswzl {
+        color: var(--chakra-colors-red);
     }
     
     /* Blur content */
@@ -1951,50 +1975,20 @@ X (twitter)     https://x.com/breatfroff
         }
     }
     
-    /* Put Request image button at the top */
-    if requestimage {
-        @media screen and (min-width: 900px) {
-            /* Put Request image button at the top */
-            .css-65tag0 {
-                margin-bottom: 39%;
-                margin-left: 40%;
-                position: fixed;
-                z-index: 9999;
-            }
-        }
-        @media screen and (height: 1080px) {
-            /* Put Request image button at the top */
-            .css-65tag0 {
-                margin-bottom: 46.8%;
-                margin-left: 40%;
-                position: fixed;
-                z-index: 9999;
-            }
-        }
-        @media screen and (min-height: 1760px) {
-            /* Put Request image button at the top */
-            .css-65tag0 {
-                margin-bottom: 39%;
-                margin-left: 40%;
-                position: fixed;
-                z-index: 9999;
-            }
-        }
-    }
-    
     /* Selfie modal */
     .css-fskrnz {
         height: 809px;
         width: 80vw;
     }
-    .css-8rcl6n {
-        height: 775px;
+    .css-vwi0gr {
+        height: 773px;
         left: 0px;
         margin-bottom: 0px;
         position: absolute;
         width: auto;
     }
-    .css-1d9ljy8 {
+    .css-vwi0gr,
+    .css-pyo214 {
         border-radius: 0px 0px 0px 16px;
     }
     .css-1qxap43 {
