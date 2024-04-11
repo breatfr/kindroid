@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## Theme v3.30.1 - 2024-04-11
+- Update scripts versions at the top of screen
+
+## Selfies scripts pc and mobile v1.06 - 2024-04-11
+- Fix the load more button detection since the last website update
+
 ## Theme v3.30 - 2024-04-11
 - Selfies page theme to include new tags feature and fix broken code from last website update
 
