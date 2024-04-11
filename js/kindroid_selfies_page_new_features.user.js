@@ -3,7 +3,7 @@
 // @description New features for Kindroid's selfies page
 // @namespace   https://kindroid.ai/selfies
 // @match       https://kindroid.ai/selfies
-// @version     1.05
+// @version     1.06
 // @updateURL   https://raw.githubusercontent.com/breatfr/Kindroid/main/js/kindroid_selfies_page_new_features.user.js
 // @author      BreatFR
 // @copyright   2023, BreatFR (https://breat.fr)
@@ -152,7 +152,7 @@
         }
 
         // Find the "Load More" button
-        var loadMoreButton = document.querySelector('button.chakra-button.css-1q03dzc');
+        var loadMoreButton = document.querySelector('button.chakra-button.css-1m67823');
         console.log('Load More Button:', loadMoreButton);
         if (loadMoreButton) {
             // Click the "Load More" button
