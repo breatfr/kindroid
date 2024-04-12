@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name            Kindroid: Wide screen + customizations v3.xx
 @description     Put Kindroid on whole page for screen with width 900px and more and add customizations features.
-@version         3.30.1
+@version         3.31
 @author          BreatFR (https://breat.fr)
 @namespace       https://github.com/breatfr
 @homepageURL     https://github.com/breatfr/kindroid
@@ -49,31 +49,31 @@
 @var checkbox   avatarrectangle                     "Avatar rectangle"                      1
 @var checkbox   avatarrectanglecustomheight         "Avatar rectangle custom height"        0
 @var text       avatarrectanglecustomheightvalue    "Avatar custom height value"            256px
-@var checkbox   avatarzoom                      "Avatar hoverzoom"                          0
-@var select     bgchoice                        "Background choice" {
+@var checkbox   avatarzoom                          "Avatar hoverzoom"                      0
+@var select     bgchoice                            "Background choice" {
     "❤️ Hearts": "heartbg",
     "⬜ None": "nobg",
     "❔ Custom": "custombg"
 }
-@var color      bgcolor                         "Background color"                          #101010
-@var text       custombgurl                     "Background URL"                            "URL between quotes"
-@var checkbox   blurcontent                     "Blur content in bubbles"                   0
-@var color      bubblescolor                    "Bubbles font color"                        #CBCBCB
-@var text       bubblestext                     "Bubbles font size"                         20px
-@var checkbox   hidenames                       "Hide names in bubbles"                     1
-@var color      kinbubblesbgcolor               "Kin bubbles background color"              rgb(33, 27, 25)
-@var text       kinbubblesbgurl                 "Kin bubbles background URL"                "URL between quotes"
-@var color      ourbubblesbgcolor               "Our bubbles background color"              rgb(27, 28, 30)
-@var text       ourbubblesbgurl                 "Our bubbles background URL"                "URL between quotes"
-@var select     systembubblesstyle              "System bubbles style" {
+@var color      bgcolor                             "Background color"                      #101010
+@var text       custombgurl                         "Background URL"                        "URL between quotes"
+@var checkbox   blurcontent                         "Blur content"                          0
+@var color      bubblescolor                        "Bubbles font color"                    #CBCBCB
+@var text       bubblestext                         "Bubbles font size"                     20px
+@var checkbox   hidenames                           "Hide names in bubbles"                 1
+@var color      kinbubblesbgcolor                   "Kin bubbles background color"          rgb(33, 27, 25)
+@var text       kinbubblesbgurl                     "Kin bubbles background URL"            "URL between quotes"
+@var color      ourbubblesbgcolor                   "Our bubbles background color"          rgb(27, 28, 30)
+@var text       ourbubblesbgurl                     "Our bubbles background URL"            "URL between quotes"
+@var select     systembubblesstyle                  "System bubbles style" {
     "Left": "systembubblesleft",
     "Dark": "systembubblesdark"
 }
-@var checkbox   iconshover                      "Icons hover"                               1
-@var text       chattextareasize                "Textarea font size"                        20px
+@var checkbox   iconshover                          "Icons hover"                           1
+@var text       chattextareasize                    "Textarea font size"                    20px
 
-@var checkbox   imageborder                     "Image border on hover"                     1
-@var checkbox   requestimage                    "Request image button at top"               1
+@var checkbox   imageborder                         "Image border on hover"                 1
+@var checkbox   requestimage                        "Request image button at top"           1
 ==/UserStyle== */
 
 /* === Credits ===
@@ -90,7 +90,7 @@ X (twitter)     https://x.com/breatfroff
 =================================================================================================================================== */
     /* Versions */
     :root {
-        --themeversion: 'Theme v3.30.1';
+        --themeversion: 'Theme v3.31';
         --chatversionpc: 'Chat script PC v1.10';
         --chatversionmobile: 'Chat script mobile v1.10';
         --selfiesversionpc: 'Selfies script PC v1.06';
@@ -1872,7 +1872,6 @@ X (twitter)     https://x.com/breatfroff
         color: var(--chakra-colors-secondaryWhite);
         text-align: center;
         justify-content: center;
-        /* padding-left: 10px; */
     }
     .css-1z0jlm7 {
         color: var(--chakra-colors-secondaryWhite);
@@ -1901,8 +1900,8 @@ X (twitter)     https://x.com/breatfroff
     /* Put Request image button at the top */
     if requestimage {
         .css-65tag0 {
-            left: -40%;
-            top: 1%;
+            left: -40% !important;
+            margin-bottom: 37.5%;
             position: absolute;
         }
     }
@@ -1968,7 +1967,8 @@ X (twitter)     https://x.com/breatfroff
     
     /* Blur content */
     if blurcontent {
-        .css-1regj17 {
+        .css-1regj17,
+        .css-pyo214 {
             filter: blur(50px);
             -moz-filter: blur(50px);
             -webkit-filter: blur(50px);
