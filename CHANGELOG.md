@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
+## Theme v3.31 - 2024-04-12
+- Fix an issue on selfies page who blocked clicking on some selfies on left
+
 ## Theme v3.30.1 - 2024-04-11
 - Update scripts versions at the top of screen
 
