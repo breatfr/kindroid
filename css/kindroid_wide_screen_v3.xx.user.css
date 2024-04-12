@@ -1899,10 +1899,29 @@ X (twitter)     https://x.com/breatfroff
     
     /* Put Request image button at the top */
     if requestimage {
-        .css-65tag0 {
-            left: -40% !important;
-            margin-bottom: 37.5%;
-            position: absolute;
+        @media screen and (min-width: 900px) {
+            /* Put Request image button at the top */
+            .css-65tag0 {
+                left: -40%;
+                margin-bottom: 37.5%;
+                position: absolute;
+            }
+        }
+        @media screen and (height: 1080px) {
+            /* Put Request image button at the top */
+            .css-65tag0 {
+                left: -40%;
+                margin-bottom: 46%;
+                position: absolute;
+            }
+        }
+        @media screen and (min-height: 1760px) {
+            /* Put Request image button at the top */
+            .css-65tag0 {
+                left: -40%;
+                margin-bottom: 37.5%;
+                position: absolute;
+            }
         }
     }
     
