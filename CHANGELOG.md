@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## Theme v3.32 - 2024-04-14
+- Fix text in selfie modal when prompt is short
+- Fix kin's name and timer to get selfie token to hide them when we scroll down
+
 ## Theme v3.31 - 2024-04-12
 - Fix an issue on selfies page who blocked clicking on some selfies on left
 - Image in selfie modal is now blur too when blue content option is enabled
