@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name            Kindroid: Wide screen + customizations v3.xx
 @description     Put Kindroid on whole page for screen with width 900px and more and add customizations features.
-@version         3.31
+@version         3.32
 @author          BreatFR (https://breat.fr)
 @namespace       https://github.com/breatfr
 @homepageURL     https://github.com/breatfr/kindroid
@@ -90,7 +90,7 @@ X (twitter)     https://x.com/breatfroff
 =================================================================================================================================== */
     /* Versions */
     :root {
-        --themeversion: 'Theme v3.31';
+        --themeversion: 'Theme v3.32';
         --chatversionpc: 'Chat script PC v1.10';
         --chatversionmobile: 'Chat script mobile v1.10';
         --selfiesversionpc: 'Selfies script PC v1.06';
@@ -1850,9 +1850,39 @@ X (twitter)     https://x.com/breatfroff
     }
     
     /* Gallery */
-    .css-ezgmhy {
-        gap: 20px;
-        justify-content: center;
+    if (bgchoice=="heartbg") {
+        .css-ezgmhy {
+            background: url(https://i.ibb.co/fYQkYyc/heart-pattern.png) bgcolor fixed 100% !important;
+            gap: 20px;
+            justify-content: center;
+            z-index: 9999 !important;
+        }
+    }    
+    if (bgchoice=="nobg") {
+        /* No background */
+        .css-ezgmhy {
+            background: var(--chakra-colors-secondaryBlack) !important;
+            gap: 20px;
+            justify-content: center;
+            z-index: 9999 !important;
+        }
+    }    
+    if (bgchoice=="custombg") {
+        /* Custom background */
+        .css-ezgmhy {
+            background: url(custombgurl) bgcolor fixed 100% !important;
+            gap: 20px;
+            justify-content: center;
+            z-index: 9999 !important;
+        }
+    }
+    if bgcolor {
+        .css-ezgmhy {
+            background-color: bgcolor;
+            gap: 20px;
+            justify-content: center;
+            z-index: 9999 !important;
+        }
     }
     .css-3vu8ng,
     .css-kuf6b {
@@ -1865,6 +1895,7 @@ X (twitter)     https://x.com/breatfroff
         left: 50%;
         transform: translate(-50%, -50%);
         -webkit-transform: translate(-50%, -50%);
+        padding-bottom: 10px;
         position: absolute;
         width: 100%;
     }
@@ -1883,7 +1914,7 @@ X (twitter)     https://x.com/breatfroff
     /* Selfies tokens */
     .css-18467a {
         position: absolute;
-        right: 10px;
+        right: 32px;
         top: 0px;
     }
     
@@ -1894,31 +1925,35 @@ X (twitter)     https://x.com/breatfroff
     .css-ewo462,
     .css-1fm8jup > * {
         justify-content: end;
-        padding-right: 10px;
+        padding-right: 32px;
     }
     
     /* Put Request image button at the top */
     if requestimage {
         @media screen and (min-width: 900px) {
-            /* Put Request image button at the top */
             .css-65tag0 {
-                left: -40%;
+                left: -41%;
                 margin-bottom: 37.5%;
                 position: absolute;
             }
         }
         @media screen and (height: 1080px) {
-            /* Put Request image button at the top */
             .css-65tag0 {
-                left: -40%;
+                left: -41%;
                 margin-bottom: 46%;
                 position: absolute;
             }
         }
-        @media screen and (min-height: 1760px) {
-            /* Put Request image button at the top */
+        /* @media screen and (height: 1300px) {
             .css-65tag0 {
-                left: -40%;
+                left: -41%;
+                margin-bottom: 50%;
+                position: absolute;
+            }
+        } */
+        @media screen and (min-height: 1760px) {
+            .css-65tag0 {
+                left: -41%;
                 margin-bottom: 37.5%;
                 position: absolute;
             }
@@ -2014,6 +2049,9 @@ X (twitter)     https://x.com/breatfroff
         left: 52%;
         max-height: max-content;
         position: absolute;
+    }
+    .css-k4oaha {
+        width: 760px;
     }
     .css-bq8vjq {
         font-size: 20px;
