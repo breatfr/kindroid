@@ -372,7 +372,7 @@ X (twitter)     https://x.com/breatfroff
         }
         
         /* Create new kindroid modal */   
-        .css-1wjwxyy > section {
+        .css-1wjwxyy > section:not(.css-1q3je8v) {
             height: 98vh;
             position: absolute;
             top: 10px;
