@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name            Kindroid: Wide screen + customizations v3.xx
 @description     Put Kindroid on whole page for screen with width 900px and more and add customizations features.
-@version         3.32
+@version         3.33
 @author          BreatFR (https://breat.fr)
 @namespace       https://github.com/breatfr
 @homepageURL     https://github.com/breatfr/kindroid
@@ -90,7 +90,7 @@ X (twitter)     https://x.com/breatfroff
 =================================================================================================================================== */
     /* Versions */
     :root {
-        --themeversion: 'Theme v3.32';
+        --themeversion: 'Theme v3.33';
         --chatversionpc: 'Chat script PC v1.10';
         --chatversionmobile: 'Chat script mobile v1.10';
         --selfiesversionpc: 'Selfies script PC v1.06';
@@ -371,6 +371,40 @@ X (twitter)     https://x.com/breatfroff
             width: 300px;
         }
         
+        /* Create new kindroid modal */        
+        .css-1ly87gx > div > div.css-jzgh9j {
+            align-items: start;
+        }
+        .css-1yxzzu5 {
+            max-width: 100% !important;
+        }        
+        .css-ue4bfp {
+            right: 5%;
+            top: 22% !important;
+        }
+        
+        .css-1wjwxyy > section > div > .css-1cnwnlw > .css-jzgh9j > div.css-1h84tgn > div.css-19ovozl > div.css-j7qwjs > p:nth-child(5) {
+            position: absolute;
+            left: 50% !important;
+            top: 0px;
+        }
+        .css-1wjwxyy > section > div > .css-1cnwnlw > .css-jzgh9j > div.css-1h84tgn > div.css-19ovozl > div.css-j7qwjs > p:nth-child(6) {
+            position: absolute;
+            left: 50% !important;
+            top: 10%;
+        }
+        .css-1wjwxyy > section > div > .css-1cnwnlw > .css-jzgh9j > div.css-1h84tgn > div.css-19ovozl > div.css-j7qwjs > div:nth-child(7) {
+            position: absolute;
+            left: 50% !important;
+            top: 15%;
+            width: 50%;
+        }
+        
+        .css-jzgh9j > div.css-rzxn8p > .css-cbfcqn {
+            margin-right: 8%;
+            position: fixed;
+        }
+        
         /* Modify size and position of Create group */
         .css-1ky9fv8 {
             bottom: 27%;
@@ -530,7 +564,7 @@ X (twitter)     https://x.com/breatfroff
         }
         .css-mifb2i {
             width: 50%;
-        }
+        }        
 
         /* 1st avatar size */
         .css-1k5gc4r,
@@ -1944,13 +1978,13 @@ X (twitter)     https://x.com/breatfroff
                 position: absolute;
             }
         }
-        /* @media screen and (height: 1300px) {
+        @media screen and (height: 1300px) {
             .css-65tag0 {
                 left: -41%;
                 margin-bottom: 50%;
                 position: absolute;
             }
-        } */
+        }
         @media screen and (min-height: 1760px) {
             .css-65tag0 {
                 left: -41%;
