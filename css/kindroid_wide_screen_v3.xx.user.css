@@ -371,7 +371,12 @@ X (twitter)     https://x.com/breatfroff
             width: 300px;
         }
         
-        /* Create new kindroid modal */        
+        /* Create new kindroid modal */   
+        .css-1wjwxyy > section {
+            height: 98vh;
+            position: absolute;
+            top: 10px;
+        }
         .css-1ly87gx > div > div.css-jzgh9j {
             align-items: start;
         }
@@ -401,6 +406,7 @@ X (twitter)     https://x.com/breatfroff
         }
         
         .css-jzgh9j > div.css-rzxn8p > .css-cbfcqn {
+            bottom: 20px;
             margin-right: 8%;
             position: fixed;
         }
