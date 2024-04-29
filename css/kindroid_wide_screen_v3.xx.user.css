@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name            Kindroid: Wide screen + customizations v3.xx
 @description     Put Kindroid on whole page for screen with width 900px and more and add customizations features.
-@version         3.33
+@version         3.34
 @author          BreatFR (https://breat.fr)
 @namespace       https://github.com/breatfr
 @homepageURL     https://github.com/breatfr/kindroid
@@ -90,7 +90,7 @@ X (twitter)     https://x.com/breatfroff
 =================================================================================================================================== */
     /* Versions */
     :root {
-        --themeversion: 'Theme v3.33';
+        --themeversion: 'Theme v3.34';
         --chatversionpc: 'Chat script PC v1.10';
         --chatversionmobile: 'Chat script mobile v1.10';
         --selfiesversionpc: 'Selfies script PC v1.06';
@@ -369,13 +369,6 @@ X (twitter)     https://x.com/breatfroff
         /* Modify size of groups */
         .css-1avgoq8 {
             width: 300px;
-        }
-        
-        /* Create new kindroid modal */   
-        .css-1wjwxyy > section:not(.css-1q3je8v) {
-            height: 98vh;
-            position: absolute;
-            top: 10px;
         }
         .css-1ly87gx > div > div.css-jzgh9j {
             align-items: start;
@@ -2006,6 +1999,32 @@ X (twitter)     https://x.com/breatfroff
     }
     .css-1jva3og {
         font-size: 18px;
+    }
+    /* Request selfie avatar settingd */
+    .css-1o815t8 {
+        max-width: 90%;
+    }
+    .css-de3hrx {
+        height: 512px !important;
+        width: 512px !important;
+    }
+    .css-79elbk {
+        margin-left: 90% !important;
+        height: 512px !important;
+        width: 512px !important;
+    }
+    .css-dfpqc0 {
+        margin-left: 70% !important;
+        height: 512px !important;
+        width: 512px !important;
+    }
+    .css-79elbk > img:hover,
+    .css-dfpqc0 > img:hover {
+        height: 512px !important;
+        width: 512px !important;
+    }
+    .css-1jcj2pk {
+        color: white;
     }
 
     /* Load More button */
