@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
+## Theme v3.34 - 2024-04-29
+- Fix avatar settings modal in request selfie to enlarge it
+
 ## Theme v3.33 - 2024-04-17
 - Fix kindroid creation modal
 
