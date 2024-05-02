@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
+## Theme v3.35 - 2024-05-02
+- Fix kin's name position on selfie page
+
 ## Theme v3.34 - 2024-04-29
 - Fix avatar settings modal in request selfie to enlarge it
 
