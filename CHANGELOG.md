@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## Selfies scripts pc and mobile v1.07 - 2024-05-06
+- Put image date in modal selfie view automatically in user preference based on his location and browser language
+
+## Theme v3.35.1 - 2024-05-06
+- Fix bottom left corner in modal selfie view
+- Add a small space on right in modal selfie view
+- Update theme and scripts versions at the top of screen
+
 ## Theme v3.35 - 2024-05-02
 - Fix kin's name position on selfie page
 
