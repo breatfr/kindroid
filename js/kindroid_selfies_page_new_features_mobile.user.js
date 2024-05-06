@@ -3,7 +3,7 @@
 // @description New features for Kindroid's selfies page
 // @namespace   https://kindroid.ai/selfies
 // @match       https://kindroid.ai/selfies
-// @version     1.06
+// @version     1.07
 // @updateURL   https://raw.githubusercontent.com/breatfr/Kindroid/main/js/kindroid_selfies_page_new_features_mobile.user.js
 // @author      BreatFR
 // @copyright   2023, BreatFR (https://breat.fr)
@@ -283,4 +283,50 @@
             }
         });
     }
+
+    // Function to format date
+    function formatDate(dateString) {
+        // Parse the date
+        let date = new Date(dateString);
+
+        // Get the browser's language
+        let language = navigator.language;
+
+        // Format the date
+        let options = { year: 'numeric', month: 'long', day: 'numeric' };
+        return date.toLocaleDateString(language, options);
+    }
+
+    // Function to format dates in modal
+    function formatModalDates() {
+        // Get all date elements
+        let dateElements = document.querySelectorAll('.chakra-text.css-151uqsi');
+
+        // Loop over each date element
+        dateElements.forEach(function(element) {
+            // Get the current date string
+            let dateString = element.textContent;
+
+            // Format the date
+            let formattedDate = formatDate(dateString);
+
+            // Update the element with the new date
+            element.textContent = formattedDate;
+        });
+    }
+
+    // Create a mutation observer to watch for changes in the DOM
+    let observer = new MutationObserver(function(mutations) {
+        // For each mutation
+        mutations.forEach(function(mutation) {
+            // If the mutation added nodes
+            if (mutation.addedNodes.length) {
+                // Format the dates in the modal
+                formatModalDates();
+            }
+        });
+    });
+
+    // Start observing the document with the configured parameters
+    observer.observe(document.body, { childList: true, subtree: true });
 })();
