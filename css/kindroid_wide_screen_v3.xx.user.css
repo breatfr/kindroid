@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name            Kindroid: Wide screen + customizations v3.xx
 @description     Put Kindroid on whole page for screen with width 900px and more and add customizations features.
-@version         3.35.1
+@version         3.36
 @author          BreatFR (https://breat.fr)
 @namespace       https://github.com/breatfr
 @homepageURL     https://github.com/breatfr/kindroid
@@ -71,6 +71,7 @@
 }
 @var checkbox   iconshover                          "Icons hover"                           1
 @var text       chattextareasize                    "Textarea font size"                    20px
+@var checkbox   hidetrialbar                        "Hide trial bar"                        1
 
 @var checkbox   imageborder                         "Image border on hover"                 1
 @var checkbox   requestimage                        "Request image button at top"           1
@@ -90,7 +91,7 @@ X (twitter)     https://x.com/breatfroff
 =================================================================================================================================== */
     /* Versions */
     :root {
-        --themeversion: 'Theme v3.35.1';
+        --themeversion: 'Theme v3.36';
         --chatversionpc: 'Chat script PC v1.10';
         --chatversionmobile: 'Chat script mobile v1.10';
         --selfiesversionpc: 'Selfies script PC v1.07';
@@ -208,6 +209,12 @@ X (twitter)     https://x.com/breatfroff
     /* Header background color */
     .css-x3odei {
         background-color: var(--chakra-colors-primaryBlack) !important;
+    }
+    
+    if hidetrialbar {
+        .css-r1nv3m {
+            display: none;
+        }
     }
     
     /* Tooltips */
