@@ -4,7 +4,7 @@
 // @namespace   https://kindroid.ai
 // @match       https://kindroid.ai/home
 // @match       https://kindroid.ai/groupchat/*
-// @version     1.10
+// @version     1.11
 // @updateURL   https://raw.githubusercontent.com/breatfr/Kindroid/main/js/kindroid_chat_page_new_features_mobile.user.js
 // @author      BreatFR
 // @copyright   2023, BreatFR (https://breat.fr)
@@ -186,4 +186,85 @@
 
     // Ajouter le style au header
     document.head.appendChild(style);
+
+    // Function to format date
+    function formatDate(dateString) {
+        // Remove non-breaking spaces and extra whitespace
+        dateString = dateString.replace(/&nbsp;/g, '').trim();
+
+        // Extract date components
+        let dateComponents = dateString.match(/(\w+), (\w+) (\d+) (\d+), (\d+):(\d+) (AM|PM)/);
+
+        if (dateComponents) {
+            // Extract components
+            let [, dayOfWeek, month, day, year, hour, minute, period] = dateComponents;
+
+            // Convert month to numeric value
+            let monthIndex = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'].indexOf(month);
+
+            // Adjust hour based on period
+            if (period === 'PM') {
+                hour = parseInt(hour, 10) + 12;
+            }
+
+            // Create Date object
+            let date = new Date(year, monthIndex, day, hour, minute);
+
+            // Get the browser's language
+            let language = navigator.language || navigator.userLanguage;
+
+            // Format the date
+            let options = {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: 'numeric',
+                minute: 'numeric',
+                hour12: false // 24-hour format
+            };
+
+            // Format the date with the user's locale
+            return new Intl.DateTimeFormat(language, options).format(date);
+        } else {
+            // If date cannot be parsed, return original string
+            return dateString;
+        }
+    }
+
+    // Function to format dates in chat bubbles
+    function formatChatBubbleDates() {
+        // Get all date elements in chat bubbles
+        let dateElements = document.querySelectorAll('.chakra-text.css-dhnoom');
+
+        // Loop over each date element
+        dateElements.forEach(function(element) {
+            // Get the current date string
+            let dateString = element.textContent;
+
+            console.log("Original date string:", dateString);
+
+            // Format the date
+            let formattedDate = formatDate(dateString);
+
+            console.log("Formatted date:", formattedDate);
+
+            // Update the element with the new date
+            element.textContent = formattedDate;
+        });
+    }
+
+    // Create a mutation observer to watch for changes in the DOM
+    let observer = new MutationObserver(function(mutations) {
+        // For each mutation
+        mutations.forEach(function(mutation) {
+            // If the mutation added nodes
+            if (mutation.addedNodes.length) {
+                // Format the dates in the chat bubbles
+                formatChatBubbleDates();
+            }
+        });
+    });
+
+    // Start observing the document with the configured parameters
+    observer.observe(document.body, { childList: true, subtree: true });
 })();
