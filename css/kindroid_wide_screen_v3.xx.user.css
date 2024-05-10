@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name            Kindroid: Wide screen + customizations v3.xx
 @description     Put Kindroid on whole page for screen with width 900px and more and add customizations features.
-@version         3.36
+@version         3.37
 @author          BreatFR (https://breat.fr)
 @namespace       https://github.com/breatfr
 @homepageURL     https://github.com/breatfr/kindroid
@@ -91,9 +91,9 @@ X (twitter)     https://x.com/breatfroff
 =================================================================================================================================== */
     /* Versions */
     :root {
-        --themeversion: 'Theme v3.36';
-        --chatversionpc: 'Chat script PC v1.10';
-        --chatversionmobile: 'Chat script mobile v1.10';
+        --themeversion: 'Theme v3.37';
+        --chatversionpc: 'Chat script PC v1.11';
+        --chatversionmobile: 'Chat script mobile v1.11';
         --selfiesversionpc: 'Selfies script PC v1.07';
         --selfiesversionmobile: 'Selfies script mobile v1.07';
         --author: 'by BreatFR';
@@ -454,12 +454,6 @@ X (twitter)     https://x.com/breatfroff
             top: 18%;
             width: 47%;
         }
-        .css-i8vj7y > .css-1ly87gx > .css-1yxzzu5 > div:nth-child(4) > .css-dhnoom {
-            position: absolute;
-            right: 50px;
-            top: 30%;
-            width: 47%;
-        }
         
         /* Group context */
         .css-i8vj7y > .css-1ly87gx > .css-1yxzzu5 > div:nth-child(5) > .css-1cv5dpr {
@@ -472,12 +466,6 @@ X (twitter)     https://x.com/breatfroff
             position: absolute;
             right: 50px;
             top: 41%;
-            width: 47%;
-        }
-        .css-i8vj7y > .css-1ly87gx > .css-1yxzzu5 > div:nth-child(5) > .css-dhnoom {
-            position: absolute;
-            right: 50px;
-            top: 68%;
             width: 47%;
         }
         
@@ -678,6 +666,10 @@ X (twitter)     https://x.com/breatfroff
     .css-1j9xj7u {
         border-radius: 20px 8px 20px 20px;
     }
+    /* Modification of date for our bubbles */
+    .css-1j9xj7u > .css-70qvj9 > .css-dhnoom {
+        margin-bottom: 10px;
+    }
 
     /* Modification of rounded corners for AI bubbles */
     .css-teti0a,
@@ -685,6 +677,11 @@ X (twitter)     https://x.com/breatfroff
     .css-1tg26k8,
     .css-1t9c0mz {
         border-radius: 8px 20px 20px 20px;
+    }
+    /* Modification of date for AI bubbles */
+    .css-teti0a > .css-70qvj9 > .css-dhnoom {
+        margin-bottom: 10px;
+        margin-left: 30px;
     }
     
     /* Bigger text in bubbles and textarea */
@@ -1572,13 +1569,22 @@ X (twitter)     https://x.com/breatfroff
     .css-1j9xj7u {
         border-radius: 20px 8px 20px 20px;
     }
-
+    /* Modification of date for our bubbles */
+    .css-1j9xj7u > .css-70qvj9 > .css-dhnoom {
+        margin-bottom: 10px;
+    }
+    
     /* Modification of rounded corners for AI bubbles */
     .css-teti0a,
     .css-1ulhpcc,
     .css-1tg26k8,
     .css-1t9c0mz {
         border-radius: 8px 20px 20px 20px;
+    }
+    /* Modification of date for AI bubbles */
+    .css-teti0a > .css-70qvj9 > .css-dhnoom {
+        margin-bottom: 10px;
+        margin-left: 40px;
     }
     
     /* Bigger text in bubbles and textarea */
