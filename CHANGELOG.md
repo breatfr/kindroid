@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## Chat scripts pc and mobile v1.11 - 2024-05-10
+- Put date in bubbles (after clicking in bubble) automatically in user preference based on his location and browser language for chat page and group chat page
+
+## Theme v3.37 - 2024-05-10
+- Align date in bubbles with bubble's content
+- Update theme and scripts versions at the top of screen
+
 ## Theme v3.36 - 2024-05-07
 - Add setting to hide "Your 3-day trial is over. Subscribe here" bar for free users to save some space
 
