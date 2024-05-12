@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
+## Theme v3.37.1 - 2024-05-12
+- Fix request selfie button position on selfie page. (thanks to lassombra)
+
 ## Chat scripts pc and mobile v1.11 - 2024-05-10
 - Put date in bubbles (after clicking in bubble) automatically in user preference based on his location and browser language for chat page and group chat page
 
