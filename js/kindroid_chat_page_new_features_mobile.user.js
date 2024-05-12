@@ -254,7 +254,7 @@
     }
 
     // Create a mutation observer to watch for changes in the DOM
-    let observer = new MutationObserver(function(mutations) {
+    let dateObserver = new MutationObserver(function(mutations) {
         // For each mutation
         mutations.forEach(function(mutation) {
             // If the mutation added nodes
@@ -266,5 +266,5 @@
     });
 
     // Start observing the document with the configured parameters
-    observer.observe(document.body, { childList: true, subtree: true });
+    dateObserver.observe(document.body, { childList: true, subtree: true });
 })();
