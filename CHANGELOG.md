@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
+## Theme v3.38 - 2024-05-14
+- Replace purple regenerate icon by his gradient version like other icons on chat and group chat pages
+
 ## Theme v3.37.1 - 2024-05-12
 - Fix request selfie button position on selfie page. (thanks to <a href="https://github.com/lassombra">@lassombra</a>)
 
