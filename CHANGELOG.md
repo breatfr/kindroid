@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## Theme v3.38.1 - 2024-05-16
+- Small code's modification for choosing buubles test size and textarea test size:
+     - Default unit for this are now rem instead of px but now you can use unit of your choice like rem, px, pt, %, em
+     - With this change, you'll keep a space between each lines even if you use a big font size (usefull for people with eyes problems)
+
 ## Theme v3.38 - 2024-05-14
 - Replace purple regenerate icon by his gradient version like other icons on chat and group chat pages
 
