@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
+## Theme v3.38.2 - 2024-05-17
+- Fix a problem in selfies due to the v3.37.1 so i put back the old code
+
 ## Theme v3.38.1 - 2024-05-16
 - Small code's modification for choosing buubles test size and textarea test size:
      - Default unit for this are now rem instead of px but now you can use unit of your choice like rem, px, pt, %, em
