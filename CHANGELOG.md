@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## Theme v3.38.3 - 2024-05-20
+- Put gradient regenerate icon as optional setting
+- Reduce a little the textarea's size when system bubbles setting is on left to avoid + button be to close to avatar in rectangle mode
+
 ## Theme v3.38.2 - 2024-05-17
 - Fix a problem in selfies due to the v3.37.1 so i put back the old code
 
