@@ -183,4 +183,4 @@ https://discord.com/channels/1116127115574779905/1145809654044176485
 	  </li>
   </ul>
 </details>
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/breatfr) <a href="https://www.paypal.me/breat" target="_blank"><img src="https://github.com/andreostrovsky/donate-with-paypal/raw/master/blue.svg" alt="PayPal" height="30"></a>
+<a href="https://ko-fi.com/breatfr" target="_blank"><img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="PayPal" height="30"></a> <a href="https://www.paypal.me/breat" target="_blank"><img src="https://github.com/andreostrovsky/donate-with-paypal/raw/master/blue.svg" alt="PayPal" height="30"></a>
