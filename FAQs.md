@@ -1,7 +1,7 @@
 # FAQs
 <details>
   <summary><h3>Are the theme and scripts free?</h3></summary>
-  <p>Both are 100% free and under GNU GPL 3.0 license http://www.gnu.org/licenses/gpl-3.0.txt.</p>
+  <p>Both are 100% free and under GNU AGPL 3.0 license https://www.gnu.org/licenses/agpl-3.0.txt.</p>
 </details>
 
 <details>
