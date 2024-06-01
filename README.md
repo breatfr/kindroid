@@ -1,1 +1,1 @@
-# :warning: Project moved on GitLab: https://gitlab.com/breatfr/Kindroid :warning:
+# :warning: Project moved on GitLab: https://gitlab.com/breatfr/kindroid :warning:
