@@ -4,6 +4,8 @@
 // @namespace   https://gitlab.com/breatfr/Kindroid
 // @match       https://kindroid.ai/selfies
 // @version     1.07.1
+// @homepageURL https://gitlab.com/breatfr/Kindroid
+// @downloadURL https://gitlab.com/breatfr/Kindroid/-/raw/main/js/kindroid_selfies_page_new_features_mobile.user.js
 // @updateURL   https://gitlab.com/breatfr/Kindroid/-/raw/main/js/kindroid_selfies_page_new_features_mobile.user.js
 // @author      BreatFR
 // @copyright   2023, BreatFR (https://breat.fr)
