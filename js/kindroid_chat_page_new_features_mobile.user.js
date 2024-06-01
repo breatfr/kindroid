@@ -5,6 +5,8 @@
 // @match       https://kindroid.ai/home
 // @match       https://kindroid.ai/groupchat/*
 // @version     1.11.1
+// @homepageURL https://gitlab.com/breatfr/Kindroid
+// @downloadURL https://gitlab.com/breatfr/Kindroid/-/raw/main/js/kindroid_chat_page_new_features_mobile.user.js
 // @updateURL   https://gitlab.com/breatfr/Kindroid/-/raw/main/js/kindroid_chat_page_new_features_mobile.user.js
 // @author      BreatFR
 // @copyright   2023, BreatFR (https://breat.fr)
