@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Kindroid - Chat page new features
 // @description New features for Kindroid's chat page
-// @namespace   https://gitlab.com/breatfr/Kindroid
+// @namespace   https://gitlab.com/breatfr
 // @match       https://kindroid.ai/home
 // @match       https://kindroid.ai/groupchat/*
 // @version     1.11.1
