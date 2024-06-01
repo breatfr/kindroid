@@ -1,13 +1,13 @@
 /* ==UserStyle==
 @name            Kindroid: Wide screen + customizations v3.xx
 @description     Put Kindroid on whole page for screen with width 900px and more and add customizations features.
-@version         3.38.3
+@version         3.38.4
 @author          BreatFR (https://breat.fr)
-@namespace       https://github.com/breatfr
-@homepageURL     https://github.com/breatfr/kindroid
+@namespace       https://gitlab.com/breatfr
+@homepageURL     https://gitlab.com/breatfr/Kindroid
 @supportURL      https://discord.com/channels/1116127115574779905/1145809654044176485
-@updateURL       https://raw.githubusercontent.com/breatfr/Kindroid/main/css/kindroid_wide_screen_v3.xx.user.css
-@license         GPL-3.0-or-later; http://www.gnu.org/licenses/gpl-3.0.txt
+@updateURL       https://gitlab.com/breatfr/Kindroid/-/raw/main/css/kindroid_wide_screen_v3.xx.user.css
+@license         AGPL-3.0-or-later; https://www.gnu.org/licenses/agpl-3.0.txt
 @preprocessor    stylus
 
 @var select     actionsstyle                        "Actions texts style" {
@@ -92,7 +92,7 @@ X (twitter)     https://x.com/breatfroff
 =================================================================================================================================== */
     /* Versions */
     :root {
-        --themeversion: 'Theme v3.38.3';
+        --themeversion: 'Theme v3.38.4';
         --chatversionpc: 'Chat script PC v1.11';
         --chatversionmobile: 'Chat script mobile v1.11';
         --selfiesversionpc: 'Selfies script PC v1.07';
