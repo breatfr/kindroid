@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Kindroid - Selfies page new features
 // @description New features for Kindroid's selfies page
-// @namespace   https://gitlab.com/breatfr/Kindroid
+// @namespace   https://gitlab.com/breatfr
 // @match       https://kindroid.ai/selfies
 // @version     1.07.1
 // @homepageURL https://gitlab.com/breatfr/Kindroid
