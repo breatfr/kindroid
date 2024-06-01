@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Kindroid - New features bundle mobile
 // @description New features for Kindroid
-// @namespace   https://gitlab.com/breatfr/Kindroid
+// @namespace   https://gitlab.com/breatfr
 // @match       https://kindroid.ai/*
 // @version     1.0.1
 // @homepageURL https://gitlab.com/breatfr/Kindroid
