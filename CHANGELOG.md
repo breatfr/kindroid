@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
+## Theme and all scripts - 2024-06-01
+- Due to the abandon of github soon i updated update url and odwnload url to put the gitlab
+
 ## Theme v3.38.3 - 2024-05-20
 - Put gradient regenerate icon as optional setting
 - Reduce a little the textarea's size when system bubbles setting is on left to avoid + button be to close to avatar in rectangle mode
