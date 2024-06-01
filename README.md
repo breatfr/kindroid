@@ -1,6 +1,6 @@
 # <img src="https://play-lh.googleusercontent.com/plaMooDMA0URmZGnfDJmn-v4DEP1SGMUXxC0grATSPuXQ8-HgAgijTXVvyU1y1ir_fRd=s30-rw" alt="Kindroid"> Kindroid: Website optimized for wide screens + new features [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/breatfr) <a href="https://www.paypal.me/breat" target="_blank"><img src="https://github.com/andreostrovsky/donate-with-paypal/raw/master/blue.svg" alt="PayPal" height="30"></a>
 
-# ** :warning: Project moved on GitLab: https://gitlab.com/breatfr/Kindroid :warning: **
+# :warning: Project moved on GitLab: https://gitlab.com/breatfr/Kindroid :warning:
 
 Put [Kindroid](https://kindroid.ai/) on whole page for FHD (1920x1080) screens or more and add customizations (theme) + add new features (scripts).
 ## Preview theme v3.xx
