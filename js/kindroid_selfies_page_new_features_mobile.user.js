@@ -22,6 +22,8 @@
     script.src = 'https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js';
     document.head.appendChild(script);
 
+    let includePromptsInDownload = getCookie('includePromptsInDownload') === 'true';
+
     if (window.location.href.includes("/selfies")) {
         // User interface
         var uiContainer = document.createElement('div');
@@ -39,8 +41,11 @@
         var row1 = document.createElement('tr');
         table.appendChild(row1);
 
+        const cellBorderStyle = 'solid 3px #fff0f0';
+
         // Cell for "Help Create Prompts" label and checkbox
         var cell1 = document.createElement('td');
+        cell1.style.borderRight = cellBorderStyle;
         row1.appendChild(cell1);
 
         var autoCreateModalLabel = document.createElement('label');
@@ -67,8 +72,12 @@
         autoCreateModalLabel.appendChild(showModalCheckbox);
         cell1.appendChild(autoCreateModalLabel);
 
+        const paddingLeft = '5px';
+
         // Cell for "See All Images" label and checkbox
         var cell2 = document.createElement('td');
+        cell2.style.borderLeft = cellBorderStyle;
+        cell2.style.paddingLeft = paddingLeft;
         row1.appendChild(cell2);
 
         var autoLoadMoreLabel = document.createElement('label');
@@ -86,19 +95,37 @@
             autoLoadMore();
         });
 
+        // Include prompts label and checkbox
+        const includePromptsLabel = document.createElement('label');
+        includePromptsLabel.innerText = 'Include Prompts ';
+        includePromptsLabel.style.marginRight = '15px'; // Add some margin to separate from checkbox
+        includePromptsInDownload = getCookie('includePromptsInDownload') === 'true';
+        const includePromptsCheckbox = document.createElement('input');
+        includePromptsCheckbox.type = 'checkbox';
+        includePromptsCheckbox.checked = includePromptsInDownload;
+        includePromptsCheckbox.addEventListener('change', function () {
+            includePromptsInDownload = includePromptsCheckbox.checked;
+            // Set cookie to remember user choice
+            setCookie('includePromptsInDownload', includePromptsInDownload, 30);
+        });
+
         autoLoadMoreLabel.appendChild(autoLoadMoreCheckbox);
         cell2.appendChild(autoLoadMoreLabel);
 
         // Second row for empty space and "Download All Images" button
         var row2 = document.createElement('tr');
         table.appendChild(row2);
-
-        // Empty cell to align with "Help Create Prompts" checkbox
-        var emptyCell = document.createElement('td');
-        row2.appendChild(emptyCell);
+        
+        const includePromptsCell = document.createElement('td');
+        includePromptsCell.style.borderRight = cellBorderStyle;
+        includePromptsLabel.appendChild(includePromptsCheckbox);
+        includePromptsCell.appendChild(includePromptsLabel);
+        row2.appendChild(includePromptsCell);
 
         // Cell for "Download All Images" button
         var cell3 = document.createElement('td');
+        cell3.style.borderLeft = cellBorderStyle;
+        cell3.style.paddingLeft = paddingLeft;
         row2.appendChild(cell3);
 
         var downloadAllButton = document.createElement('button');
@@ -116,8 +143,8 @@
 
         uiContainer.appendChild(table);
         document.body.appendChild(uiContainer);
-        } else {
-          // Masquer l'interface de la page chat
+    } else {
+        // Masquer l'interface de la page chat
     }
 
     // Check if autoLoadMore is enabled from cookie
@@ -184,9 +211,12 @@
                 .then(blob => {
                     const filename = ('0000' + (totalImages - index)).slice(-4); // Reverse numbering
                     zip.file(`${filename}.jpg`, blob);
-                    const prompt = image.alt;
-                    const promptFile = new Blob([prompt], { type: 'text/plain' });
-                    zip.file(`${filename}.txt`, promptFile);
+                    if (includePromptsInDownload) {
+                        const prompt = image.alt;
+                        const promptFile = new Blob([prompt], { type: 'text/plain' });
+                        zip.file(`${filename}.txt`, promptFile);
+                    }
+
                     ++count;
                     downloadStatus.innerText = ' Downloading... (' + count + '/' + totalImages + ')';
                     if (count === totalImages) {
